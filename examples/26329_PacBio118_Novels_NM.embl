@@ -1,0 +1,1620 @@
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-A1_011_03_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-A1 gene), isolate JL142,
+DE   allele Mamu-A1_011_03_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,204..473,722..997,1596..1871,1974..2090,
+FT                   2538..2570,2713..2760,2929..2933)
+FT                   /standard_name="CDS"
+FT                   /gene="A1"
+FT                   /allele="Mamu-A1_011_03_01_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            204..473
+FT                   /standard_name="Exon 2"
+FT   exon            722..997
+FT                   /standard_name="Exon 3"
+FT   exon            1596..1871
+FT                   /standard_name="Exon 4"
+FT   exon            1974..2090
+FT                   /standard_name="Exon 5"
+FT   exon            2538..2570
+FT                   /standard_name="Exon 6"
+FT   exon            2713..2760
+FT                   /standard_name="Exon 7"
+FT   exon            2929..2933
+FT                   /standard_name="Exon 8"
+FT   source          1..2933
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2933 BP; 559 A; 848 C; 928 G; 598 T; 0 other;
+     atggcgatca tggcgccccg gaccctcctc ctggtgctct ccggggccct ggccctgacc        60
+     cagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcgag       120
+     gggcccgcct ggcgggggcg caggacccgg ggagccgcgc ggggaggagg gtcgggcggg       180
+     tctcagcctc tcctcgcccc caggctccca ctccatgagg tatttccaca ccgccgtgtc       240
+     ccggcccggc cgcggggagc cccgcttctt caccgtgggc tacgtggacg acacgcagtt       300
+     cgtgcggttc gacagcgacg ccgcgagtcc gagaaaggag ccgcgggcgc cgtgggtgga       360
+     gcaggagggg ccggagtatt gggaccggga gacacggatc tccaaggcca acacacagac       420
+     ctaccgagag aacctgcgga ccgcgctccg ctactacaac cagagcgagg ccggtaagtg       480
+     accccggccc ggggcgcagg tcacgacccc tccccattcc ccacggacgg cccgcgtcgc       540
+     cccgagtctc cgggtcccag atacaccccg aagccgcggg accccgagac cgttgacccg       600
+     ggagagcccc aggcgccttt gcccagtttc attttcagtt gaggccaaaa tccccggggg       660
+     ttggtctggg cggggcgggg cggggctccg gggactgtac tgaccgcggg ggcggggcca       720
+     gggtctcaca ccttccagac gatgtacggc tgcgacctgg ggcccgacgg gcgcctcctc       780
+     cgcgggtatg accagtacgc ctacgacggc agggattaca tcgccctgaa cgaggacctg       840
+     cgctcctgga cggccgggga catggcggct cagaacaccc agcggaagtg ggaggcggcg       900
+     ggtgtggcgg agcagcacag aacctacctg gagggcgagt gcctggagtg gctccgcaga       960
+     tacctggaga acgggaagga gacgctgcag cgcgcgggta ccaggggcca cggggcgcct      1020
+     ccctgatcgc ctgtagatct cccgggctgg cctcccacaa ggaggggaga caaatgggac      1080
+     caacactaga atatcgccct ccctctggtc ctgagggaga ggaatcctcc tgggtttcca      1140
+     gatcctgtac cagagagtga ctctgagggt ccgccctgct ctctgacaca attaaggata      1200
+     aaatctctga gggaatgaag ggaagacgat ccctcgaata ctgatcaggg gttccctttg      1260
+     ccaccggcag cagccttggg ccccgtgact tttcctctca ggccctgttc tctgcttcac      1320
+     actcaatgtg tgtgagggtc tgagtccagc tccgctgagt ccctcagcct ccactcaggt      1380
+     caggagcaga agtcactgtt ccctcctcgg ggaatagaat tttccacaga ataggagatt      1440
+     ctcccaggtg cctgtgtcca ggatagtgtc tgggttctgt gctcccttcc ccaccccagg      1500
+     tgtcctctgt ccattctcaa gatggccaca tgtgtgctgg tggagtgtcc catgacagat      1560
+     gcaaaatgcc tgcattttct gactcttgcc atcagacccc cccaagacac atgtgaccca      1620
+     ccaccccgtc tctgaccatg aggccaccct gaggtgctgg gccctgggct tctaccctgc      1680
+     ggagatcaca ctgacctggc ggcgggatgg ggaggaccaa actcaggaca cggagctcgt      1740
+     ggagaccagg cctgcaggag atggaacctt ccagaagtgg gcggctgtgg tggtgccttc      1800
+     tggaaaggag cagagataca cctgtcatgt gcagcatgag ggtctgcccg agcccctcac      1860
+     cctgagatgg ggtaaagagg gagatggggg tgtcatgtct cttagggaaa gccggagcct      1920
+     ttctggagac ctttagcagg ctcaggaccc ctcaccttcc cctcttttcc cagagccgtc      1980
+     ttcccagtcc accatcccca tcgtgggcat cattgctggc ctggttctcc ttggagctgt      2040
+     ggtcactgga gctgtggtcg ctgctgtgat gtggaagagg aagagctcag gtgaggaagg      2100
+     ggagtgagga gtggagtctg agatttcttg tcttactgag ggtttcaagc cccaggtaga      2160
+     agtgtaccct gcctggttac tgggaagcac catccacact catgggccaa cccagcctgg      2220
+     gccctgtgtg ccagcaccta ctcttttgta aagcacctgt tacagtgaag gacagataga      2280
+     tcacctcgat ttcggtggtg atgggacctg atcccagcag tcacaagtca caagagaagg      2340
+     tccctggtga ggacagacct caggagggca gttggtccag gacccacacc tgctttcttc      2400
+     atgtttcctg atcctgccct gggtctgtag tcacacattt ctggaaactt ctctggggtc      2460
+     caagactagg agattcctct aggaccttat ggcactggtt cctttctgat acctcacagg      2520
+     acattttctt cccacagata gaaaaggagg gagctactct caggctgcaa gtaagtatga      2580
+     aggaggctga tcctggagat ccttgggatg ttgtggttgg gggcccatgg gggagctcac      2640
+     ccagcccaca gttcctcctt tagtcacatc tccagaggga tctgaccagg tcctgttttt      2700
+     gttctactcc aggcagtgac agtgcccagg gctctgatgt gtctctcacg gcttgtaaag      2760
+     gtgagaccct ggggggcctg atgtgtgggg ggtgttgggg ggaacagtgg acgcagctgt      2820
+     gctatggggt ttctttgact tggatgtatt gagcatgtga tgagctgttt aaagtgtcac      2880
+     tcctcactgt gacggatatg aattttttca tgaatatttt ttctatagtg tga             2933
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-AG1_05_20_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-AG1 gene), isolate JL171,
+DE   allele Mamu-AG1_05_20_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,204..473,716..991,1588..1863,1966..2082,
+FT                   2519..2526)
+FT                   /standard_name="CDS"
+FT                   /gene="AG1"
+FT                   /allele="Mamu-AG1_05_20_01_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            204..473
+FT                   /standard_name="Exon 2"
+FT   exon            716..991
+FT                   /standard_name="Exon 3"
+FT   exon            1588..1863
+FT                   /standard_name="Exon 4"
+FT   exon            1966..2082
+FT                   /standard_name="Exon 5"
+FT   exon            2519..2551
+FT                   /standard_name="Exon 6"
+FT   exon            2694..2740
+FT                   /standard_name="Exon 7"
+FT   exon            2909..2913
+FT                   /standard_name="Exon 8"
+FT   source          1..2913
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2913 BP; 568 A; 821 C; 913 G; 611 T; 0 other;
+     atggcggtca tggcgccccg aaccctcctc ctggtgctct caggggtcct ggccctgacc        60
+     cagacccagg cgggtgagtg cggggtcggg agggaaacgc cctctgcggg gaggagggga       120
+     gggcccgccc ggccggggcg caggacccgg ggagccgcgc ggggaggagg gtcgggcggg       180
+     tctcagtctc tcctcgcccc caggctccca ctccatgagg tatttctaca ccgccgtgtc       240
+     ccggcccggc cgtcgggagc ccctcttcat cgccgtgggc tacgtggacg acacgcagtt       300
+     cgtgcggttc gacagcgacg ccgagagtcc gaggatggag ccgcgggcgc cgtgggtgga       360
+     gcaggagggg ccggagtatt gggaccggga gacacagaac atgaagaccg cgacacagac       420
+     ctaccgaggg aacctgcgga ccgcgctccg ctactacaac cagagcgagg ggggtgagtg       480
+     accccggccc ggggcgcagg tcacgacccc tccacatccc ccacggacgg cccgggtggc       540
+     cccgagtctc tgggtcccag atccatcccg aagccgcggg acccggggac ccttgacccg       600
+     ggagagcccc aggcgccttt acccgatttc ctttttagtt tgggccaaaa tccccgcggg       660
+     ttggtcgggg cggggcgggg ctccggggac gggctgaccg cgggggcggg gccagggtct       720
+     cacaccatcc agaagatgta cggctgcgac ctggggcccg acgggcgcct cctccgcggg       780
+     tatgaacagt tcgcctacga tggcagggat tacatcatcc tgaacgagga cctgcgctcc       840
+     tggacggccg cggacatggc ggctcagttc acccagcgga agtgggaggc ggcccgtgcg       900
+     gcggagcagc acagaaccta cctggagggc gagtgcctgg agtggctccg cagatacctg       960
+     gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gccacggggc gcctccctga      1020
+     tctcctgtgg atctcccggg ctggcctccc acaaggaggg gagacaaatg ggaccaacac      1080
+     tagaatatcg ccctccctct ggttctgagg gagaggaatc ctcctgggat tccagatcct      1140
+     gtaccagaga gtgactctga ggttccgccc tgctctctga cacaattaag gataaaatct      1200
+     ctgaaggaat gaagggaaga cgatccctcg aatactgatc aggggtttca tttgacaccg      1260
+     gcagcagcct tgggccccgt gactttttct ctcaggccct gttctctgct tcacactcag      1320
+     tgtgtgtggg ggtctgagtc cagctcctct gagtccctca gcctccactc aggtcaggac      1380
+     cagaagtcac tgttccttcc tcagggaata gaattttcca cggaatagga gattctccca      1440
+     ggtgcctgtg tccaggatag tgtctgggtt atgtgctccc ttcctcaccc caggtgtcct      1500
+     gttcattctc aagatggccc catgtgtgct ggtggactgt cccatgacag atgcaaaatg      1560
+     actgaatttt ctgactcttc ccatcagacc cccccaagac acatgtgacc caccaccccg      1620
+     tctctgacta cgaggccacc ctgaggtgct gggccctggg cttctaccct gcggagatca      1680
+     cactgacctg gcagcgggat ggagaggaac aaactgaaga cacagagctc gtggagacca      1740
+     ggcctacagg ggatggaacc ttccagaagt gggcggctgt ggtggtgcct tctggagagg      1800
+     agcagagata cacctgtcat gtgcagcatg agggtctgcc caagcccctc accctgagat      1860
+     tcggtgaaga gggagatggg ggtgtcatgt cttttaggga aagccggagc ctctctagag      1920
+     acctttagca gggtcaggac cactcacctt accctctttt cccagagccg ttttcccagt      1980
+     ccaccatccc catcgtgggc atcattgctg gcctggttct gcttggaact gtggtcactg      2040
+     gagctgtggt tgctgctgtg atgtggagga ggaagagctc aggtgaggaa ggggtgagga      2100
+     gtggggtctg ggatttcttg tctcactgag ggtttcaagc cccaggtaga agtgtaccct      2160
+     gtctggttac tgggaagcac catccacact catgggctga cccagcctgg gccctgtgtg      2220
+     ccagcaccta ctctttggta aagcacctgt tacaatgaag gacagattta tcaccttgat      2280
+     tatggtgaag ggacctgatc ccagcagtca caagtcacaa gggaaggtcc ctgctgagga      2340
+     cagacctcag gaggacagtt ggtccaggac ccacacctgc tttcttcatg tttcctgatc      2400
+     ctgccctggg tctgcaatca cacatttctg gaaacttctc tggggtccaa gactaggaga      2460
+     ttcctgtagg accttatgac tcctttctga tatctcacag gacattttct tcccatagat      2520
+     agataaggag ggagctactc tcaggctgca agtaagtatg aaggaggctg atccctgaga      2580
+     tccttgggat attgtggttg ggagcccatg ggggagctca ctaaccccac agttcctcct      2640
+     ctagccacat ctccagaggg atctgaccag gtcctgtttt tgttctactc caggcagtga      2700
+     cagtgcccaa ggttctgatg tgtctctcac ggctttaaag gcgagaccct ggggggcctg      2760
+     atgtgtgtgg ggtgttgggg ggaacagtgg acgcagctgt gctgtggggt ttctttgact      2820
+     tggatgtatt gagcatgtga tgggctgttt aaagtgtcac tcctcactgt gacggatgtg      2880
+     aattttttca tgaatatgtt ttctatagag tga                                   2913
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-AG2_01_02_02_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-AG2 gene), isolate JL122,
+DE   allele Mamu-AG2_01_02_02_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..64,195..421)
+FT                   /standard_name="CDS"
+FT                   /gene="AG2"
+FT                   /allele="Mamu-AG2_01_02_02_01_nov"
+FT   exon            1..64
+FT                   /standard_name="Exon 1"
+FT   exon            195..463
+FT                   /standard_name="Exon 2"
+FT   exon            709..966
+FT                   /standard_name="Exon 3"
+FT   exon            1568..1844
+FT                   /standard_name="Exon 4"
+FT   exon            1992..2108
+FT                   /standard_name="Exon 5"
+FT   exon            2548..2580
+FT                   /standard_name="Exon 6"
+FT   exon            2723..2770
+FT                   /standard_name="Exon 7"
+FT   exon            2939..2943
+FT                   /standard_name="Exon 8"
+FT   source          1..2943
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2943 BP; 607 A; 810 C; 897 G; 629 T; 0 other;
+     atggcgtccc gaaccctcct cctactgctc tcgggtaccc cggccctgac cgagacctgg        60
+     gagggtgagt gcgggatcca gagggaaatg gcctctgcca agaggagcga ggggcccgcg       120
+     cagctggggc gcaggacccg gggagccgcg ccaggaggag gatcgagagg gtctcagccc       180
+     ctccgcgccc ccaggttccc actccatgag gtatttcagc accgccttgt cccggcccgg       240
+     ccgcgggggc cccgcttcat tgcagtgggc tacgtggacg acacgcagtt cgtgcggttc       300
+     gacagcgacg cggcgagtcc gaggatggag ccgccggcgc catgggtgga gcaggagcgg       360
+     ccggagtatt gggaccggag cacacggaac gccaaggtcc acgcacagac tgacagagtg       420
+     aacctgcaga ccctgctccg ctactacaac cagagcgagg cccatgagtg accccggccc       480
+     ggagcacagg tcacgaccct tccccatgcg cacggaccgc ccggatcccc ccgagtctcc       540
+     ggccccgaga tccaccccga ggctgtggga ccagcccaga tcctcgaccg ggtagagccc       600
+     caggcgcctt taccgggttt cattttcagt ttaggccaaa atccccgcgg gtcggtcggg       660
+     gcgggggcgg ggcttggtgg gcggggctga ccgtggaggc ggggccaggg tctaacacac       720
+     tccagataaa gtatgggtga gacttggggc tggaagggca cttcctccgc ggttatgaac       780
+     agcacgccaa agatggcaag gattacatcg cacttaaccg gggcttgtgc tcctggaccg       840
+     cagctgacac gcgcaagtgg gaggcagagg aatttgcaaa gcaggtcagg gcctacctgg       900
+     agggcatgtg cgtggggtgg ctccgcagac accaggagaa cgggaaggag acgctgcagc       960
+     gcgtgggtat cacggggcac gggacgcctc cctgatcgcc tgtagatctc ccgggctggg      1020
+     ctcccacaag aagagaagga aaatgagacc aacactagaa tgtctaactc cctctggtcc      1080
+     tgagggagag gaatcctcct gggtttcttt ccagatcctg taccagagaa tgactttgag      1140
+     ggtctactct gctctctgat acaattaagg gatgacatct ctgagggaat gaagggaaga      1200
+     caatccctgg aatactgatg agtggttccc tttgacaccg gcagcagcct tgggccccgt      1260
+     aacttttcct ctcaggcctt gttctctgct tcacattcaa tatgtgtagg gggctgagtc      1320
+     cagctcctct gagtccctca gcctcccctc aggtcaggac cagaagtcac tgttccctct      1380
+     tcagggacta gaattttcca cggaatagga gattctccca ggtgcctgtg tccaagctgg      1440
+     tatctgggtc gtgtgctccc ttccccaccc caggtgtcct gtccattctc aggagggcca      1500
+     catgcgtgct gctggagtgt cccataagag atgcaaagtg cctgaatttt ctgactcttc      1560
+     acgtcagact cacccccaag acacatgtga cccacgattc catctctgac tataaggcca      1620
+     ccctgaggtg ctgggccctg ggcttctacc ctgtggagat cacactgacc tggcagtggg      1680
+     atggggaggg ccagactcag gacatggagc ttgtagagac caggcccgca gggaatggaa      1740
+     ccttccagaa gtgggcagct gtggtgtgcc ttctggagag gaacagagat atacgtgcca      1800
+     tgtacagcat gaagcattgc ccaagcccct caccctgaga tgtagtaagg caggagatga      1860
+     gcctggaagg ggagaggggg gcggtcatgt ctcttaggga aagcaggagc ctctctggag      1920
+     accttcagca gcagcagggt cagggctggg ggctgggcat cagggatcct caccttcccc      1980
+     ttttttccca aagccgtctt cccagtccac catccccatc gtgggcatcg ttgctggcct      2040
+     ggttctcctt ggagctgtag tcactggagc tggggtcgct gctgtgatgt ggaggaagaa      2100
+     gagctcaagt ggggaagggg tgaggagtgg ggtctgagtt ttcttgtctc actgggggtt      2160
+     cctagcccca ggtagaagtg tgccctgcct ggttactggg aagcacactc atgggccaac      2220
+     ccagcctggg cctttgtgcc agcacttact gttttgtaaa gcacctgtga caaggaagga      2280
+     cagatttatc acctcgatga ttgtgatgat ggggacctga tcccagcagt cacaagtcgc      2340
+     aggggaaggt ccctgctgag gacagacctc aggagggcag ttggtccagg acccacacct      2400
+     gctttcctca tgtttcctga tcctgtcctg gatctgcagt tacacttttc tggaaaattc      2460
+     tctgggatca aagactaggg ggtatgctat agggccttat ggccctgact cccttttggc      2520
+     ctctcacagg acattttctt cccacagata gaaacagagt gatctactct caagctgcaa      2580
+     gtaagtatga agtgggctga tccctgagat ccttgggata ttgtggtcgg gatccagtgg      2640
+     gagagcttac ccaaccccaa acttctcctc tagccaaatc tcctctgggc tctgaccagg      2700
+     tcctgttttt gttctaccac aggcagcaac tgtgcccagc attctgatgt gtctctcacg      2760
+     gcttgtaaaa atgagaccct ggggggcctg atgtatgtgg ggtgtcaggg gaacagtgga      2820
+     tgcagctgtg ctatggggtt tcttcgagtt ggatgtattg agcatgcgat gggctgttta      2880
+     aagtgctacc cctcactatg acagatagga atttctccat taatattttt ttctatagtg      2940
+     tga                                                                    2943
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-AG2_01_04_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-AG2 gene), isolate JL278,
+DE   allele Mamu-AG2_01_04_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,716..991,1592..1867,1970..2086,
+FT                   2532..2539)
+FT                   /standard_name="CDS"
+FT                   /gene="AG2"
+FT                   /allele="Mamu-AG2_01_04_01_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            716..991
+FT                   /standard_name="Exon 3"
+FT   exon            1592..1867
+FT                   /standard_name="Exon 4"
+FT   exon            1970..2086
+T                   /standard_name="Exon 5"
+FT   exon            2532..2564
+FT                   /standard_name="Exon 6"
+FT   exon            2707..2753
+FT                   /standard_name="Exon 7"
+FT   exon            2922..2926
+FT                   /standard_name="Exon 8"
+FT   source          1..2926
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2926 BP; 569 A; 834 C; 916 G; 607 T; 0 other;
+     atggcggtca tggcgccccg aaccctcctc ctggtgctct caggagtcct ggccctgacc        60
+     cagacccggg cgggtgagtg cggggtcgcg agggaaacgg cctctgccga gagcagcgag       120
+     gggcccgccc ggcgggggcg caggaccggg gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagcctct cctcgccccc aggctcccac tccatgaggt atttctacac cgccgtgtcc       240
+     cggcccggcc gctgggagcc ccgcttcatc gccgtgggct acgtggacga cacgcagttc       300
+     gtgcggttcg acagcgacgc ccagagtccg aggatggagc cgcgggcgcc gtgggtggag       360
+     caggaggggc cggagtattg ggaccgggag acacagaaca tgaagaccgc gacacagacc       420
+     taccaaggga acctgcggac cctgctccgc tactacaacc agagcgaggc cagtgagtga       480
+     ccccggcccg gggcgcaggt cacgacccct ccacatcccc cacggacggc ccgggtggcc       540
+     ccgagtctcc gggtcccaga tccaccccga agccgcggga ccaggggacc cttgacccga       600
+     gagagcccca ggcgccttta cccgatttcc tttttagttt gggccaaaat ccccgtgggt       660
+     tggtgggggc ggggcggggc tcggtggact gggctgaccg cgggggcgcg gccagggtct       720
+     cacaccgtcc agaagatgta cggctgcgac ctggggcccg acgggcgcct cctccgcggg       780
+     tatgaacagt tcgcctacga cggcagggat tacatcatcc tgaacgagga cctgcgctcc       840
+     tggacggccg cggacatggc ggctcagaac acccagcgca agtgggaggc ggcgggtgtg       900
+     gcggagcagc acagaaccta cctggagggc gagtgcctgg agtggctccg cagatacctg       960
+     gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gccacggggc gcctccctga      1020
+     tcgcctgtgg atctcccggg ctggcctccc acaaggaggg gagacaaatg ggaccaacac      1080
+     tagaatatcg ccctcccact ggtcctgagg gagaggaatc ctcctgggtt tccagatcct      1140
+     gtaccagaga gtgactctga ggttccgccc tgctctctga cacaattaag gataaaatct      1200
+     ctgagggaat gactggaaga cgatccctcg aatactgatc aggggttccg tttgacaccg      1260
+     gcagcagcct tgggcccggt gacttttcct ctcaggccct gttctctgct tcacactcaa      1320
+     tgaatgtgtg tgggggtctg agtccagctc ctctgagtcc ctcagcctcc actcaggtca      1380
+     ggaccagaag tcactgttcc ttcctcaggg aatagaattt tccacggaat aggtgattat      1440
+     ccctggagcc tgtgtccagg atggtgtctg gattctgtgc tcccttcccc accccaggtg      1500
+     tcctgtccat tctcaagatg gtcacatgcg tgctggtgga gtgtcccatg acagatgcaa      1560
+     aatgcctgca ttttctgact cttcccatca gaccccccca agacacacgt gacccaccac      1620
+     cccatctctg accatgaggc caccctgagg tgctgggccc tgggcttcta ccctgcggag      1680
+     atcacactga cctggcagcg ggatggagag gaacaaactc aggacacaga gctcatggag      1740
+     accaggccta cagggaatgg aaccttccag aagtgggcgg ctgtggtggt gccttctgga      1800
+     gaggagcaga gatacacctg tcatgtgcaa catgagggtc tgcccaagcc cctcaccttg      1860
+     agatggggta aagagggaga tgggggtgtc atgtctctta gtgaaagccg gagcctttct      1920
+     ggagaccttt agcagggtca gaacccctca ccttcctctc ttttcccaga gtcgtcttcc      1980
+     cagtccacca tccccatcgt gggcatcatt gctggcctgg ttctgcttgg aactgtggtc      2040
+     actggagctg tggttgctgc tgtgatgtgg aggaggaaga gctcaggtga ggaaggggtg      2100
+     aggagtgggg tctgggattt cttgtctcac tgagggtttc aagccccagg tagaagtgtg      2160
+     ccctgcctgg ttactgggaa gcaccatcca cactcatggg ctgacccagc ctgggccctg      2220
+     tgtgcgagca cctactgctt tgtaaagcac ctgttacaat gaaggacaga tagatcacct      2280
+     cgattacggt ggtgatggga cctgatccca gcagtcacaa gtcacaaggg aaggtccctg      2340
+     gtgaggacag acctcaggag ggcaattggt ccaggaccca cacctgcttt cttcatgttt      2400
+     cctgatcctg ccctgggtct gcaatcacac atttctggaa acttctctgg ggtccaagac      2460
+     taggagattc ctgtaggacc ttatggccct gactcctttc tgatatctca caggacattt      2520
+     tcttcccata gatagataag gcgggagcta ctctcaggct gcaagtaagt atgaaggagg      2580
+     ctgatccctg agatccttgg gatattgtgg ttgggagccc atgggggagc tcactaaccc      2640
+     cacagttcct cctctagccg catctccaga gggatctgac caggtcctgt ttttgttcta      2700
+     ctccaggcag tgacagtgcc cagggctctg atgtgtctct cacggcttta aaggtgagac      2760
+     cctggggggc ctgatgtgtg tggggtgttg gggggaacag tggacgcagc tgtgctgtgg      2820
+     ggtttctttg acttggatgt attgagcatg tgatgggctg tttaaagtgt cactcctgac      2880
+     tgtgacggat gtgaattttt tcatgaatat tttttctata gtgtga                     2926
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-AG4_08_02_04_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-AG4 gene), isolate JL158,
+DE   allele Mamu-AG4_08_02_04_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,716..991,1588..1863,1966..2082,
+FT                   2528..2535)
+FT                   /standard_name="CDS"
+FT                   /gene="AG4"
+FT                   /allele="Mamu-AG4_08_02_04_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            716..991
+FT                   /standard_name="Exon 3"
+FT   exon            1588..1863
+FT                   /standard_name="Exon 4"
+FT   exon            1966..2082
+FT                   /standard_name="Exon 5"
+FT   exon            2528..2560
+FT                   /standard_name="Exon 6"
+FT   exon            2703..2749
+FT                   /standard_name="Exon 7"
+FT   exon            2917..2921
+FT                   /standard_name="Exon 8"
+FT   source          1..2921
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2921 BP; 568 A; 825 C; 914 G; 614 T; 0 other;
+     atggcggtca tggccccccg aaccctcctc ctggtgctct caggggtcct agccctgacc        60
+     cggacctggg ccggtgagtg cggggtcttg agggaaacgg cctctgccga gagcagcgag       120
+     gggcccgccc ggcgggggcg caggaccggg gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagcctct cctcgccccc aggctcgcac tccatgaggt atttctacac ctccatgtcc       240
+     cggcccggcc gcggggagcc ccgcttcttc gccgtgggct acgtggacga cacgcagttc       300
+     gtgcggttcg acagcgacgc cgagagtccg aggatggagc cgcgggcgcc gtgggtggag       360
+     caggaggggc cggagtattg ggaccgggag acacagaaca tgaagaacgc gacacagacc       420
+     taccgaggga acctgcggac cctgctccgc tactacaacc agagcgaggc cggtgagtga       480
+     cctcggctcg gggctcaggt cacgacccct ccccatcccc cacggacggc ccgggtggcc       540
+     ccgagtctct gggtcccaga tccaccccga agccgcggga cccggggacc cttgacccgg       600
+     gagagcccca ggagccttta cccgatttcc tttttagttt gggccaaaat ccccgtgggt       660
+     tggtcggggc ggggcgaggc tcggtgggcg gggctgaccg cgggggcggg gccagggtct       720
+     cacacactcc agaagatgta cggctgcgac ctggggccgg acgggcgcct cctccgcggg       780
+     tatgaacagt tcgcctacga cggcagggat tacatcgtcc tgaacgagga cctgcgctcc       840
+     tggaccgctg cggacttggc ggctcagaac acccagcgaa agtgggaggc ggcccgtgcg       900
+     gcggagcagc acagaaccta cctggagggc gagtgcctgg agtggctccg cagatacttg       960
+     gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gccacggggc gcctccctga      1020
+     tctcctgtgg atctcccggg gtggcctccc acaaggaggg gagacaaatg ggatcaacac      1080
+     tagaatatcg ccctccctct ggtcctgagg gagaggaatc ctcctgggtt tccagatcct      1140
+     gtaccagaga gtgactctga gggtccaccc tgctctctga cacaattaag gataaaatct      1200
+     ctgagggaat gaagggaaga cgattcctcg aatactgatc aagggttccc tttgacaccg      1260
+     gcagcagcct tgggccccgt gacttttcct ctcaggcctt gttctctgct tcacactcaa      1320
+     tgtgtgtggg ggtctgagtc cagctcctct gagtccctca gcctccactc aggtcaggag      1380
+     cagaagtcac tgttccctcc tcagggaata gaattttcca cggaatagga gattctcaca      1440
+     ggtgcctgtg tccaggatgg tgtctgggtt ctgggctccc ttccccaccc caggtgtcct      1500
+     gtccattctc aagatggtca catgcgtgct ggtggagtgt cccatgacag atgcaaaatg      1560
+     actgaatttt ctgactcttc ccatcagacc cccccaagac acatgtgacc caccaccccg      1620
+     tctctgacta cgaggccacc ctgaggtgct gggccctggg cttctaccct gcggagatca      1680
+     cactgacctg gcagcgggat ggagaggaac aaactcagga tacagagctc gtggagacca      1740
+     ggcctacagg ggatggaacc ttccaaaagt gggcggctgt ggtggtgcct tctggagagg      1800
+     agcagagata cacctgtcat gtgcagcatg agggtctgcc cgagcccctc accttgagat      1860
+     ggggtaaaga gggagatggg ggtgtcatgt ctcttaggga aagccgaagc ctttctggag      1920
+     acctttagca gggtcgggac ccctcacctt cccctctttt cccagagccg tcttcccagt      1980
+     ctaccatcct catcgtaggc atcattgctg gcctggttct ccttggaact gtggtcactg      2040
+     gagctgtggt cgctgctgtg atgtggagga ggaagagctc aggtgaggaa ggggtgagga      2100
+     gtggggtctg ggatttcttg tctcactgag ggcttcaaac cccaggtaga agtgtacact      2160
+     gtctggttac tgggaagcac catccacact catgggctga cccagcctgg gccctgtgtg      2220
+     ccagcaccta ctcttttgta aagcacctgt tacaatgaag gacagataga tcaccttgat      2280
+     tatggtggtg atgggacctg atcccagcag tcacaagtca caagggaagg tccctgctga      2340
+     ggacagacct caggagggca attggtccag gacccacacg tactttcttc atgtttcctg      2400
+     atcctgccct gggtctgcaa tcacacattt ctggaaactt ctctggggtc caagactagg      2460
+     agattcctct aggaccttat ggccctgact cctttctgat atctcacagg acattttctt      2520
+     cccatagata gataaggcgg gagctactct caggctgcaa gtaagtatga aggaggctga      2580
+     tccctgagat ccttgggata ttgtggttgg gagcccatgg gggagctcac taaccccaca      2640
+     gttcctcctc tagccacatc tccagaggga tctgaccagg tcctgttctt gttctactcc      2700
+     aggcagtgac agtgcccagg gctctgatgt gtctctcacg gctttaaagg tgagaccctg      2760
+     gggggcctga tgtgtggggg gtgttggggg aacagtggac gcagctgtgc tgtggggttt      2820
+     gtttgacttg gatgtactga gcatgtgatg ggctgtttaa agtgtcactc ctcactgtga      2880
+     cggatgtgaa ttttttcatg aatatgtttt ctatagtgtg a                          2921
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-AG5_07_06_02_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-AG5 gene), isolate JL142,
+DE   allele Mamu-AG5_07_06_02_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   CDS             join(1..73,205..474,718..993,1586..1861,1964..2080,
+FT                   2523..2530)
+FT                   /standard_name="CDS"
+FT                   /gene="AG5"
+FT                   /allele="Mamu-AG5_07_06_02_01_nov"
+FT   exon            205..474
+FT                   /standard_name="Exon 2"
+FT   exon            718..993
+FT                   /standard_name="Exon 3"
+FT   exon            1586..1861
+FT                   /standard_name="Exon 4"
+FT   exon            1964..2080
+FT                   /standard_name="Exon 5"
+FT   exon            2523..2555
+FT                   /standard_name="Exon 6"
+FT   exon            2698..2744
+FT                   /standard_name="Exon 7"
+FT   exon            2913..2917
+FT                   /standard_name="Exon 8"
+FT   source          1..2917
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2917 BP; 572 A; 824 C; 908 G; 613 T; 0 other;
+     atggcggtca tggcgccccg aaccctcctc ctggtgctct caggggtcct ggccctgacc        60
+     cagacccggg cgggtgagtg cggggtcggg agggaaacgg cctctgccgg gagcagcgag       120
+     ggccccgccc agcgggggcg caggacccgg ggagtcgcgc ggggaggagg gtcgggcggg       180
+     tctcagcctc tcctcgcccc caaggctctc actccttgag gtatttctac acctccatgt       240
+     ctcggcccgg ccgtcgggag ccccgcttca tcgccgtggg ctacgtggac gacacgcagt       300
+     tcgtgcggtt cgacagcgac gccgagagtc cgaggatgga gccgcgggcg ccgtgggtgg       360
+     agcaggaggg gccggagtat tgggaccggg agacacagaa catgaagacc gcgacacaga       420
+     cctaccgagt gaacctgcgg accctgctcc cctactacaa ccagagcgag gccggtgagt       480
+     gaccccggcc cggggcgcag gtcacgaccc ctccacatcc cccacggacg gccctggtgg       540
+     ccccgagtct ctgggtccca gatccacccc gaagccgcgg gaccagggga cccttgaacc       600
+     gagagagccc caggcgcctt tacccgattt cctttttagt ttgggccaaa atccccgtgg       660
+     gttggtgggg gcggggcggg gctcggtgga ctgggctgac cgcgggggcg cggccagggt       720
+     ctcacaccgt ccagaagatg tacggctgcg acctggggcc cgacgggcgc cgcctccgcg       780
+     ggtatgaaca gttcgcctac gatggcaggg attacatcgc cctgaacgag gacctgcgct       840
+     cctggacggc cgcggacatg gcggctcaga acacccagcg caagtgggag gcagaggatg       900
+     tggcagagca gcacagaacc tacctggagg gcgagtgcct ggagtcgctc cgcagatacc       960
+     tggagaacgg gaaggagacg ctgcagcgcg cgggtaccag gggccacggg gcgcctccct      1020
+     gatctcctgt ggatctccct ggctggcctc ccacaaggag gggagacaaa tgggaccaac      1080
+     actagaatat cgccctccct ctggtcctga gggagaggaa tcctcctggg tttccagatc      1140
+     ctgtaccaga gagtgactct gagggtccgc cctgctctct gacacaagga taaaatctct      1200
+     gagggaatga ctggaagacg atccctcgaa tactgatcag gggttccctt tgacaccggc      1260
+     agcagccttg ggccccgtga cttttcctct caggccctgt tctctgcttc acactcaatg      1320
+     tgtgtggggg tctgagtcca gctcctctga gtccctcagc ctccactcag gtcaggacca      1380
+     gaagtcactg ttccttcctc agggaataga attttccacg gaataggaga ttctcacagg      1440
+     tgcctgtgtc caggatggtg tctgggttct gtgctccctt ccccacccca ggtgtcctgt      1500
+     ccattctcaa gatggtcaca tgtgtgctgg tggagtgtcc catgacagat gcaaaatgcc      1560
+     tgcattttct gactcttccc atcagacccc cccaagacaa atgtgaccca ccaccccgtc      1620
+     tctgactacg aggccaccct gaggtgttgg gccctgggct tctaccctgc ggggatcaca      1680
+     ctgacctggc agcgggatgg agaggaacaa actcaggaca cggagctcgt ggagaccagg      1740
+     cctacagggg atggaacctt ccagaagtgg gcggctgtgg tggtgccttc tggagaggag      1800
+     cagagataca cctgtcatgt gcaacatgag ggtctgccca agcccctcac cttgagatgg      1860
+     ggtaaaaagg gaggtggggg tgtcatgtct tttagggaaa gccggagcct ctctggagac      1920
+     cttcagcagg atcaggaccc ctcaccttcc cctcttttcc cagagccgtc ttccgagtcc      1980
+     accatcccca tcgtgggcat cattgctggc ctggttctgc ttggaactgt ggtcactgga      2040
+     gcggtggttg ctgctgtgat gtggaggagg aagagctcag gtgaggaagg ggtgaggagt      2100
+     ggggtctggg atttcttgtc tcactgaggg tttcaagccc caggtagaag tgtacactgt      2160
+     ctggttactg ggaagcacca tcgacactca tgggctgacc cagcctgggc cctgtgtgcc      2220
+     agcacctact cttttgtaaa gcacctgtta caatgaagga cagatttatc accttgatta      2280
+     tggtgaaggg acctgatccc agcagtcaca agtcacaagg gaaggtccct gctgaggaca      2340
+     gacctcagga gggcaattag tccaggaccc acacctgctt tcttcatgtt tcctgatcct      2400
+     gccctgggtc tgcaatcaca catttctgga aacttctctg gggtccaaga ctaggagatt      2460
+     cctataggac cttatggccc tgactccttt ctgatatctc acaggacatt ttcttcccat      2520
+     agatagataa ggagggagct actctcaggc tgcaagtaag tatgaaggag gctgatccct      2580
+     gagatccttg ggatattgtg gttgggagcc catgggggag ctcactaacc ccacagttcc      2640
+     tcctctagcc acatcttcag agggatctga ccaggtcctg tttttgttct actccaggca      2700
+     gtgacagtgc ccaaggttct gatgtgtctc tcacggcttt aaaggcgaga ccctgggggg      2760
+     cctgatgtgt gtggggtgtt ggggggaaca gtggacgcag ctgtgctgtg gggtttgttt      2820
+     gacttggatg tattgagcat gtgatgggct gtttaaagtg tcactcctaa ctgtgacaga      2880
+     tgtgaatttt ttcatgaata tgttttctat agagtga                               2917
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B10Ps_01_04_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B10Ps gene), isolate JL173,
+DE   allele Mamu-B10Ps_01_04_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   exon            <1..72
+FT                   /standard_name="Exon 1"
+FT   CDS             join(9..72,202..471,717..992,1568..1843,1948..2064,
+FT                   2505..2537,2644..2687)
+FT                   /standard_name="CDS"
+FT                   /gene="B10Ps"
+FT                   /allele="Mamu-B10Ps_01_04_01_01_nov"
+FT   exon            202..471
+FT                   /standard_name="Exon 2"
+FT   exon            717..992
+FT                   /standard_name="Exon 3"
+FT   exon            1568..1843
+FT                   /standard_name="Exon 4"
+FT   exon            1948..2064
+FT                   /standard_name="Exon 5"
+FT   exon            2505..2537
+FT                   /standard_name="Exon 6"
+FT   exon            2644..>2691
+FT                   /standard_name="Exon 7"
+FT   exon            2856..2860
+FT                   /standard_name="Exon 8"
+FT   source          1..2860
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2860 BP; 535 A; 813 C; 918 G; 594 T; 0 other;
+     atgcggtcat ggcgccccga actctcctcc tgctgctctc gggggccctg gccctgactg        60
+     agacctgggc cggtgagtgc ggggtcggga gggaaatggc ctctgcgggg aggagcgagg       120
+     ggaccgcagg cgggggcgca ggacccgggg agccgcgcgg ggaggagggt cgggcgggtc       180
+     tcagcccctc ctcgccccca ggctcgcact cattgaggta tttcagcacc gctgtgtccc       240
+     ggcccggccg cggggagccc cgcttcatct ccttgtgcta cgtggacgac acgcagttcc       300
+     tgcggttgga cagcgacgcc gagagtccga ggatggagcc gcgggcgcgg tggttggagc       360
+     aggaggggcc ggagtattgg gaagagcaga cagggctcgc caaggacatc acacagtcct       420
+     tccgagtgaa cctgcggacc ctgcgcggct actacaacca gagcgaggcc ggtgagtggc       480
+     cccggcccgg ggcgcaggtc acgacccctc cccatccccc acggacggtc cgggtctccc       540
+     cgagtctccg ggtccgaaat ccgcccctag gccgcgcgac ccgcccagac cctcgaccgg       600
+     ggagagcccc aggcgccttt acccggcttc attttcagtt gaggccaaag tcctcgcggg       660
+     ttggtcgggg cggggcgggg atcggtgggc ggggctgacc gcgggggcgg ggccaggaac       720
+     tcacaccctc cagtggttgt ctggctgcga cctgggaccc gacgcgcgcc tcctccgcgg       780
+     atataaccag caggcctacg acggcaagga ttacatcgcc ctgaacgggg acctgagctc       840
+     ctggaccggg gcagacacgg cggctcagat aacccagcgc aagtgggagg cggcccgcga       900
+     ggcagagcag tggagagccc acctggaggg gacatgcgtg gagtggctcc gcagatacct       960
+     ggagaacggg aaggagacgc tgcagcgcgc gggtaccagg ggcagtgggg agccttcccc      1020
+     atcacctcta gatcgcccgg gatggcctcc cacgaggagg ggaggaaaat gggatcagcg      1080
+     ctagaatgtt gccctccctt gaatggagaa tggcatgagt ttcactgatt tcctctgagg      1140
+     gccccctccg ctctctagga caattaaggg atgacgtctc tgaggaaatg gaggggaaga      1200
+     cagtccctag aatactgatc aggggtcccc tttgaccacc gcagcagcct tgggcaccgt      1260
+     gaatttttgt ctcaggcctt gttctctgcc tcacactcaa tgtgtttgaa ggtctgattc      1320
+     cagcttttct gagtccctcg gcctccactc aggtcaggac cagaagtccc tgttcctccc      1380
+     tcagagacta gaactctcca aggaatagga gattatccca gatgcctgtg tccaggctgg      1440
+     tgtctggctt ctgtgctcct tcccccaccc caggtgtcct gttcattctc agggtggtca      1500
+     catgggtgct gctggggtgt cccatgagag atgcaaagcg cctgaatttt ctgactcttc      1560
+     ccatcagatc ccccaaagac acacgtgacc caccacccca tctctgacca tgaggccacc      1620
+     ctgaggtgct gggccctggg cttctaccct gcggagatca cactgacctg gcagcgggat      1680
+     ggggaggacc aaactcagga caccaaggtt gtggagacca ggccagcagg agatggaacc      1740
+     taccagaagt ggggagctgt ggtggtgcct tctggagaag agcagagata cacgtgccat      1800
+     gtgcagcata aggggctgcc ggagcccctc accctgagat ggggtaagaa gggggatgag      1860
+     gggtcatgtc tcttctcagg ggaaacagga gcccttctgg agcccttcag cagagtcagg      1920
+     gcccctcatc ttcccctcct ttcccagagc catcttccca gtccaccatc cccatcgtgg      1980
+     gcattgttgc tggcctggct ggcctagcag ttgtggtcac cggagctgtg gtcactgctg      2040
+     tgatgtggag gaggaagagc tcaggtaggg aaggggtgtg gggtggggtc tgggttttct      2100
+     tgtcccgctg ggggtttcaa acctcaggta gaagtgtttc ctgcctcatt actgggaagc      2160
+     agcatccaca caagggctaa cccagcctgg gaccctgtgt gccagcactt actcttttgt      2220
+     gcagcaatgt gacaatgaag gacggatgta tcaccttgat ggttgtgctg ttggggtcct      2280
+     gattccagca ttcacgagtc aggagaaggt ccctgctaag gatggacctt aggaggacag      2340
+     ttggtccagg atacacacct gctttcctcc tttttgctga tcctgccctc ggtctgtagt      2400
+     catagttttg gaaatttctt ttgggtccaa gactaggagg ttcctctaag atctcaagac      2460
+     cctgcttcct cccagtcccc tcacaggaca ttttcttgct acaggtggaa aaggagggag      2520
+     ctactctcag gctgcgtgta agcggtgggg gtgggagtgt ggaggagctc acccatcccg      2580
+     taattcctcc tgtcccacgt ctcctgcggg ctctgaccag gtcctgtttt tgttctaccc      2640
+     cagccagcga cagtgcccag ggctctgatg tgtctctcac ggcttgaaaa ggtgagattc      2700
+     ttggggtcta gagttggggg caggggaaca gaggggaaag gcctgcataa tggagattct      2760
+     ttgattgtga cgtttcaagt gtgtggtggg ctgttcagag tgtcatcact taccatgact      2820
+     gacttgaatt tgttcatgac tgttgttttc tgtagcctga                            2860
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B14Ps_175_04_02_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B14Ps gene), isolate JL185,
+DE   allele Mamu-B14Ps_175_04_02_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   exon            <1..72
+FT                   /standard_name="Exon 1"
+FT   CDS             join(9..72,202..471,717..992,1567..1751)
+FT                   /standard_name="CDS"
+FT                   /gene="B14Ps"
+FT                   /allele="Mamu-B14Ps_175_04_02_01_nov"
+FT   exon            202..471
+FT                   /standard_name="Exon 2"
+FT   exon            717..992
+FT                   /standard_name="Exon 3"
+FT   exon            1567..1842
+FT                   /standard_name="Exon 4"
+FT   exon            1947..2063
+FT                   /standard_name="Exon 5"
+FT   exon            2505..2537
+FT                   /standard_name="Exon 6"
+FT   exon            2644..>2691
+FT                   /standard_name="Exon 7"
+FT   exon            2856..2860
+FT                   /standard_name="Exon 8"
+FT   source          1..2860
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2860 BP; 517 A; 820 C; 926 G; 597 T; 0 other;
+     atgcggtcat ggcgccccga accctcctcc tgctgctctc gggggccctg gccctgaccg        60
+     agacctgggc cggtgagtgc ggggtcggga gggaaatggc ctctgcgggg aggagcgagg       120
+     ggaccgcagg cgggggcgca ggacccgggg agccgcgcgg ggaggagggt cgggcgggtc       180
+     tcagcctctc ctcgccccca ggctcgcact ccttgaggta tttcagcgcc ggcacgtccc       240
+     ggcccggccg cggggagccc cgcttcatct ctgtgggcta cgtggacgac acgcagttcg       300
+     tgcggtttga cagcgacgcc gcgagtccga ggatggagcc gcgggcgcgg tggttggagc       360
+     aggaggggcc ggagtattgg gaagagcaga cagggctagc caaggacgtc gcacagactt       420
+     tccgagtggg cctgcggacc ctgcgcagct actacaacca gagcgaggcc ggtgagtggc       480
+     cccggcccgg ggcgcaggtc acgacccctc cctacccccg acggacggtc cgggtctccc       540
+     cgagtctccg ggtccgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg       600
+     ggagagccct aggcgccttt acccggcttc attttcagtt gaggccaaag tccccgcggg       660
+     gtggtcgggc cggggcgggg ctcggtgggc ggggatgacc gcgggggcgg ggccagggtt       720
+     tcacaccctc cagtggatgt acggctgcga cctggggccc gacgggcgcc tactccgcgg       780
+     atatcaccgg ttcgcctacg acggcaggga ttacatcgcc ctgaacccgg acctgcgctc       840
+     ctggaccgcg gcagacacgg cggctcagaa cacccagcgc aagtgggagg cggcccgcga       900
+     ggcagagcag tggagagccc acctgcaggg gacgtgcgtg gagtggctcc gcagacacct       960
+     ggagaacggg aaggacacac tgcagcgtgc tggtaccagg ggcagtgggg agccttctcc      1020
+     atcacctcta gatcgcccgg gatggcctcc cacgaggagg ggaggaaaat gggatcagcg      1080
+     ctagaatgtc ccctcccttg aatgaagaat ggcatgagtt tccctgattt cctctgaggg      1140
+     ccccctctgc tctctaggac aattaaggga tgacgtctct gaggacatgg agggaaagac      1200
+     agtccctgga atactgatca gaggtcccct ttgacccctg cagcaacttt gggcaccgtg      1260
+     aatttttctc tcaggccttg ttctctgcct cacactcaat gtgtttgaag gtctgattcc      1320
+     agcttttctg agtccctcgg cctccgctca ggtcaggacc agaagtccct gttcctccct      1380
+     cagagtctag aactctccaa ggaataggag attatcccag atgcctgtgt ccaggctggt      1440
+     gtctggcttc tgtgctcctt ccccccgccc aggtgtcctg ttcattctca gggtggtcac      1500
+     atgcgtgctg ctggggtgtc ccatgagaga tgcaaagccc ctgaattttc tgactcttcc      1560
+     catcagatcc cccaaagaca cacgtgaccc accaccccgt ctctgaccat gaggccaccc      1620
+     tgaggtgctg ggccctgggc ttctaccctg cggagatctc actgacctgg cagcgggatg      1680
+     gggaggagca aactcaggac accgagcttg tggagaccag gccaggagga gatggaacct      1740
+     accagaagta gggagctgtg gtggtgcctt ctggagaaga gcagagatac acgtgccatg      1800
+     tgcaacatga ggggctgctg gagcccctca ccctgagatg gggtaagaag ggggatgagg      1860
+     ggtcatgtct cttctcaggg gaagcaggag cccttctgga gcccttcagc agggtcaggg      1920
+     cccctcattt tcccctcctt tcccagagcc atcttcccag tccaccatcc ccatcgtggg      1980
+     cattgttgct ggcctggctg tcctagcagt tgtggtcacc ggagctgtgg tcgctgctgt      2040
+     gatgtggagg aggaagagct caggtaggga aggggtgagg ggtggggtct gggttttctt      2100
+     gtccctctgg gggtttcaaa cctcaggtag aagtgttccc tgcctcatta ctgggaagca      2160
+     gcatccacac aggggctaac ccagcctggg gccccgtgtg ccagcactta ctcttttgtg      2220
+     cagcacatgt gacaatgaag gacagatata tcaccttgat ggttttgctg ttggggtcct      2280
+     gattccagca ttcacgagtc aggggaaggt gtctgctaag gacagacctt aggagggcag      2340
+     ttggtccagg acacacacct gcttccctcc tgttttctga tcctgccctg ggtctgtagt      2400
+     catagttttg gaaatttctt ttgggtccaa gactaggagg ttcctctaag atctcatgac      2460
+     cctgcttcct cccagtcctc tcacaggaca ttttcttccc acaggtggaa aaggagggag      2520
+     ctactctcag gctgcgtgta agtggtgggg gtgggagtgt ggaggagatc acccacccca      2580
+     taattcctcc tgtcccacgt ctcctgcggg ctctgaccag gtcctgtttt tgttctaccc      2640
+     cagccagcga cagtgcccag ggctctgatg tgtctctcac ggcttgaaaa ggtgagattc      2700
+     ttggggtcta gagtgggggg caggggaaca gatgggaaag gcctgcgtaa tggagattct      2760
+     ttgattggga cgtttcaagt gtgtggtggg ctgttcagag tgtcatcact taccatgact      2820
+     gacttgattt tgttcatgac tgttgttttc tgtagcctga                            2860
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B16_01_12_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B16 gene), isolate JL117,
+DE   allele Mamu-B16_01_12_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..64,194..463,709..984,1564..1839,1944..2060,
+FT                   3479..3511,3618..3665,3830..3834)
+FT                   /standard_name="CDS"
+FT                   /gene="B16"
+FT                   /allele="Mamu-B16_01_12_01_01_nov"
+FT   exon            1..64
+FT                   /standard_name="Exon 1"
+FT   exon            194..463
+FT                   /standard_name="Exon 2"
+FT   exon            709..984
+FT                   /standard_name="Exon 3"
+FT   exon            1564..1839
+FT                   /standard_name="Exon 4"
+FT   exon            1944..2060
+FT                   /standard_name="Exon 5"
+FT   exon            3479..3511
+FT                   /standard_name="Exon 6"
+FT   exon            3618..>3665
+FT                   /standard_name="Exon 7"
+FT   exon            3830..3834
+FT                   /standard_name="Exon 8"
+FT   source          1..3834
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 3834 BP; 788 A; 1042 C; 1140 G; 864 T; 0 other;
+     atgatgcccg gaaccctcct cctgctgctc tcgggggccc tggccctgac cgagacctgg        60
+     gccggtgagt gcggggtcgg gaaggaaatg gcctctgccg ggaggagcga ggggaccgca       120
+     ggcgggggcg caggacccgg ggagccgcgc ggggaggagg gtcgggcggg tctcagcctc       180
+     tcctcgcccc caggctcgca ctcctggagg tatttcagca cctccgtgtc ccggccgggc       240
+     cgcggggagc cccgcttcat ctccgtgggc tacgtggacg acacgcagtt cctgcggttc       300
+     gacagctacg ccgccagtcc gaggatggag ccgcgggcgc cgtgggtgga gcaggagggg       360
+     ccggagtatt gggaccggga gacgcggaac gccgagggcc acgcacagac tcaccgagag       420
+     aacctgcgga ccctgctccg ctactacaac cagagcgagg ccggtgagcg accctggagc       480
+     cgggcgcagg tcatgacccc tccccatccc ccacggacga cccgggtcgc cccgagtccc       540
+     tgggtccgag atccgccccg aggccgcggg acccgcccag acccttgacc ggagagagcc       600
+     ccaggcgcct ttacccgttt tttttttcag ttgaggccga agtcccagag ggttggtcgg       660
+     ggcggggcgg ggctcggtgg gcggggctga ccgcgggggc ggggccaggg tctcacacca       720
+     tccagagggt gtttggctgc gacctggggc ccgacgggcg cctcctccgc ggatataacc       780
+     agcacgccta caatggcaag gattacatcg ccctgaacga ggacctgcgc tcctggaccg       840
+     cagcggacac tgcggctcag atcacccagc gcaagtggga ggcggccggt gtggcggagg       900
+     agtggagcgt ctacctggag ggcgagtgcg tggagtggct ccgcagatac ctggagaacg       960
+     ggaaggagac gccgcagcgc gcgggtaccc tgcaggggct gtggggagac ttcccggtct      1020
+     cctatagatc tccccggatg gcctcccatg aggaggggag gaaaatggga tcagcgctag      1080
+     aatgtcgccc tctcttgaat gaagaatggc atgagtttcc ctgatttcct ctgagggccc      1140
+     ctctgctctc taggacaatt aagggatgac gtctctgagg acatggaggg gaagacagtc      1200
+     cctagaatac tgatcagggg tcccctttga ctcctgcagc agccttgggc tttgtgactt      1260
+     tttcctctca ggccttgttc tctgcctcac actcaatgtg tctgaaggtc tgattccagc      1320
+     ttttctgagt cccttggcct ccactcgggt caggaccaga agtccctgtt cctccttcag      1380
+     agactagaac tcttcaagga ataggagatt atcccaggtg cctgtgtcca ggctggtgtc      1440
+     tggcttctgt gctcccttcc ccaccccagg tgtcctgttc attctcagga tggtcacatt      1500
+     cgtgctgctg gggtgtccca tgagagatgc aaagcccctg agttttctga ctcttcccat      1560
+     cagatccccc aaagacacac gtgacccatc accccgtctc tgaccatgag gccaccctga      1620
+     ggtgctgggc cctgggcttc taccctgcgg agatcacact gatgtggcag cgggatgggg      1680
+     aggaccaaac tgaagacacc cagcttgtgg agaccaggcc agcaggggat ggaaccttcc      1740
+     agaagtgggc agctgtggtg gtgccttctg gagaagagca gagatacacg tgccatgtgc      1800
+     agcacaaggg gctgctggag cccctcaccc tgagatgggg taagaagggg gatgaaggat      1860
+     cacgtctctc ctcagggaaa gtaggagccc ttctggagcc cttcagcagg gtcaggaccc      1920
+     ctcaccttcc cctcctttcc cagagccatc ttcccagtcc accatcccca tcgtgggcat      1980
+     cgttgctggc ctggctgtcc tagccttttt ggtcactgga gctgtggtca ctgctgtgtt      2040
+     gtggaagagg aagagctcag gtagggaagg ggtgaggggt ggagtctggg ttttcttgtc      2100
+     ccactggggg tttcaagccc caggtagaag tgtgccccgc ctcattagtg aaggggtggc      2160
+     ctgcccctcc acacctgtgg gtgtttctca ttaggtggaa ggagagactt gagaaaagaa      2220
+     atgtgacaca gagacaaagt atagagaaag aaaaagtggg cccaggggac cggcgctcag      2280
+     catacagagg acccacatcg gcaccggtct ctgagttccc ttggtattta ttgataatta      2340
+     tctttgccat cttaaagaaa aggaagtggc aggataatag gatcattgta gggagaaagt      2400
+     cagcagtaag acatatgaat aaagttctct gtgacatgaa taagtttaag gaaaagtgcc      2460
+     ttgatatgca tatgcaaaca tctccataaa cctttttagt gcataaagag cagcattgcg      2520
+     ctagcaaatc ccgcctttcg ccctaaggcg gttttctcct ttctcagtaa acagaacata      2580
+     tgatggggtt ttatacccag atgttctatt gcccagggac gggcaggaga cagatgcttt      2640
+     tctctatctc aactgccaac aaccaccaag aggccttttt tcctcttgta ctagtcctcc      2700
+     tcagcacaga cccttcacgg gtgtcaggct gggggacgat caggtctttc ccttcccacg      2760
+     aggccatatt tcagcctatc acatgggaag aaaccttgga caatacctag ctttcctagg      2820
+     cagaggtccc tgtgaccttt ggcagtgtat gtgtccctgg gtacttgaga ttaagagaat      2880
+     ggtgatgact tttaaccagc aagctgcctt caggcgcttg tttaacaaag cacaccctgc      2940
+     acagcccaaa atcctttaaa ccttgagtca ccacagcaca tgtctcttgc aaggacaagg      3000
+     ttgggggtag ggtcacagat taacagcatc tcaaatacag aacagaatgg agtctcttat      3060
+     gtctacttct ttctgtatag acacagtaac agtctgatct ttctttcttt tccccacaat      3120
+     tattgggaag cagcatccac acatgggcca tcccagcctg ggtcctgtgt gccggcactt      3180
+     actcttttgt gaagcacatg tgacaatgaa ggacaatgta tcaccttgat ggttgtggtg      3240
+     ttggggtcca gattccagca ttcatgagtc aggggaaggt ccctgctaag gacaggcctt      3300
+     aggagggccg ttggtccagc acccacccct gctttcctgg tatttcctga ttctgccctg      3360
+     ggtctgtagt cacagttccg aaaacttctc tccggtacaa gactaggagg ttccttcctc      3420
+     taaggtctcg tgtccctgcc tcctccttgt cccctcacag aacattttct tcccacaggt      3480
+     ggaaaaggag ggagctactc tcaggctgtg tgtaagtggt gggggtggga gtgtggagga      3540
+     gctcacccac cccataattc ctcctgtccc acgtttcctg cgggctctga ccagatgctg      3600
+     tttttgttct accccagcca gcaacagtgc ccagggctct gatgtgtctc tcagggattg      3660
+     taaaggtgag attcttgggg tctgaagtgg gtgggggtgg ggcaaagggg aaaggactgg      3720
+     gttatggggc ttctttgatt gggatgtttc gagtgtgtgg ggcactgttc agagtgtcat      3780
+     cacttaacat gactgacttg gatttgttta tgactattgc tttctgtagc ctga            3834
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_030_03_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL173,
+DE   allele Mamu-B_030_03_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,716..991,1566..1841,1946..2062,
+FT                   2506..2538,2645..2688)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_030_03_01_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            716..991
+FT                   /standard_name="Exon 3"
+FT   exon            1566..1841
+FT                   /standard_name="Exon 4"
+FT   exon            1946..2062
+FT                   /standard_name="Exon 5"
+FT   exon            2506..2538
+FT                   /standard_name="Exon 6"
+FT   exon            2645..2692
+FT                   /standard_name="Exon 7"
+FT   exon            2857..2861
+FT                   /standard_name="Exon 8"
+FT   source          1..2861
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2861 BP; 532 A; 816 C; 917 G; 596 T; 0 other;
+     atgcgggtca tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc        60
+     gagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcagg gaggagcgag       120
+     gggaccgcag gcgggggcgc aggacccggg gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttcagcac caccgtgtcc       240
+     tggcccggcc gcggggagcc ccgcttcatc tccgtgggct acgtggacga catgcagttc       300
+     gtgcggttcg acagcgacgc tgagagtccg agagaggagc cgcgggtgct gtgggcggag       360
+     caggaggggc cggagtattg ggaagagcag acacggaaca cggaggccca cgcacagaat       420
+     caccgagtgt gcctgcggac cgtgcgcggc tactacaacc agagcgaggc cggtgagtga       480
+     ccccggcccg gggcgcaggt cacgacccct ccccaccccc cacggacggc ccggtggccc       540
+     cgagtctccg gatccgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg       600
+     ggagagcccc aggcgccttt acccggtttc atttccgttt aggccaaaat ccccggggat       660
+     tggtcgggct ggggcggggc tcggcgggcg gggctgaccg cgggggcggg gccagggtct       720
+     cacaccctcc agaggatgtt tggctgcgac ctggggcccg acgggcgcct cctccgcggg       780
+     tataaccagt tcgcctacga cggcaaggat tacatcgccc tgaacgagga cctgcgctcc       840
+     tggacctcgg cggacgtggc ggctcagaac acccagcgca agtgggaggc gacccgttat       900
+     gcggagcggt tcagagccta cctggaggag acgtgcgtgg agtcgctccg cagacacctg       960
+     gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gcactgggga gccttcccca      1020
+     tcacctctag atcgcccggg atggcctccc acgaggaggg gaggaaaatg ggatcagcgc      1080
+     tagaatgtcc cctcccttga atgaagaatg gcatgagttt tcctgatttc ctctgagggc      1140
+     cccctctgct ctctaggaca attaagggat gacgtctctg aggacatgga ggggaggaca      1200
+     gtccctagat tactgatcag gggtctcctt tgaaccctgc agcagccttg ggcaccgtga      1260
+     atttttctct caggccttgt tctctgcctc acactcaatg tgtctgaagg tctgattcca      1320
+     gcttttctga gtccctcggc ctccactcag gtcaggacca gaagtcgctg ttcctccttc      1380
+     agagtctgga actctccaag gaataggaga ttatcccaga tgcctgtgtc caggctggtg      1440
+     tctggcttcg gtgctccctt ccccacccca ggtgtcctgt ccattctcaa gatggtcaca      1500
+     tgagtgctgc tggagtgtcc catgagagat gcaaagcgcc tgaattttct gacttttccc      1560
+     atcagacccc ccaaagacac acgtgaccca ccaccccgtc tctgaccatg aggccaccct      1620
+     gaggtgctgg gccctgggct tctaccctgc ggagatcaca ctgacctggc agcgggatgg      1680
+     ggaggagcaa actcaggaca ccgagcttgt ggagaccagg ccaggaggag atggaacctt      1740
+     ccagaagtgg gcagctgtgg tggtgccttc tggagaagag cagagataca cgtgccatgt      1800
+     gcagcacaag ggattgccag agcccctcac cctgagatgg ggtaaggagg gggatgaggg      1860
+     gtcatgtccc ttctcagggg aaacaggagc ctttctggag cccttcagca gggtcagggc      1920
+     ccctcatctt tccctccttt cccagagcca tcttcccagt ccaccatccc catcatgggc      1980
+     attgttgctg gcctggctgt cctagcagtt gtggtcaccg gagctgtggt cgcagctgtg      2040
+     atgtggagga ggaagagctc aggtagggaa gggtgagggg tggggtctgg gttttcttgt      2100
+     cctctggggg tttcaaaccc caggtaaaag tgttccctgc ctcattcctg ggaagcagca      2160
+     tccacacagg ggctaaccca gcctgggacc ctgtgtggcc agcacttact cttttgtgta      2220
+     gcacatgtga taatgaagga cggatgtatc accctgatga ttatggtatt ggggtcctga      2280
+     ttccagcatt catgagtcag gagaaggtcg ctgctaagga cagaccttag gagggcagtt      2340
+     ggtccaggac acacacctgc tttcctcctg tttcctgatc ctgcccttat agttctgcag      2400
+     tcatagttct ggaaatttct cttgggtcca agactaggag gttccgctaa ggtcttatgg      2460
+     ccctgcatcc tcccagtccc ctcacaggat attttcttcc cacaggtgga aaaggaggga      2520
+     gctactctca ggctgcgtgt aagtggtggg ggtgggagtg tggaggagct cacccattcc      2580
+     ataattcctc ctgtcccatg tctcctgcgg gctctgacca gctcctgttt ttgttctact      2640
+     ccagccagcg acagtgccca gggctctgat gtgtctctca cggcttgaaa aggtgagatt      2700
+     cttggggtct agagtggggg gggggggcga cagaggggaa aggcctgcat aatggagatt      2760
+     ctttgattgg gacgtttcaa gtgtgtggtg gctgttcaga gtgtcatcac ttaccatgac      2820
+     tgacttgaat ttgttcatga ctgttgtttt ctgtagcctg a                          2861
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_054_01_02_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL173,
+DE   allele Mamu-B_054_01_02_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   exon            <1..72
+FT                   /standard_name="Exon 1"
+FT   CDS             join(9..72,202..471,717..992,1567..1784)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_054_01_02_01_nov"
+FT   exon            202..471
+FT                   /standard_name="Exon 2"
+FT   exon            717..992
+FT                   /standard_name="Exon 3"
+FT   exon            1567..1816
+FT                   /standard_name="Exon 4"
+FT   exon            1921..2037
+FT                   /standard_name="Exon 5"
+FT   exon            2478..2510
+FT                   /standard_name="Exon 6"
+FT   exon            2641..>2688
+FT                   /standard_name="Exon 7"
+FT   exon            2861..2865
+FT                   /standard_name="Exon 8"
+FT   source          1..2865
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2865 BP; 518 A; 809 C; 930 G; 608 T; 0 other;
+     atgcggtcat ggcgccgcga accctcctcc tgctgctctc gggggccctg gccctgaccg        60
+     agacctgggc cggtgagtgc ggggtcggga gggaaatggc ctctgcgggg aggagcgagg       120
+     ggaccgcagg cgggggcgca ggacccgggg agccgcgcgg ggaggagggt cgggcgggtc       180
+     tcagcctctc ctcgccccca ggctcgcact ccttgaggta tttcagcacc gccgtgtccc       240
+     ggcccggccg cggggagccc cgcttcatct ccgtgggcta cgtggacgac acgcagttcc       300
+     tgcggttcga cagcgacgcc gcgagtccga ggatggagcc gcgggcgccg tgggcggagc       360
+     aggaggggcc ggagtattgg gaagagcaga cagggctcgc caaggacatc acacaatctt       420
+     tccgagtgag cctggggaac ctgcgcggct actacaacca gagcgaggcg ggtgagtggc       480
+     cccggcccgg ggagcaggtc acgacccctc cccatccccc acggacggcc cgggtctccc       540
+     cgagtctccg ggttcgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg       600
+     ggagagcccc aggcgccttt acccggtttc attttcagtt gaggccaaag tcctcgcggg       660
+     ttggtcgggg cggggcgggc ctcggtgggc ggggctgacc gtgggggcgg ggccagggtc       720
+     tcacaccctc cagtggatgt acggctgcga cctggggccc gacgggcgcc ttctccacgg       780
+     gtatcaccag ttcgcctacg acggcaagga ttacatcgcc ctgaacgggg acctgcgctc       840
+     ctggaccgcg gcggacatgg cggctcagaa cacccagcgc aagtgggagg cggcccgcga       900
+     ggcagagcgg atgagagccc acctggaggg gacgtgcgtg gagtggctcc tcagacacat       960
+     ggagaacggg aaggagacgc tgcagcgcgc gggtaccagg ggcaatgggg cgccttcccc      1020
+     atcacctcta gatcgcccgg gatggcctcc catgaggagg agaggaaaat gggatcagcg      1080
+     ctataatgtc gccctccctt gaatggagaa tggcatgagt tttcctgatt tcctctgagg      1140
+     gcccctctgc tctctaggac aattaaggga tgacgtctct gaggacatgg agggaaagac      1200
+     agtccctaga atacagatca ggggtcccct ttgactcctg cagcaacttt gggcaccgtg      1260
+     aatttttctc tcaggccttg ttctctgcct cacactcaat gtgtctgaag gtctgattcc      1320
+     agcttttctg agtccctcgg cctccactca ggttaggacc agaagtccct gttcctccct      1380
+     cagagaatag aactctccaa ggaataggag attatcccag atgcctgtgt ccgggctggt      1440
+     gtctggcttc cgtgctccct tccccacccc aggtgtcctg ttcattctca gggtggtcac      1500
+     atgggtgctg ctggggtgtc ccatgagaga tgcaaagcgc ctgaattttc tgactcttcc      1560
+     catcagatcc cccaaagaca cacgtgaccc accctgaggt gctgggccct gggcttctac      1620
+     cctgcggaga tcacactgac ctggcagcgg gatggggagg accaaactca ggacaccgag      1680
+     cttgtggaga ccaggccagt aggagatgga accttccaga agtgggcagc tgtggtggtg      1740
+     ccttctggag aagagcagag atacacgtgc catgtgcagc ataaggggct gccggagccc      1800
+     ctcaccctga gatggggtaa ggagtgggat gaggggtcat gtctcttctc aggggaaaca      1860
+     ggagcccttc tggagccctt cagcagggtc agggcccttc accttcccct cctttcccag      1920
+     agccatcttc ccagtccacc atccccatcg tgggcattgt tgctggcctg gctgtcctag      1980
+     cagttgtggt cactggagct gtggtcgctg ctgtgatgtg gaggaggaag agctcaggta      2040
+     gggaaggggt gaagggtggg gtctgggtgt tcttgtcccg ctgggggttt caaaccccag      2100
+     ttagaagtgt tccctgcttc attcctggga agcagcatcc acacaggggc taacccagcc      2160
+     tgggaccctg tgtgccagca cttactcttt tgtgtagcaa tgtgacaatg aaggacagat      2220
+     gtatcacctt gatggttgtg ctgttggggt cctgattcca gcattcacga gtcaggggaa      2280
+     ggtccctcct aaggacagac cttaggaggg cagttggttc aggacccaca cctgctttcc      2340
+     tcctgtttgc tgatcctgcc ctgggtctgt agtcatagtt ctggaaattt cttttgggtc      2400
+     caagactagg aggttcctct aagatctcat gaccctgctt cctcccagtc ccctcacagg      2460
+     acattttctt gctacaggtg gaaaaggagg gagctactct ctccttacat gcaggagcta      2520
+     cacttctcct gcgtgtaagt ggtgggggtg gcagtgttgg ggagctcacc catcccgtaa      2580
+     ttcctcctgt cccacgtctc ctgtgggctc tgacgaggtc ctgtttttgt tctaccccag      2640
+     ccagtgacag tgcccagggc tctgatgtgt gtctcacggc ttgaaaaggt gagattcttg      2700
+     gggtctagag taggctgggg gggtgggggt ggggcagagg ggaaaggcct gcataatgga      2760
+     gattctttga ttgggacgtt tcaagtgtgt ggtggctgtt cagagtgtca tcacttaaca      2820
+     tgactgactt gattttgttc atgactgttg ttttctgtag cctga                      2865
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_056_01_01_03_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL274,
+DE   allele Mamu-B_056_01_01_03_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,718..993,1570..1845,1950..2066,
+FT                   2501..2533,2640..2683)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_056_01_01_03_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            718..993
+FT                   /standard_name="Exon 3"
+FT   exon            1570..1845
+FT                   /standard_name="Exon 4"
+FT   exon            1950..2066
+FT                   /standard_name="Exon 5"
+FT   exon            2501..2533
+FT                   /standard_name="Exon 6"
+FT   exon            2640..2687
+FT                   /standard_name="Exon 7"
+FT   exon            2848..2852
+FT                   /standard_name="Exon 8"
+FT   source          1..2852
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2852 BP; 523 A; 795 C; 944 G; 590 T; 0 other;
+     atgcgggtcg tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc        60
+     gagacccagg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcgag       120
+     gggaccgcag gttggggcgc agggcccggg gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttcagcaa cgccgtgtcc       240
+     cggcccggcc gcggggagcc ccgcttcatt gccgtgggct acgtggacga cacgcagttc       300
+     gtgcggttcg acagcgacgt cgagagtccg aggatggagc cgcgggcgcc gtggatggag       360
+     caggaggggc cggagtattg ggaagagcag acacggaaag tcaaggagac cgcacagact       420
+     ttccgagtgg gcctggggaa cctgcgtggc tactacaacc agagcgaggc cggtgagtgg       480
+     cgccggcccg gggcgcaggt cacgacctct ccccatcccc cacggacggc ccgggtggcc       540
+     ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcgcaga ccctcgaccg       600
+     aggagagccc caggcgcctt tacccggttt cattttcagt tgaggccaaa gtccccgggg       660
+     gttggtcggg gcggggcggg gctcggtggg cggggctgac cgcgggggcg gggccagggt       720
+     ctcacacctt ccagtggatg tttggctgcg acctgggatc cgacgggcgc ctcctccgcg       780
+     ggtatgacca gtccgcctac gaaggcaaag attacatcgc cctgaacgag gacctgcgct       840
+     cctggaccgc ggcggatgtg gcggctcaga acacccagcg caagtgggaa gcggccggtg       900
+     aggcagagcg gatgagagcc tacttggagg gcgagtgcgt ggagtggctc cgcagatacc       960
+     tggagaacgg gaaggagatg ctgcagcgcg cgggtaccag gggcagtggg gagccttccc      1020
+     catcacctct agatcgcccg ggatggcctc ccatgaggag gagaggaaaa tgggatcagc      1080
+     gctagaatgt cgccctccct tgaatggaga atggcatgag ttttcctgat ttcctctgag      1140
+     ggccccctct gctctctagg acagttaagg gatgacgtct ctgaggacat ggaggggaag      1200
+     acagtcccta gaatactgat caggggtccc ctttgacccc tgcagcagcc ttgggcaccg      1260
+     tgtatttttc tctcaggcct tgttctctgc ctcacactca atgtgtttga aggtctgatt      1320
+     ccagcttttc tgagtccctc ggcctccact caggtcagga ccagaagtcg ctgttcctcc      1380
+     ctcagagtct agaactctcc aaggaatagg ggattatccc aggtggcctg tgtccagtct      1440
+     ggtgtctggg ttctgtgctc cctccccgac cccgggtgtc ctgttcattc tcagggtggt      1500
+     cacatgcgtg ctgctggagt gtcccatgag agaggcaaag cgcctgaatt ttctgactct      1560
+     tcccatcaga tcccccaaag acacacgtga cccaccaccc cgtctctgac catgaggcca      1620
+     ccctgaggtg ctgggccctg ggcttctacc ctgcggagat cacactgacc tggcagcggg      1680
+     atggggagga ccaaactcag gacaccgagc ttgtggagac caggccagga ggagatggaa      1740
+     ccttccagaa gtggggagct gtggtggtgc cttctggaga agagcagaga tacacgtgcc      1800
+     atgtgcagca ccaggggctg ccggagcccc tcaccctgag atggggtaag gagggggatg      1860
+     aggggtcatg tctcttctca gggaaagcag gagcccttct ggagcccttc agcagggtca      1920
+     gggcccctca ccttcccctc ctttcccaga gccatctacc cagtccacca tccccatcgt      1980
+     gggcatcgtt gctggcctgg ctgtcctagc agttgtggtc accggagctg tggtcgctgc      2040
+     tgtgatgtgg aggaggaaga gctcaggtag ggaaggggtg aggggtgggg tctgggtttt      2100
+     cttgtcccac tgggggtttc aagcaccagg tagaagtgtt ccctgcctca ttcctgggaa      2160
+     gcagcatcca cacaggggct aactcaacct gggaccctgt gtgccagcac ctactctttt      2220
+     gtgtagcaat gtgacaaaga aggacggatg tatcaccttg atgattatgg tattggggtc      2280
+     ctgattccag cattcacgag tcaggggaag gtccctgcta aggacagacc ttaggagggg      2340
+     agttggtcca cagcacacac ctgctttcct cctgtttcct gatctgggtc tgtagtcatc      2400
+     attatggaaa attctcttgg gtccaagaag aggaggttcc tctaagatct tatggccctg      2460
+     cttcctccca gtcccctcac agggtatttt cttcccgcag gtggaaaagg agggagctac      2520
+     tctcaggctg catgtaagtg gtgggggtgg gagtgtggag gagcttaccc accccataat      2580
+     tccttctgtc ccatgtctcc tgagggctct gaccagctcc tgtttttgtt ctaccccagc      2640
+     caacgacagt gcccagggct ctgatgtgtc tctcacggct tgaaaaggtg agatccttgg      2700
+     ggtctagagt ggggggcggg ggacagaggg gaaaggcctg ggtaatggag attctttgat      2760
+     tgggacgttt cgagtgtgtg gtggctgttc agagtgtcat cactaaccat gactgacttg      2820
+     aatttgttca tgatttgttt tctgtagcct ga                                    2852
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_098_11_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL212,
+DE   allele Mamu-B_098_11_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,718..993,1568..1843,1948..2064,
+FT                   2506..2538,2645..2688)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_098_11_01_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            718..993
+FT                   /standard_name="Exon 3"
+FT   exon            1568..1843
+FT                   /standard_name="Exon 4"
+FT   exon            1948..2064
+FT                   /standard_name="Exon 5"
+FT   exon            2506..2538
+FT                   /standard_name="Exon 6"
+FT   exon            2645..>2692
+FT                   /standard_name="Exon 7"
+FT   exon            2857..2861
+FT                   /standard_name="Exon 8"
+FT   source          1..2861
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2861 BP; 535 A; 803 C; 927 G; 596 T; 0 other;
+     atgcgggtca tggagcaccg aaccctcctc ctgctgctct cggcggccct ggccctgacc        60
+     cagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcgag       120
+     gggaccgcag gcgggggcgc agggcccggg gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagtctct cctcgccccc aggctcgcac tccatgaggt atttcagcac ctccgtgtcc       240
+     cggcccggcc gcggggagcc gcgcttcatc gccgtgggct acgtggacga cacgcagttc       300
+     gtgcggttcg acagcgacgc cgcgagtccg aagatggagc cgcgggcgtc gtggatggag       360
+     caggaggggc cggagtattg ggaagagcag acacggagag tcaaggacgc cgcacagact       420
+     ttccgagtga gcctggggaa cctgcgcggc tactacaacc agagcgaggc cggtgagtgg       480
+     ccccggcccg gggcgcaggt cacgacccct ccccaccccc cacggacggc ccgggtctcc       540
+     ccgagtctcc gggtccgaga tccgccccga ggctgcgaga cccgcccaga ccctcgaccg       600
+     gggagagccc caggcacctt tgcccggttt cattttcagt tgagaccaaa atgcccgcgg       660
+     ggtggtcggg gcggggcggg gctcggggga cgggtctgac cgcgggggcg gggccagggt       720
+     ctcacaccct ccagacaatg tctggctgcg acctggggcc cgacgggcgc ctcctccgcg       780
+     ggtattacca gcaagcctac gacggcaggg attacatcgc cctgaacgag gacctgcgct       840
+     cctggaccgc tgcggatgag gcggctcaga acacccagcg caagtgggag gcggccggtg       900
+     tggcggagca gtggagagcc tacctggagg gagagtgcct ggagtgtctc cgcagatacc       960
+     tggagaacgg gaaggagact ctgcagcgcg cgggtaccag gggcaatggg gagccttccc      1020
+     catcacttct agatcgcccg ggatggcctc ccacgaggag gggaggaaaa tgagatcagc      1080
+     gctagaatgt cgccctccgt tgaatggaga atggcatgag tttccctaat ttcctctgag      1140
+     ggcccactct actctctagg acaattaagg gatgacgtct ctgaggacat ggaggggaag      1200
+     acagtccctg gaatacagat caggggtccc ctttgacccc tgcagcagcc ttgggcaccg      1260
+     tgaatttttc tctcaggcct tgtcctctgc ctcacactca atgtgtctga ggtctgattc      1320
+     cagcttttct gagtccctcg gcctccactc aggtcaggac cagaagtccc tgttcctccc      1380
+     tcagagacta gaactctcca aggaatagga gattatccca gatgcctgtg tccaggctgg      1440
+     tgtctgggtt ctctgctccc tcccccaccc caggtgtcct gttcattctc aggatggtca      1500
+     catgagtgct gctggggtgt cccatgagag atgcaaagcg cctgaatttt ctgactcttc      1560
+     ccatcagaac ccccaaagac acacgtgacc caccaccccg tctctgacca tgaggccacc      1620
+     ctgaggtgct gggccctggg cttctaccct gtggagatca cactgacctg gcagcgggat      1680
+     ggggaggacc aaactcagga caccgagctt gtggagacca ggccaggagg agatggaacc      1740
+     ttccagaagt ggggagctgt ggtggtgcct tctggagaag agcagagata tacgtgccat      1800
+     gtgcagcatg aggggctgcc ggagcccatc accctgagat ggggtaagga gggggatgag      1860
+     gggtcatgtc tcttctcagg gaaagcagga gcccttctgg agcccttcag cagagtcagg      1920
+     gcccctcatc ttcccctcct ttcccagagc catcttccca gtccaccatc cccatcgtgg      1980
+     gcattgttgc tggcctggct gtcctagcag ttgtggtcac tggagctgtg gttgctgctg      2040
+     tgatgtggag gaggaagagc tcaggtaggg aaggggtgag aagtggggtc tggtttttct      2100
+     tgtccctctg ggggtttcaa gccccaggta gaaatgttcc ctgcctcatt actgggaagc      2160
+     agcatccaca caggagctaa cccagcctgg gaccctgtgt gccagcactt actcttttgt      2220
+     gtagcacatg tgacaatgaa ggacggatgt atcaccttga tgattatggt attggggtcc      2280
+     tgattccagc attcatgggt cagggtaagg ttcctgctaa ggacagacct taggaggaca      2340
+     gttggtccag gacacacagc tgctttcctc ctgtttgctg atcctgctct gggtctgcag      2400
+     tcatagttct ggaaatttct cttgggtcca agactaggag gttctgctaa gatcttatgg      2460
+     ccctccatcc tcccagtccc ctcacaggat attttcttcc cacaggcgga aaaggaggga      2520
+     gctactctca ggctgcgtgt aagtggtggg ggtgggagtg tggaggagct cacccatcct      2580
+     gtaattcctc ctgtcccatg tctcctgtgg gctctgacca gctcctgttt ttgttctgct      2640
+     ccagacagcg acagtgccca gggctctgat gtgtctctca cggcttgaaa aggtgagatt      2700
+     cttggggtct agagtggggg gcgggggggc agaggggaaa ggcctgggta atggagattc      2760
+     tgtgattgta acgtttcgag tgtgtgatgg gctgttcaga gtgtcatcac ttaccatgac      2820
+     tgacttgaat ttgttcatga ctgttgtttt ctgtagcctg a                          2861
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_109_01_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL171,
+DE   allele Mamu-B_109_01_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,737..819)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_109_01_01_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            737..1012
+FT                   /standard_name="Exon 3"
+FT   exon            1586..1861
+FT                   /standard_name="Exon 4"
+FT   exon            1959..2075
+FT                   /standard_name="Exon 5"
+FT   exon            2515..2547
+FT                   /standard_name="Exon 6"
+FT   exon            2654..>2701
+FT                   /standard_name="Exon 7"
+FT   exon            2864..2868
+FT                   /standard_name="Exon 8"
+FT   source          1..2868
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2868 BP; 538 A; 806 C; 923 G; 601 T; 0 other;
+     atgcgggtcg tggcgctccg atacctcctc ctgctgctct cggggatcct ggccctgacc        60
+     aagacctggg ccggtgagtg cggggtcggg agggaaacgg cctctgcggg gaggagcgag       120
+     gggaccgcag gcgggggcgc aggacccgag gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttctacac caccgtgtcc       240
+     cggcccggcc gcggggagcc gcgcttcatc tccgtgggct acgtggacga cacgcagttc       300
+     gtgcggttcg acagcgacgc cgagagtccg agagaggagc cgcgggcgcc gtggatggag       360
+     caggaggggc cggagtattg ggaagaggag acacggatcg ccaaggccaa cgcacagact       420
+     gaccgagcgg acctggggat cctgcgcggc tactacaacc agagcgaggc cggtgagtcg       480
+     tcccggcccg gggcgcaggt cgcgacccct ccccatcccc cacggacgac ccgggtctcc       540
+     ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg       600
+     gggagagccc caggcgcctt cacccggtta cattttcact tgaggacaaa atcctcgcgg       660
+     gttggtcggg gcggggcggg gctcggtggg cggggcgggg ctcggtgggc ggggctgacc       720
+     tcgggggcgg ggccagggtc tcacaccctc cagaagatgt gtggctgcga cctgggaccc       780
+     gacggacgcc tcctccgcgg gtattaccag gacgcctagg acggcaaaga ttacatcgcc       840
+     ctgaaccggg acctgcgctc ctggacggcc gcggacatgg cggctcagaa cacccagcgg       900
+     aagtgggaag cggccggtga ggcagagcag tggagagcct atctggaggg cgagtgcgtg       960
+     gagtcgcttc gcagatacct ggagaacggg aaggagacgc tgcagcgcgc gggtaccagg      1020
+     ggcagtgggg agccttcccc atcacctcta gatcgcccgg gatggcctcc catgaggagg      1080
+     ggaggaaaat gggatcagcg ctagaatgtc ccctcccttg aatggagaat ggcatgagtt      1140
+     ttcctgattt cctctgaggg ccccctctgc tctctaggac aattaaggga tgacgtctct      1200
+     gaggacatgg aggggaagac agtccctaga atactgatca gaggtcccct ttgacccctg      1260
+     cagcagcctt gggcaccgtg aatttttctc tcaggccttg ttctctgcct cacactcaat      1320
+     gttttgaagg tctaattcca gcttttctga gtccctcggc ctccactcag gtcaggacca      1380
+     gaagtccctg ttcctccctc agagactaga actctccaag gaataggaga ttatcccaga      1440
+     tgcctgtgtc caggctggtg tctggcttct gtgctccctt ccccacccca ggtgtcctgt      1500
+     tcattctcag ggtggtcaca tgggtgctgc tggggtgtcc catgagagat gcaaagcgcc      1560
+     tgaattttct gactctttcc atcagatccc ccaaagacac acgtgaccca ccaccccatc      1620
+     tctaaccatg aggccaccct gaggtgctgg gccctgggct tctaccctgc ggagatcaca      1680
+     ctgacctggc agcgggatgg ggaggaccaa actcaggaca ctgagcttgt ggagaccagg      1740
+     ccaggaggag atggaacctt ccagaagtgg ggagatgtgg tggtgccttc tggagaagag      1800
+     cagagataca cgtgccatgt gcagcatgag gggctaccgg agcccctcac cctgagatgg      1860
+     ggtaaggagg gggatgaggg gtcatgtctc ttctcaggga aagcaggagc ccttctggat      1920
+     cagggtcagg gcccctcatc cttcccctcc tttcccagag ccatcttccc agtccaccat      1980
+     ccccatcgtg ggcattgttg ctggcctggc tgtcctagca gttatggtca ccggagctgt      2040
+     ggtcgctgct gtgatgtgga ggaggaagag ctcaggtagg gaaggggtgt ggggtggggt      2100
+     ctgggttttc ttgtccctct gggggtttca agccccaggt agaagtgttc cctgcctcat      2160
+     tcctaggaaa cagcatccac acagggtcta acccagcctg ggaccctgtg tgccaggact      2220
+     tactcttttg tgtagcaatg tgacaatgaa ggacggatgt atcaccttga tgattatggt      2280
+     attgggtcct gattccagca ttcacgagtc aggggaaggt ccctgctaag gacagacctt      2340
+     gggagggcag tttgtccagg acacacagct gctttcctcc tgttccctga tcctgccctg      2400
+     ggtctgtagt catagttctg gaaatttctc tagggtccaa gactaggagg ttcctctaag      2460
+     atcttatggc cctgcttcct cccagcatcc tcacaggata ttttcttccc acaggtggaa      2520
+     aaggagggag ctactctcag gctacgtgta agtggtgggg gtgggagtgt ggaggagctc      2580
+     accaaccctg taattcctct tgtcccatgt cacctgcggg ctctgaccag ctcctgtttt      2640
+     tgttctaccc cagccagcaa cagtgcccag ggatctgatg tgtctctcac ggctttaaag      2700
+     ggtgagattc ttggggtcta gagtgggttg ggaggcagag gtgaaaggcc tcggtaatgg      2760
+     agattcgttg attgtaacgt ttcgagtgtg tggtgggctg ttcagaatgt catcactcac      2820
+     catgactgac ttgaattttt tgttcatgac ttgttttctg tagcctga                   2868
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_109_07_01_02N_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL247,
+DE   allele Mamu-B_109_07_01_02N_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,719..888)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_109_07_01_02N_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            719..994
+FT                   /standard_name="Exon 3"
+FT   exon            1547..1822
+FT                   /standard_name="Exon 4"
+FT   exon            1919..2035
+FT                   /standard_name="Exon 5"
+FT   exon            2475..2507
+FT                   /standard_name="Exon 6"
+FT   exon            2614..2661
+FT                   /standard_name="Exon 7"
+FT   exon            2828..2832
+FT                   /standard_name="Exon 8"
+FT   source          1..2832
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2832 BP; 543 A; 801 C; 898 G; 590 T; 0 other;
+     atgcgggtcg tggcgctccg aaccctcctc ctgctgctct cggggatcct ggccctgacc        60
+     aagacctggg ccggtgagtg cggggtcggg agggaaacgg cctctgcggg gaggagcgag       120
+     gagaccgcag acgggggcgc aggacccggg gagccgcgcc gggaggaggg tcgggcgggt       180
+     ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttctacac caccgtgtcc       240
+     cggcccggcc gcggggagcc ccgcttcatc tccgtgggct acgtggacga cacgcagttc       300
+     gtgcggttcg acagcgacgc cgagagtccg agagaggagc ctcgggcgcc gtggatggag       360
+     caggaggggc cggagtattg ggaagagcag acacggatcg ccaaggccaa cgcacagact       420
+     gaccgagcgg acctggggat cctgcgcggc tactacaacc agagcgaggc cggtgagtgg       480
+     tcccggcccg gggcgcaggt cacgacccct ccccatcccc caccgacgac ccgggtctcc       540
+     ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg       600
+     gggagagccc caggcacctt tacccggtta cattttcact tgaggacaaa aatcctcgcg       660
+     ggttggtcgg ggcggggcgg ggctcggtgg gcggggctga ccgcgggggc ggggccaggg       720
+     tctcacacca tccagacgat gtatggctgc gacctgggac ccgacggacg cctcctccgc       780
+     gggtattacc aggacgccta cgacggcaaa gattacatcg ccctgaacgg ggacctgcgc       840
+     tcctggaccg ccgcggacat ggcggctcag aacacccagc ggaagtgaga agcggccgat       900
+     gaggcagagc agtggagagc ctacctggag ggcgagtgcg tggagtcgct tcgcagatac       960
+     ctggagaacg ggaaggagac gctgcagcgc gcaagtacca ggggcagtgg ggacccttcc      1020
+     tcatcacctc tagatcgccc gggatggcct cccatgagga ggggaggaaa atgggagcag      1080
+     cgctagaatg tcccctccct tgaatggaga atggcatgag ttttcctgat ttcctctgag      1140
+     ggccccctct gctctctagg acaattaagg gatgacgtct ctgaggacat agaggggaag      1200
+     acagtcccct ttgacccctg cagcagcctt gggcaccgtg aattttcctc taaggccttg      1260
+     ttctctgcct cacactaaat gcgtttgaag gtctgattcc agcttttctg agtcccttgg      1320
+     cctccactca ggtcaggacc agaagtccct gttcctccct cagagactag aactctccaa      1380
+     ggaataagag attatcccag atgcctgtgt ccaggctggt gtctgggttc tatgctccct      1440
+     cccccacccc agctgtcctg ttcattctca gggtggccac atgggtgctg ctggggtgtc      1500
+     ccatgagaga tgcaaagcgc ctgaattttc tgactctttc catcagatcc cccaaagaca      1560
+     cacgtgaccc accatcccgt ctctaaccat gaggccaccc tgaggtgctg ggccctgggc      1620
+     ttctaccctg cggagatcac actgacctgg cagcgggatg gggaggacca aactcaggac      1680
+     actgagcttg tggagaccag gccaggagga gatggaacct tccagaagtg gggagctgtg      1740
+     gtggtgcctt ctggagaaga gcagagatac acgtgccatg tgcagcatga ggggctaccg      1800
+     gagcccctca ccctgagatg gggtaaggag ggggatgagg ggtcatgtct cttctcaggg      1860
+     aaagcaggag cccttctgga tcagggtcag ggcccctcac cttcccatcc tttcccagag      1920
+     ccatcttccc agtccaccat ccccatcgtg ggcattgttg ctggcctggc tgtcctagca      1980
+     gttatggtca ccggagctgt ggtcgctgct gtgatgtggg ggaggaagaa ctcaggtagg      2040
+     gaaggggtgt ggggtggggt ctgggttttc ttgtccctct gggggtttca agccccaggt      2100
+     agaagtgttc cctgactcat tcctgggaag cagcatccac acagggtcta acccagcctg      2160
+     ggaccctgtg tgccaggact tactcttttg tgtagcaatg tgacaatgaa ggacagatgt      2220
+     atcaccttga tgattatggt actgggtcct gattccagca ttcacgagtc aggggaaggt      2280
+     ccctgctaag gacagacctt gggagggcag tttgtccagg acacacagct gctttcctcc      2340
+     tgttccctga tcctgccctg ggtctgtagt catagttctg gaaatttctc tagggtccaa      2400
+     gactaggagg ttcctctaag atcttatggc cctgcttcct cccagcctcc tcacaggata      2460
+     ttttcttccc acaggtggaa aaggagggag ctactctcag gctacgtgta agtggtgggg      2520
+     gtgggagtgt ggaggagctc accaacccta taattcctct tgtcccatgt cacctgcggg      2580
+     ctctgaccag ctcctgtttt tgttctaccc cagccagcaa cagttcccag ggatctgatg      2640
+     tgtctctcac ggctttaaag ggtgagattc ttggggtcta gagtggggga cgggggggca      2700
+     gaggggaaag gcctgggtaa tggagattct ttgattgtaa cgtttcgagt gtgtggtggg      2760
+     ctgttaagag tgtcatcact taccatgact gacttgaatt tttttgttca tgacttgttt      2820
+     tctgtagcct ga                                                          2832
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_114_02_02_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL173,
+DE   allele Mamu-B_114_02_02_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,718..993,1569..1844,1948..2064,
+FT                   2505..2537,2644..2687)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_114_02_02_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            718..993
+FT                   /standard_name="Exon 3"
+FT   exon            1569..1844
+FT                   /standard_name="Exon 4"
+FT   exon            1948..2064
+FT                   /standard_name="Exon 5"
+FT   exon            2505..2537
+FT                   /standard_name="Exon 6"
+FT   exon            2644..>2691
+FT                   /standard_name="Exon 7"
+FT   exon            2854..2858
+FT                   /standard_name="Exon 8"
+FT   source          1..2858
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2858 BP; 531 A; 827 C; 912 G; 588 T; 0 other;
+     atcccggtca tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc        60
+     gagacctggg ccggtgagtg cggggccggg agggaaaagg cctcggcggg gaggagcaag       120
+     gggaccgcag gcgggggcgc aggacccggg gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagcctct cctcgccccc aggctcccac tccttgaggt atttcggcac caccgtgtcc       240
+     cggcccggcc gcggggagcc ccgcttcatc tccgtgggct acgtggacga cacgcagttc       300
+     ctgcggttcg acagcgacgc cgagagtccg aggatggagc cgcgggcgcc gtggatggag       360
+     caggaggggc cagagtattg ggaagagcag acacggatcg ccaaggccat cgcacagact       420
+     aacctaggga ccctgcggac cgcgctccgc tactacaacc agagcgagac gggtgagtgg       480
+     ccccggcccg gggcgcaggt cacgacccct ccccatcccc cacggatggc ctgggtctcc       540
+     ccgagtctca gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg       600
+     gagagagccc caggcgcctt tacccgattt cattttccgt tgaggccaaa atgcccgcgg       660
+     gttggtcggg gcgaggcgag gctcggtggg cggggctgac cgcgggggcg gggccagggt       720
+     ctcacaccgt ccagaagatg tacggctgcg acctggggct cgacgggcgc ctcctccgcg       780
+     gatattacca gttcgcctac gacggcaggg attacatcgc cctgaacgag gacctgcgct       840
+     cctggaccgc tacggatgag gcggctcaga acacccagcg caagtgggag gcggccggtg       900
+     tggcggagca gatgagagcc cacctggagg ggacgtgcgt ggagtggctc cgcagatacc       960
+     tggagaacgg gaaggagacg ctgcagcgcg cgggtaccag gggcagtggg gagccttccc      1020
+     catcacctct agattccccg ggatggcctc ccacgaggac gggaggaaaa tgggatcagc      1080
+     gctagaatgt cgccctccct tgaatggaga atggcgtgag tttccctgat ttcctctgag      1140
+     ggccccctct gtgctctagg acaattaagg gatgacgtct ctgaggacat ggaggggaag      1200
+     acagtccctg gaatactgat caggggtccc ctttgactcc tgcagcagcc ttgggcaccg      1260
+     tgaatttttc tctcaggcct tgtcctctgc ctcacactca atgtgtctga aggtctgatt      1320
+     ccagcttttc tgagtccctc ggcctccact caggtcagga ccagaagtcc ctgttcctcc      1380
+     ctcagagact agaactctcc aaggaatagg agattatccc agatgcctgt gtccgggctg      1440
+     gtgtctggct tctgtgctcc cttccccacc ccaagtgtcc tgtccattct cagggtggtc      1500
+     acatgcgtgc tgctggagtg tcccatgaga gatgcaaagc gcctgaattt tctgactctt      1560
+     cctatcagat cccccaaaga cacacgtgac ccaccacccc atctctgacc atgaggctac      1620
+     cctgaggtgc tgggccctgg gcttctaccc tccagagatc acactgacct ggcagcggga      1680
+     tggggaggac caaactcagg acaccgagct tgtggagacc aggccaggag gagatggaac      1740
+     cttccagaag tggggagctg tggtggtgcc ttctggagaa gagcagagat acacgtgcca      1800
+     tgtgcagcat gaggggctgc cgaagcccct caccctgaga tggggtaagg aggggatgag      1860
+     gggtcatgtc tcttctcagg gaaagcagga gcccttctgg agcccttcag cagggtcagg      1920
+     gcccctcatc ttcccctcct ttcccagagc catcttccca gtccaccatc cccatcgtgg      1980
+     gcattgttgt tggcctggct gtcctagcag ttgtggtcac cggagctgtg gtcgctgctg      2040
+     ggatgtggag gaggaagagc tcaggtaggg aaggggtgtg gggtggggtc tggcttttct      2100
+     tgtcctctgg gggtttcaag ccccaggtag aaatgttcac tgcctcattc ctgggaagca      2160
+     gcatccacac aggggctaac ccagcctggg accctgtgtg ccagcactta ctcttttgtg      2220
+     tagcacatgt gacaatgaag gacggatgta tcaccttgat gattatggta ttggggtcct      2280
+     gattccagca ttcacgagtc aggggaaggt ccctgctaag gacagacctt aggaggacag      2340
+     ttggtccagg acacacacct gctttcctcc agtttcctga tcctgccctg ggtctgcagt      2400
+     catagttctg gaaatttttc ttgggtccaa gactagcagg ttccactaag atcttatggt      2460
+     cctacttcct cccagtcccc tcacaggata ttttcttccc acaggtggaa aaggagggag      2520
+     ctactctcag gctgcgtgta agtggtgggg gtgggagtgt ggaggagctc acccatcccg      2580
+     taattcctcc tgtcccacgt ctcctgcggg ctctgaccag ctcctgtttt tgttctaccc      2640
+     cagccagcga cagtgcccag ggctctgatg tgtctctcac ggcttgaaaa ggtgagattc      2700
+     ttggggtcta gagtgggggg cggggacaga ggcgaaaggc ctcagtaatg gagattcttt      2760
+     gattgggacg tttcgagtgt gtggtgggct gttcagagtg tcatcactta ccatgactga      2820
+     cttgaatttg ttcatgactg ttgttttctg tagcctga                              2858
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-B_187_03_01_01_nov;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-B gene), isolate JL138,
+DE   allele Mamu-B_187_03_01_01_nov
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   CDS             join(1..73,203..472,718..993,1566..1841,1946..2059,
+FT                   2501..2533,2639..2682)
+FT                   /standard_name="CDS"
+FT                   /gene="B"
+FT                   /allele="Mamu-B_187_03_01_01_nov"
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   exon            203..472
+FT                   /standard_name="Exon 2"
+FT   exon            718..993
+FT                   /standard_name="Exon 3"
+FT   exon            1566..1841
+FT                   /standard_name="Exon 4"
+FT   exon            1946..2059
+FT                   /standard_name="Exon 5"
+FT   exon            2501..2533
+FT                   /standard_name="Exon 6"
+FT   exon            2639..>2686
+FT                   /standard_name="Exon 7"
+FT   exon            2846..2850
+FT                   /standard_name="Exon 8"
+FT   source          1..2850
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2850 BP; 533 A; 806 C; 917 G; 594 T; 0 other;
+     atgcagatca tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc        60
+     gagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcaag       120
+     gggaccgcag gcaggggcgc aggacccggg gagccgcgcg gggaggaggg tcgggcgggt       180
+     ctcagcctct ccttgccccc aggctcccac tccatgaggt atttcagcac cgccgtgtcc       240
+     cggcctggcc gccgggaacc ctggtatctc gaagtcggct acgtggacga cacgcagttc       300
+     gtgtggttcg acagcgacgc cgagagtccg aggatggagc cgcgggcgcc gtgggtggag       360
+     caggaggggc cggagtattg ggaccggaac acacggaacg ccaagggcca cgcacagact       420
+     ttccgaggga acctgaggac agcgctccgc tactacaacc agagcgaggg gggtgagtgg       480
+     ccccggcccg gggcgcaggt cacgacccct ccccatcccc cacggacggc ccgggtctcc       540
+     ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg       600
+     gggagagccc caggcgcctt tacccggttt cattttcagt tgaggccaaa atccctgcgg       660
+     gttgggcggg gcggggcggg gctcggaggg cggggctgac cgcgggggcg gggccagggt       720
+     ctcacaccct ccagtggatg tacggctgtg acctggggcc cgacgggcgc ctcctccgcg       780
+     ggtatcacca gttcgcctac gacggcaagg attacatcgc cctgaacgag gacctgcgct       840
+     cctggaccgc cgcggacatg gcggctcggt tcacccagcg caagtgggag gcggcccgcg       900
+     aggcagagca gcagagggcc tacctggagg gcgagtgcct ggagtggctc cgcagatacc       960
+     tggagaatgg gaaggagaca ctgcagcgcg cgggtaccag gggcagtggg aagacttccc      1020
+     catcacctct agatcgcccg ggatggcctc ccatgaggag gggaggaaaa tgagatcagc      1080
+     gctagaatgt cgccctccct tgaatggaga atggcatgag ttttcctgag tttcctctga      1140
+     agaccccctc tgctctctag gacaattaag ggatgacgtc tcgacatgga ggggaagaca      1200
+     gtccccagaa tactgatcag gggtgccctt tattccctgc agcagccttg ggaaccgtga      1260
+     acttttctct caggccttgt tctctgcctc acactcaatg tgtctgaagg tctgattcca      1320
+     gcttttctga gtccctcggc ctccactcag gtcaggacca gaagtccctg ttcctccctc      1380
+     agagactaga actctccaag gaataggaga ttatcccaga tgcctgtgtc caggctggtg      1440
+     tctgggttct gtgctccctc cccgaccccg ggtgtcctgt ccattctcag ggtggtcaca      1500
+     tgcgtgctgg tgggatgtcg catgagagat gcaaagcgcc tgaattttct ggctcttccc      1560
+     atcagatccc ccaaagacac acgtgaccca ccaccccgtc tctgaccatg aggccaccct      1620
+     gaggtgctgg gctctgggct tctaccctgc ggagatcacg ctgacctggc agcgggatgg      1680
+     ggaggatcaa actcaggaca ccgagcttgt ggagaccagg ccaggaggag atggaacctt      1740
+     ccaaaagtgg ggagctgtgg tggtgccttc tggagaagag cagagataca catgccatgt      1800
+     acagcacgag ggattgccgg agcccctcac cctgagatgg ggtaaggagt gggatgaagg      1860
+     gtcatgtctg ttctcaggga aagcaggagc ccttctggag cccttcagca gggtcagggc      1920
+     ccctcatctt cccctccttt cccagagcca tcttcccagt ccaccatcgc catcgtgggc      1980
+     attgttgctg gcctggctgt cctagcagtt gtcaccggag ctgtggtcgc tgctgtgatg      2040
+     tggaggagga agagctcagg tagggaaggg gtgaggggtg gggtctgggt gttcttgtcc      2100
+     cactgggggt ttcaagcccc aggtagaagt gttccctgcc tcattcctgg gaagcagcat      2160
+     ccacacaggg gctaactcaa cctgggaacc tgtgtgccag cacttactct tttgtgtagc      2220
+     acatgtgaca atgaaggacg gatgtatcac cttgatgatt atggtattgg ggtcctgatt      2280
+     ccagcattcg tgagtcaagg gaaggtccct actaaggaca gaccttggga gggcagttgg      2340
+     tccaggacac acagctgctt tcctcctgtt ccctgttcct gccctgggtc tgtagtcata      2400
+     gttctggaaa tttctcttgg gtccaagact aggaggttcc tctaagatct tatggccttg      2460
+     cttcctccca gcccactcac aggacatttt cttcccacag gtggaaaagg agggagctac      2520
+     tttcaggctg catgtaagtg gtgggggtgg gagtgtggag gagctcaccc accccataat      2580
+     tcctcctgtc catgtctcct gcgggctctg accaggtcct gtttttgttc taccccagcc      2640
+     aaggacagtc cccagggctc tgatgagtct ctcatggctt gaaaaggtga gattcttggc      2700
+     gttgagtggg ttggggggca gaggggaaag gcctcggtaa tggagattct ttgattgtaa      2760
+     cgtttcgagt gtgtggtggc tgttcggagt gtcatcactt accatgattg acttgaattt      2820
+     tttgttcatg acttgttttc tgtagcctga                                       2850
+//
+ID   XXX; XXX; linear; XXX; XXX; XXX;
+XX
+AC   Mamu-I_01_01_01_01_nov1;
+XX
+DE   Macaca mulatta gene for MHC class I antigen (Mamu-I gene), isolate JL253,
+DE   allele Mamu-I_01_01_01_01_nov1
+XX
+KW   
+XX
+OS   Macaca mulatta
+OC   .
+XX
+FH   Key             Location/Qualifiers
+FH
+FT   exon            1..73
+FT                   /standard_name="Exon 1"
+FT   CDS             join(1..73,202..471,717..992,1567..1842,1947..2063,
+FT                   2504..2536,2643..2686)
+FT                   /standard_name="CDS"
+FT                   /gene="I"
+FT                   /allele="Mamu-I_01_01_01_01_nov1"
+FT   exon            202..471
+FT                   /standard_name="Exon 2"
+FT   exon            717..992
+FT                   /standard_name="Exon 3"
+FT   exon            1567..1842
+FT                   /standard_name="Exon 4"
+FT   exon            1947..2063
+FT                   /standard_name="Exon 5"
+FT   exon            2504..2536
+FT                   /standard_name="Exon 6"
+FT   exon            2643..>2690
+FT                   /standard_name="Exon 7"
+FT   exon            2854..2858
+FT                   /standard_name="Exon 8"
+FT   source          1..2858
+FT                   /organism="Macaca mulatta"
+FT                   /mol_type="genomic DNA"
+XX
+SQ   Sequence 2858 BP; 532 A; 810 C; 925 G; 591 T; 0 other;
+     atgcgggtca tggcgcccgg aaccctcctc ctgctgctct cgggggccct ggccctgacc        60
+     gagacctggg ccggtgagtg ctgggccggg agggaaaagg actcggcggg aggggcgagg       120
+     ggaccgcagg cgggggcgca gggcccgggg agccgggcgg ggaggagggt cgggcgagtc       180
+     tcagcctctc ctcgccccca ggctcccact ccttgaggta tttcggcacc acagtgtccc       240
+     ggcccggccg cggggagccg cgcttcatcg ccgtgggcta cgtggacgac acgcagttcg       300
+     tgcggttcga cagcgacgcc gagagtccga ggatggagcc gcgggcgccg tggatggagc       360
+     aggaggggcc ggagtattgg gaagaggaga cacggatcgc caaggcccgc gcacagactg       420
+     agcgagggaa cctgcggacc gcgctccgct actacaacca gagcgagggg ggtgagtggc       480
+     cccggcccgg ggcgcaggtc acgacccctc cccacccccg acagacggcc cgggtctccc       540
+     cgagtctcag ggtccgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg       600
+     agagagcccc aggctccttt atccggtttc attttcagtt gccgccaaag tccccgcggg       660
+     gtggtcgggg cggggcgggg ctcggtgggc ggggctgacc gcgggggcgg ggccagggtc       720
+     tcacaccctc cagaagatgt gtggctgcga cctggggccg gacgggcgcc tcctccgcgg       780
+     gtattaccag tccgcctacg acggcaggga ttacatcgcc ctgaacgagg acctgcgctc       840
+     ctggaccgct gcgggtgagg cggctcagaa cacccagcgc aagtgggagg cggccggtga       900
+     ggcagagcag cggagagcct acctggaggg ccggtgcgtg gagtggctcc gcagatacct       960
+     ggagaagggg aaggagacgc tgcagcgcgc gggtaccagg ggcactgggg agccttcccc      1020
+     atcacctcta gatctccctg gatggcctcc catgaggagg ggaggaaaat gggatcagcg      1080
+     ctagaatgtc gccctccctt aaatggagaa tggcatgagt tttcctgatt tcctctgagg      1140
+     gcccctctgc tctctaggac aattaaggga tgacgtctct gaggaaatgg aggggaagac      1200
+     agtccctgga atacagatca ggggtcctct ttgactcctg cagcagcctt gggcaccgtg      1260
+     aatttttctc tcaggccttg ttctctgcct cacactcaat gtgtttgaag gtctgattcc      1320
+     agcttttctg agtccctcgg cctccactca ggtcaggacc agaagtccct gttcctccct      1380
+     cagagaatag aactctccaa ggaataggag attatcccag atgcctgtgt ccagtctggt      1440
+     gtctggcttc tgtgctccct tccccacccc aagtgtcctg tccattctca gggtggtcac      1500
+     atgcgtgctg ctggggtgtc ccatgagaga tgcaaagcgc ctgaattttc tgacttttcc      1560
+     catcagatcc cccaaagaca cacgtgaccc accaccccgt ctctgaccat gaggccaccc      1620
+     tgaggtgctg ggccctgggc ttctaccctg cggagatcac actgacctgg cagcgggatg      1680
+     gggaggagca aactcaggac accgagcttg tggagaccag gccaggagga gatggaaact      1740
+     tccagaagtg ggcagctgtg gtggtgcctt ctggagaaga gcagagatac acgtgccatg      1800
+     tgcagcatga ggggctgccg gagcccctca ccctgagatg gggtaaggag ggggatgagg      1860
+     agtcatgtct cttctcaggg gaaacaggag cccttctgga gcccttcagc agggtcaggt      1920
+     cccctcacct tcccctcctt tcccagagcc atcttcccag tccaccatcc ccatcatggg      1980
+     cattgttgct ggcctggctg tcctagcagt tgtggtcacc ggagctgtgg tcgcagctgt      2040
+     gatgtggagg aggaagagct caggtaggga aggggtgagg agtgggatct tgcttttctt      2100
+     gtcctctggg ggtttcaagc ccaaggtaga aatgttcact gcctcattcc tgggaagcag      2160
+     catccacaca gggcctaacc cagcctggga ccctgtgtgc cagcacttac tcttttgtgc      2220
+     agcacatgtg acaatgaagg acggatgtat caccttgatg attatggtat tggggtcctg      2280
+     attccagcat tcatgagtca gggtaaggtc cctgctaagg acaaacctta ggaggacagt      2340
+     ttgcccaaga cacacagctg ctttcctcct gtttcctgat cctgccctgg gtctgcagtc      2400
+     atagttctgg aaatttctct tgggtccaag actaggaggt tccgctaaga tcttgtggcc      2460
+     ctgcttcctc ccagtcccct cacaggatat tttcttccca caggtggaaa aggagggagc      2520
+     tactctcagg ctgcgtgtaa gtggtggggg tgggagtgtg gaggagctca cccatcctgt      2580
+     aattcctcct gtcccacgtc tcctgcgggc tctgaccagc tcctgttttt gttctactcc      2640
+     agccagcaac agtgcccagg gctctgatgt gtctctcaca gcttgaaaag gtgagattct      2700
+     tgggatctag agtgggggga cggggggcag agggaaaggt cctggtaata gagattcttt      2760
+     gattgggatg tttcaggtgt gtggtggctg ttcagagtgt catcacttac catgactgac      2820
+     ttgaattttg ttcatgactg ttgttttctg tagcctga                              2858
+//

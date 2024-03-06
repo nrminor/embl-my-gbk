@@ -1,0 +1,1701 @@
+LOCUS       Mamu-A1_011_03_01_01_nov|2021090121310853        2933 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:0
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(1..73,204..473,722..997,1596..1871,1974..2090,
+                     2538..2570,2713..2760,2929..2933)
+                     /standard_name="CDS"
+     exon            204..473
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            722..997
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1596..1871
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1974..2090
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2538..2570
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2713..2760
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2929..2933
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atggcgatca tggcgccccg gaccctcctc ctggtgctct ccggggccct ggccctgacc
+       61 cagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcgag
+      121 gggcccgcct ggcgggggcg caggacccgg ggagccgcgc ggggaggagg gtcgggcggg
+      181 tctcagcctc tcctcgcccc caggctccca ctccatgagg tatttccaca ccgccgtgtc
+      241 ccggcccggc cgcggggagc cccgcttctt caccgtgggc tacgtggacg acacgcagtt
+      301 cgtgcggttc gacagcgacg ccgcgagtcc gagaaaggag ccgcgggcgc cgtgggtgga
+      361 gcaggagggg ccggagtatt gggaccggga gacacggatc tccaaggcca acacacagac
+      421 ctaccgagag aacctgcgga ccgcgctccg ctactacaac cagagcgagg ccggtaagtg
+      481 accccggccc ggggcgcagg tcacgacccc tccccattcc ccacggacgg cccgcgtcgc
+      541 cccgagtctc cgggtcccag atacaccccg aagccgcggg accccgagac cgttgacccg
+      601 ggagagcccc aggcgccttt gcccagtttc attttcagtt gaggccaaaa tccccggggg
+      661 ttggtctggg cggggcgggg cggggctccg gggactgtac tgaccgcggg ggcggggcca
+      721 gggtctcaca ccttccagac gatgtacggc tgcgacctgg ggcccgacgg gcgcctcctc
+      781 cgcgggtatg accagtacgc ctacgacggc agggattaca tcgccctgaa cgaggacctg
+      841 cgctcctgga cggccgggga catggcggct cagaacaccc agcggaagtg ggaggcggcg
+      901 ggtgtggcgg agcagcacag aacctacctg gagggcgagt gcctggagtg gctccgcaga
+      961 tacctggaga acgggaagga gacgctgcag cgcgcgggta ccaggggcca cggggcgcct
+     1021 ccctgatcgc ctgtagatct cccgggctgg cctcccacaa ggaggggaga caaatgggac
+     1081 caacactaga atatcgccct ccctctggtc ctgagggaga ggaatcctcc tgggtttcca
+     1141 gatcctgtac cagagagtga ctctgagggt ccgccctgct ctctgacaca attaaggata
+     1201 aaatctctga gggaatgaag ggaagacgat ccctcgaata ctgatcaggg gttccctttg
+     1261 ccaccggcag cagccttggg ccccgtgact tttcctctca ggccctgttc tctgcttcac
+     1321 actcaatgtg tgtgagggtc tgagtccagc tccgctgagt ccctcagcct ccactcaggt
+     1381 caggagcaga agtcactgtt ccctcctcgg ggaatagaat tttccacaga ataggagatt
+     1441 ctcccaggtg cctgtgtcca ggatagtgtc tgggttctgt gctcccttcc ccaccccagg
+     1501 tgtcctctgt ccattctcaa gatggccaca tgtgtgctgg tggagtgtcc catgacagat
+     1561 gcaaaatgcc tgcattttct gactcttgcc atcagacccc cccaagacac atgtgaccca
+     1621 ccaccccgtc tctgaccatg aggccaccct gaggtgctgg gccctgggct tctaccctgc
+     1681 ggagatcaca ctgacctggc ggcgggatgg ggaggaccaa actcaggaca cggagctcgt
+     1741 ggagaccagg cctgcaggag atggaacctt ccagaagtgg gcggctgtgg tggtgccttc
+     1801 tggaaaggag cagagataca cctgtcatgt gcagcatgag ggtctgcccg agcccctcac
+     1861 cctgagatgg ggtaaagagg gagatggggg tgtcatgtct cttagggaaa gccggagcct
+     1921 ttctggagac ctttagcagg ctcaggaccc ctcaccttcc cctcttttcc cagagccgtc
+     1981 ttcccagtcc accatcccca tcgtgggcat cattgctggc ctggttctcc ttggagctgt
+     2041 ggtcactgga gctgtggtcg ctgctgtgat gtggaagagg aagagctcag gtgaggaagg
+     2101 ggagtgagga gtggagtctg agatttcttg tcttactgag ggtttcaagc cccaggtaga
+     2161 agtgtaccct gcctggttac tgggaagcac catccacact catgggccaa cccagcctgg
+     2221 gccctgtgtg ccagcaccta ctcttttgta aagcacctgt tacagtgaag gacagataga
+     2281 tcacctcgat ttcggtggtg atgggacctg atcccagcag tcacaagtca caagagaagg
+     2341 tccctggtga ggacagacct caggagggca gttggtccag gacccacacc tgctttcttc
+     2401 atgtttcctg atcctgccct gggtctgtag tcacacattt ctggaaactt ctctggggtc
+     2461 caagactagg agattcctct aggaccttat ggcactggtt cctttctgat acctcacagg
+     2521 acattttctt cccacagata gaaaaggagg gagctactct caggctgcaa gtaagtatga
+     2581 aggaggctga tcctggagat ccttgggatg ttgtggttgg gggcccatgg gggagctcac
+     2641 ccagcccaca gttcctcctt tagtcacatc tccagaggga tctgaccagg tcctgttttt
+     2701 gttctactcc aggcagtgac agtgcccagg gctctgatgt gtctctcacg gcttgtaaag
+     2761 gtgagaccct ggggggcctg atgtgtgggg ggtgttgggg ggaacagtgg acgcagctgt
+     2821 gctatggggt ttctttgact tggatgtatt gagcatgtga tgagctgttt aaagtgtcac
+     2881 tcctcactgt gacggatatg aattttttca tgaatatttt ttctatagtg tga
+//
+LOCUS       Mamu-AG1_05_20_01_01_nov|20210901213108258        2913 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:1
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     CDS             join(1..73,204..473,716..991,1588..1863,1966..2082,
+                     2519..2526)
+                     /standard_name="CDS"
+     misc_feature    1..70
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            1..73
+                     /standard_name="Exon 1"
+     exon            204..473
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            716..991
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1588..1863
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1966..2082
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2519..2551
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2694..2740
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2909..2913
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atggcggtca tggcgccccg aaccctcctc ctggtgctct caggggtcct ggccctgacc
+       61 cagacccagg cgggtgagtg cggggtcggg agggaaacgc cctctgcggg gaggagggga
+      121 gggcccgccc ggccggggcg caggacccgg ggagccgcgc ggggaggagg gtcgggcggg
+      181 tctcagtctc tcctcgcccc caggctccca ctccatgagg tatttctaca ccgccgtgtc
+      241 ccggcccggc cgtcgggagc ccctcttcat cgccgtgggc tacgtggacg acacgcagtt
+      301 cgtgcggttc gacagcgacg ccgagagtcc gaggatggag ccgcgggcgc cgtgggtgga
+      361 gcaggagggg ccggagtatt gggaccggga gacacagaac atgaagaccg cgacacagac
+      421 ctaccgaggg aacctgcgga ccgcgctccg ctactacaac cagagcgagg ggggtgagtg
+      481 accccggccc ggggcgcagg tcacgacccc tccacatccc ccacggacgg cccgggtggc
+      541 cccgagtctc tgggtcccag atccatcccg aagccgcggg acccggggac ccttgacccg
+      601 ggagagcccc aggcgccttt acccgatttc ctttttagtt tgggccaaaa tccccgcggg
+      661 ttggtcgggg cggggcgggg ctccggggac gggctgaccg cgggggcggg gccagggtct
+      721 cacaccatcc agaagatgta cggctgcgac ctggggcccg acgggcgcct cctccgcggg
+      781 tatgaacagt tcgcctacga tggcagggat tacatcatcc tgaacgagga cctgcgctcc
+      841 tggacggccg cggacatggc ggctcagttc acccagcgga agtgggaggc ggcccgtgcg
+      901 gcggagcagc acagaaccta cctggagggc gagtgcctgg agtggctccg cagatacctg
+      961 gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gccacggggc gcctccctga
+     1021 tctcctgtgg atctcccggg ctggcctccc acaaggaggg gagacaaatg ggaccaacac
+     1081 tagaatatcg ccctccctct ggttctgagg gagaggaatc ctcctgggat tccagatcct
+     1141 gtaccagaga gtgactctga ggttccgccc tgctctctga cacaattaag gataaaatct
+     1201 ctgaaggaat gaagggaaga cgatccctcg aatactgatc aggggtttca tttgacaccg
+     1261 gcagcagcct tgggccccgt gactttttct ctcaggccct gttctctgct tcacactcag
+     1321 tgtgtgtggg ggtctgagtc cagctcctct gagtccctca gcctccactc aggtcaggac
+     1381 cagaagtcac tgttccttcc tcagggaata gaattttcca cggaatagga gattctccca
+     1441 ggtgcctgtg tccaggatag tgtctgggtt atgtgctccc ttcctcaccc caggtgtcct
+     1501 gttcattctc aagatggccc catgtgtgct ggtggactgt cccatgacag atgcaaaatg
+     1561 actgaatttt ctgactcttc ccatcagacc cccccaagac acatgtgacc caccaccccg
+     1621 tctctgacta cgaggccacc ctgaggtgct gggccctggg cttctaccct gcggagatca
+     1681 cactgacctg gcagcgggat ggagaggaac aaactgaaga cacagagctc gtggagacca
+     1741 ggcctacagg ggatggaacc ttccagaagt gggcggctgt ggtggtgcct tctggagagg
+     1801 agcagagata cacctgtcat gtgcagcatg agggtctgcc caagcccctc accctgagat
+     1861 tcggtgaaga gggagatggg ggtgtcatgt cttttaggga aagccggagc ctctctagag
+     1921 acctttagca gggtcaggac cactcacctt accctctttt cccagagccg ttttcccagt
+     1981 ccaccatccc catcgtgggc atcattgctg gcctggttct gcttggaact gtggtcactg
+     2041 gagctgtggt tgctgctgtg atgtggagga ggaagagctc aggtgaggaa ggggtgagga
+     2101 gtggggtctg ggatttcttg tctcactgag ggtttcaagc cccaggtaga agtgtaccct
+     2161 gtctggttac tgggaagcac catccacact catgggctga cccagcctgg gccctgtgtg
+     2221 ccagcaccta ctctttggta aagcacctgt tacaatgaag gacagattta tcaccttgat
+     2281 tatggtgaag ggacctgatc ccagcagtca caagtcacaa gggaaggtcc ctgctgagga
+     2341 cagacctcag gaggacagtt ggtccaggac ccacacctgc tttcttcatg tttcctgatc
+     2401 ctgccctggg tctgcaatca cacatttctg gaaacttctc tggggtccaa gactaggaga
+     2461 ttcctgtagg accttatgac tcctttctga tatctcacag gacattttct tcccatagat
+     2521 agataaggag ggagctactc tcaggctgca agtaagtatg aaggaggctg atccctgaga
+     2581 tccttgggat attgtggttg ggagcccatg ggggagctca ctaaccccac agttcctcct
+     2641 ctagccacat ctccagaggg atctgaccag gtcctgtttt tgttctactc caggcagtga
+     2701 cagtgcccaa ggttctgatg tgtctctcac ggctttaaag gcgagaccct ggggggcctg
+     2761 atgtgtgtgg ggtgttgggg ggaacagtgg acgcagctgt gctgtggggt ttctttgact
+     2821 tggatgtatt gagcatgtga tgggctgttt aaagtgtcac tcctcactgt gacggatgtg
+     2881 aattttttca tgaatatgtt ttctatagag tga
+//
+LOCUS       Mamu-AG2_01_02_02_01_nov|2021090121310851        2943 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:2
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     CDS             join(2^3,1..64,195..421)
+                     /standard_name="CDS"
+     misc_feature    1..68
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            1..64
+                     /standard_name="Exon 1"
+     exon            195..463
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            709..966
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1568..1844
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1992..2108
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2548..2580
+                     /standard_name="Exon 6"
+     exon            2723..2770
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2939..2943
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atggcgtccc gaaccctcct cctactgctc tcgggtaccc cggccctgac cgagacctgg
+       61 gagggtgagt gcgggatcca gagggaaatg gcctctgcca agaggagcga ggggcccgcg
+      121 cagctggggc gcaggacccg gggagccgcg ccaggaggag gatcgagagg gtctcagccc
+      181 ctccgcgccc ccaggttccc actccatgag gtatttcagc accgccttgt cccggcccgg
+      241 ccgcgggggc cccgcttcat tgcagtgggc tacgtggacg acacgcagtt cgtgcggttc
+      301 gacagcgacg cggcgagtcc gaggatggag ccgccggcgc catgggtgga gcaggagcgg
+      361 ccggagtatt gggaccggag cacacggaac gccaaggtcc acgcacagac tgacagagtg
+      421 aacctgcaga ccctgctccg ctactacaac cagagcgagg cccatgagtg accccggccc
+      481 ggagcacagg tcacgaccct tccccatgcg cacggaccgc ccggatcccc ccgagtctcc
+      541 ggccccgaga tccaccccga ggctgtggga ccagcccaga tcctcgaccg ggtagagccc
+      601 caggcgcctt taccgggttt cattttcagt ttaggccaaa atccccgcgg gtcggtcggg
+      661 gcgggggcgg ggcttggtgg gcggggctga ccgtggaggc ggggccaggg tctaacacac
+      721 tccagataaa gtatgggtga gacttggggc tggaagggca cttcctccgc ggttatgaac
+      781 agcacgccaa agatggcaag gattacatcg cacttaaccg gggcttgtgc tcctggaccg
+      841 cagctgacac gcgcaagtgg gaggcagagg aatttgcaaa gcaggtcagg gcctacctgg
+      901 agggcatgtg cgtggggtgg ctccgcagac accaggagaa cgggaaggag acgctgcagc
+      961 gcgtgggtat cacggggcac gggacgcctc cctgatcgcc tgtagatctc ccgggctggg
+     1021 ctcccacaag aagagaagga aaatgagacc aacactagaa tgtctaactc cctctggtcc
+     1081 tgagggagag gaatcctcct gggtttcttt ccagatcctg taccagagaa tgactttgag
+     1141 ggtctactct gctctctgat acaattaagg gatgacatct ctgagggaat gaagggaaga
+     1201 caatccctgg aatactgatg agtggttccc tttgacaccg gcagcagcct tgggccccgt
+     1261 aacttttcct ctcaggcctt gttctctgct tcacattcaa tatgtgtagg gggctgagtc
+     1321 cagctcctct gagtccctca gcctcccctc aggtcaggac cagaagtcac tgttccctct
+     1381 tcagggacta gaattttcca cggaatagga gattctccca ggtgcctgtg tccaagctgg
+     1441 tatctgggtc gtgtgctccc ttccccaccc caggtgtcct gtccattctc aggagggcca
+     1501 catgcgtgct gctggagtgt cccataagag atgcaaagtg cctgaatttt ctgactcttc
+     1561 acgtcagact cacccccaag acacatgtga cccacgattc catctctgac tataaggcca
+     1621 ccctgaggtg ctgggccctg ggcttctacc ctgtggagat cacactgacc tggcagtggg
+     1681 atggggaggg ccagactcag gacatggagc ttgtagagac caggcccgca gggaatggaa
+     1741 ccttccagaa gtgggcagct gtggtgtgcc ttctggagag gaacagagat atacgtgcca
+     1801 tgtacagcat gaagcattgc ccaagcccct caccctgaga tgtagtaagg caggagatga
+     1861 gcctggaagg ggagaggggg gcggtcatgt ctcttaggga aagcaggagc ctctctggag
+     1921 accttcagca gcagcagggt cagggctggg ggctgggcat cagggatcct caccttcccc
+     1981 ttttttccca aagccgtctt cccagtccac catccccatc gtgggcatcg ttgctggcct
+     2041 ggttctcctt ggagctgtag tcactggagc tggggtcgct gctgtgatgt ggaggaagaa
+     2101 gagctcaagt ggggaagggg tgaggagtgg ggtctgagtt ttcttgtctc actgggggtt
+     2161 cctagcccca ggtagaagtg tgccctgcct ggttactggg aagcacactc atgggccaac
+     2221 ccagcctggg cctttgtgcc agcacttact gttttgtaaa gcacctgtga caaggaagga
+     2281 cagatttatc acctcgatga ttgtgatgat ggggacctga tcccagcagt cacaagtcgc
+     2341 aggggaaggt ccctgctgag gacagacctc aggagggcag ttggtccagg acccacacct
+     2401 gctttcctca tgtttcctga tcctgtcctg gatctgcagt tacacttttc tggaaaattc
+     2461 tctgggatca aagactaggg ggtatgctat agggccttat ggccctgact cccttttggc
+     2521 ctctcacagg acattttctt cccacagata gaaacagagt gatctactct caagctgcaa
+     2581 gtaagtatga agtgggctga tccctgagat ccttgggata ttgtggtcgg gatccagtgg
+     2641 gagagcttac ccaaccccaa acttctcctc tagccaaatc tcctctgggc tctgaccagg
+     2701 tcctgttttt gttctaccac aggcagcaac tgtgcccagc attctgatgt gtctctcacg
+     2761 gcttgtaaaa atgagaccct ggggggcctg atgtatgtgg ggtgtcaggg gaacagtgga
+     2821 tgcagctgtg ctatggggtt tcttcgagtt ggatgtattg agcatgcgat gggctgttta
+     2881 aagtgctacc cctcactatg acagatagga atttctccat taatattttt ttctatagtg
+     2941 tga
+//
+LOCUS       Mamu-AG2_01_04_01_01_nov|2021090121310887        2926 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:3
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     CDS             join(1..73,203..472,716..991,1592..1867,1970..2086,
+                     2532..2539)
+                     /standard_name="CDS"
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            716..991
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1592..1867
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1970..2086
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2532..2564
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2707..2753
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2922..2926
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atggcggtca tggcgccccg aaccctcctc ctggtgctct caggagtcct ggccctgacc
+       61 cagacccggg cgggtgagtg cggggtcgcg agggaaacgg cctctgccga gagcagcgag
+      121 gggcccgccc ggcgggggcg caggaccggg gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagcctct cctcgccccc aggctcccac tccatgaggt atttctacac cgccgtgtcc
+      241 cggcccggcc gctgggagcc ccgcttcatc gccgtgggct acgtggacga cacgcagttc
+      301 gtgcggttcg acagcgacgc ccagagtccg aggatggagc cgcgggcgcc gtgggtggag
+      361 caggaggggc cggagtattg ggaccgggag acacagaaca tgaagaccgc gacacagacc
+      421 taccaaggga acctgcggac cctgctccgc tactacaacc agagcgaggc cagtgagtga
+      481 ccccggcccg gggcgcaggt cacgacccct ccacatcccc cacggacggc ccgggtggcc
+      541 ccgagtctcc gggtcccaga tccaccccga agccgcggga ccaggggacc cttgacccga
+      601 gagagcccca ggcgccttta cccgatttcc tttttagttt gggccaaaat ccccgtgggt
+      661 tggtgggggc ggggcggggc tcggtggact gggctgaccg cgggggcgcg gccagggtct
+      721 cacaccgtcc agaagatgta cggctgcgac ctggggcccg acgggcgcct cctccgcggg
+      781 tatgaacagt tcgcctacga cggcagggat tacatcatcc tgaacgagga cctgcgctcc
+      841 tggacggccg cggacatggc ggctcagaac acccagcgca agtgggaggc ggcgggtgtg
+      901 gcggagcagc acagaaccta cctggagggc gagtgcctgg agtggctccg cagatacctg
+      961 gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gccacggggc gcctccctga
+     1021 tcgcctgtgg atctcccggg ctggcctccc acaaggaggg gagacaaatg ggaccaacac
+     1081 tagaatatcg ccctcccact ggtcctgagg gagaggaatc ctcctgggtt tccagatcct
+     1141 gtaccagaga gtgactctga ggttccgccc tgctctctga cacaattaag gataaaatct
+     1201 ctgagggaat gactggaaga cgatccctcg aatactgatc aggggttccg tttgacaccg
+     1261 gcagcagcct tgggcccggt gacttttcct ctcaggccct gttctctgct tcacactcaa
+     1321 tgaatgtgtg tgggggtctg agtccagctc ctctgagtcc ctcagcctcc actcaggtca
+     1381 ggaccagaag tcactgttcc ttcctcaggg aatagaattt tccacggaat aggtgattat
+     1441 ccctggagcc tgtgtccagg atggtgtctg gattctgtgc tcccttcccc accccaggtg
+     1501 tcctgtccat tctcaagatg gtcacatgcg tgctggtgga gtgtcccatg acagatgcaa
+     1561 aatgcctgca ttttctgact cttcccatca gaccccccca agacacacgt gacccaccac
+     1621 cccatctctg accatgaggc caccctgagg tgctgggccc tgggcttcta ccctgcggag
+     1681 atcacactga cctggcagcg ggatggagag gaacaaactc aggacacaga gctcatggag
+     1741 accaggccta cagggaatgg aaccttccag aagtgggcgg ctgtggtggt gccttctgga
+     1801 gaggagcaga gatacacctg tcatgtgcaa catgagggtc tgcccaagcc cctcaccttg
+     1861 agatggggta aagagggaga tgggggtgtc atgtctctta gtgaaagccg gagcctttct
+     1921 ggagaccttt agcagggtca gaacccctca ccttcctctc ttttcccaga gtcgtcttcc
+     1981 cagtccacca tccccatcgt gggcatcatt gctggcctgg ttctgcttgg aactgtggtc
+     2041 actggagctg tggttgctgc tgtgatgtgg aggaggaaga gctcaggtga ggaaggggtg
+     2101 aggagtgggg tctgggattt cttgtctcac tgagggtttc aagccccagg tagaagtgtg
+     2161 ccctgcctgg ttactgggaa gcaccatcca cactcatggg ctgacccagc ctgggccctg
+     2221 tgtgcgagca cctactgctt tgtaaagcac ctgttacaat gaaggacaga tagatcacct
+     2281 cgattacggt ggtgatggga cctgatccca gcagtcacaa gtcacaaggg aaggtccctg
+     2341 gtgaggacag acctcaggag ggcaattggt ccaggaccca cacctgcttt cttcatgttt
+     2401 cctgatcctg ccctgggtct gcaatcacac atttctggaa acttctctgg ggtccaagac
+     2461 taggagattc ctgtaggacc ttatggccct gactcctttc tgatatctca caggacattt
+     2521 tcttcccata gatagataag gcgggagcta ctctcaggct gcaagtaagt atgaaggagg
+     2581 ctgatccctg agatccttgg gatattgtgg ttgggagccc atgggggagc tcactaaccc
+     2641 cacagttcct cctctagccg catctccaga gggatctgac caggtcctgt ttttgttcta
+     2701 ctccaggcag tgacagtgcc cagggctctg atgtgtctct cacggcttta aaggtgagac
+     2761 cctggggggc ctgatgtgtg tggggtgttg gggggaacag tggacgcagc tgtgctgtgg
+     2821 ggtttctttg acttggatgt attgagcatg tgatgggctg tttaaagtgt cactcctgac
+     2881 tgtgacggat gtgaattttt tcatgaatat tttttctata gtgtga
+//
+LOCUS       Mamu-AG4_08_02_04_01_nov|20210901213108168        2921 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:4
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     CDS             join(1..73,203..472,716..991,1588..1863,1966..2082,
+                     2528..2535)
+                     /standard_name="CDS"
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            716..991
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1588..1863
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1966..2082
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2528..2560
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2703..2749
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2917..2921
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atggcggtca tggccccccg aaccctcctc ctggtgctct caggggtcct agccctgacc
+       61 cggacctggg ccggtgagtg cggggtcttg agggaaacgg cctctgccga gagcagcgag
+      121 gggcccgccc ggcgggggcg caggaccggg gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagcctct cctcgccccc aggctcgcac tccatgaggt atttctacac ctccatgtcc
+      241 cggcccggcc gcggggagcc ccgcttcttc gccgtgggct acgtggacga cacgcagttc
+      301 gtgcggttcg acagcgacgc cgagagtccg aggatggagc cgcgggcgcc gtgggtggag
+      361 caggaggggc cggagtattg ggaccgggag acacagaaca tgaagaacgc gacacagacc
+      421 taccgaggga acctgcggac cctgctccgc tactacaacc agagcgaggc cggtgagtga
+      481 cctcggctcg gggctcaggt cacgacccct ccccatcccc cacggacggc ccgggtggcc
+      541 ccgagtctct gggtcccaga tccaccccga agccgcggga cccggggacc cttgacccgg
+      601 gagagcccca ggagccttta cccgatttcc tttttagttt gggccaaaat ccccgtgggt
+      661 tggtcggggc ggggcgaggc tcggtgggcg gggctgaccg cgggggcggg gccagggtct
+      721 cacacactcc agaagatgta cggctgcgac ctggggccgg acgggcgcct cctccgcggg
+      781 tatgaacagt tcgcctacga cggcagggat tacatcgtcc tgaacgagga cctgcgctcc
+      841 tggaccgctg cggacttggc ggctcagaac acccagcgaa agtgggaggc ggcccgtgcg
+      901 gcggagcagc acagaaccta cctggagggc gagtgcctgg agtggctccg cagatacttg
+      961 gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gccacggggc gcctccctga
+     1021 tctcctgtgg atctcccggg gtggcctccc acaaggaggg gagacaaatg ggatcaacac
+     1081 tagaatatcg ccctccctct ggtcctgagg gagaggaatc ctcctgggtt tccagatcct
+     1141 gtaccagaga gtgactctga gggtccaccc tgctctctga cacaattaag gataaaatct
+     1201 ctgagggaat gaagggaaga cgattcctcg aatactgatc aagggttccc tttgacaccg
+     1261 gcagcagcct tgggccccgt gacttttcct ctcaggcctt gttctctgct tcacactcaa
+     1321 tgtgtgtggg ggtctgagtc cagctcctct gagtccctca gcctccactc aggtcaggag
+     1381 cagaagtcac tgttccctcc tcagggaata gaattttcca cggaatagga gattctcaca
+     1441 ggtgcctgtg tccaggatgg tgtctgggtt ctgggctccc ttccccaccc caggtgtcct
+     1501 gtccattctc aagatggtca catgcgtgct ggtggagtgt cccatgacag atgcaaaatg
+     1561 actgaatttt ctgactcttc ccatcagacc cccccaagac acatgtgacc caccaccccg
+     1621 tctctgacta cgaggccacc ctgaggtgct gggccctggg cttctaccct gcggagatca
+     1681 cactgacctg gcagcgggat ggagaggaac aaactcagga tacagagctc gtggagacca
+     1741 ggcctacagg ggatggaacc ttccaaaagt gggcggctgt ggtggtgcct tctggagagg
+     1801 agcagagata cacctgtcat gtgcagcatg agggtctgcc cgagcccctc accttgagat
+     1861 ggggtaaaga gggagatggg ggtgtcatgt ctcttaggga aagccgaagc ctttctggag
+     1921 acctttagca gggtcgggac ccctcacctt cccctctttt cccagagccg tcttcccagt
+     1981 ctaccatcct catcgtaggc atcattgctg gcctggttct ccttggaact gtggtcactg
+     2041 gagctgtggt cgctgctgtg atgtggagga ggaagagctc aggtgaggaa ggggtgagga
+     2101 gtggggtctg ggatttcttg tctcactgag ggcttcaaac cccaggtaga agtgtacact
+     2161 gtctggttac tgggaagcac catccacact catgggctga cccagcctgg gccctgtgtg
+     2221 ccagcaccta ctcttttgta aagcacctgt tacaatgaag gacagataga tcaccttgat
+     2281 tatggtggtg atgggacctg atcccagcag tcacaagtca caagggaagg tccctgctga
+     2341 ggacagacct caggagggca attggtccag gacccacacg tactttcttc atgtttcctg
+     2401 atcctgccct gggtctgcaa tcacacattt ctggaaactt ctctggggtc caagactagg
+     2461 agattcctct aggaccttat ggccctgact cctttctgat atctcacagg acattttctt
+     2521 cccatagata gataaggcgg gagctactct caggctgcaa gtaagtatga aggaggctga
+     2581 tccctgagat ccttgggata ttgtggttgg gagcccatgg gggagctcac taaccccaca
+     2641 gttcctcctc tagccacatc tccagaggga tctgaccagg tcctgttctt gttctactcc
+     2701 aggcagtgac agtgcccagg gctctgatgt gtctctcacg gctttaaagg tgagaccctg
+     2761 gggggcctga tgtgtggggg gtgttggggg aacagtggac gcagctgtgc tgtggggttt
+     2821 gtttgacttg gatgtactga gcatgtgatg ggctgtttaa agtgtcactc ctcactgtga
+     2881 cggatgtgaa ttttttcatg aatatgtttt ctatagtgtg a
+//
+LOCUS       Mamu-AG5_07_06_02_01_nov|20210901213108231        2917 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:5
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(1..73,205..474,718..993,1586..1861,1964..2080,
+                     2523..2530)
+                     /standard_name="CDS"
+     exon            205..474
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            718..993
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1586..1861
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1964..2080
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2523..2555
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2698..2744
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2913..2917
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atggcggtca tggcgccccg aaccctcctc ctggtgctct caggggtcct ggccctgacc
+       61 cagacccggg cgggtgagtg cggggtcggg agggaaacgg cctctgccgg gagcagcgag
+      121 ggccccgccc agcgggggcg caggacccgg ggagtcgcgc ggggaggagg gtcgggcggg
+      181 tctcagcctc tcctcgcccc caaggctctc actccttgag gtatttctac acctccatgt
+      241 ctcggcccgg ccgtcgggag ccccgcttca tcgccgtggg ctacgtggac gacacgcagt
+      301 tcgtgcggtt cgacagcgac gccgagagtc cgaggatgga gccgcgggcg ccgtgggtgg
+      361 agcaggaggg gccggagtat tgggaccggg agacacagaa catgaagacc gcgacacaga
+      421 cctaccgagt gaacctgcgg accctgctcc cctactacaa ccagagcgag gccggtgagt
+      481 gaccccggcc cggggcgcag gtcacgaccc ctccacatcc cccacggacg gccctggtgg
+      541 ccccgagtct ctgggtccca gatccacccc gaagccgcgg gaccagggga cccttgaacc
+      601 gagagagccc caggcgcctt tacccgattt cctttttagt ttgggccaaa atccccgtgg
+      661 gttggtgggg gcggggcggg gctcggtgga ctgggctgac cgcgggggcg cggccagggt
+      721 ctcacaccgt ccagaagatg tacggctgcg acctggggcc cgacgggcgc cgcctccgcg
+      781 ggtatgaaca gttcgcctac gatggcaggg attacatcgc cctgaacgag gacctgcgct
+      841 cctggacggc cgcggacatg gcggctcaga acacccagcg caagtgggag gcagaggatg
+      901 tggcagagca gcacagaacc tacctggagg gcgagtgcct ggagtcgctc cgcagatacc
+      961 tggagaacgg gaaggagacg ctgcagcgcg cgggtaccag gggccacggg gcgcctccct
+     1021 gatctcctgt ggatctccct ggctggcctc ccacaaggag gggagacaaa tgggaccaac
+     1081 actagaatat cgccctccct ctggtcctga gggagaggaa tcctcctggg tttccagatc
+     1141 ctgtaccaga gagtgactct gagggtccgc cctgctctct gacacaagga taaaatctct
+     1201 gagggaatga ctggaagacg atccctcgaa tactgatcag gggttccctt tgacaccggc
+     1261 agcagccttg ggccccgtga cttttcctct caggccctgt tctctgcttc acactcaatg
+     1321 tgtgtggggg tctgagtcca gctcctctga gtccctcagc ctccactcag gtcaggacca
+     1381 gaagtcactg ttccttcctc agggaataga attttccacg gaataggaga ttctcacagg
+     1441 tgcctgtgtc caggatggtg tctgggttct gtgctccctt ccccacccca ggtgtcctgt
+     1501 ccattctcaa gatggtcaca tgtgtgctgg tggagtgtcc catgacagat gcaaaatgcc
+     1561 tgcattttct gactcttccc atcagacccc cccaagacaa atgtgaccca ccaccccgtc
+     1621 tctgactacg aggccaccct gaggtgttgg gccctgggct tctaccctgc ggggatcaca
+     1681 ctgacctggc agcgggatgg agaggaacaa actcaggaca cggagctcgt ggagaccagg
+     1741 cctacagggg atggaacctt ccagaagtgg gcggctgtgg tggtgccttc tggagaggag
+     1801 cagagataca cctgtcatgt gcaacatgag ggtctgccca agcccctcac cttgagatgg
+     1861 ggtaaaaagg gaggtggggg tgtcatgtct tttagggaaa gccggagcct ctctggagac
+     1921 cttcagcagg atcaggaccc ctcaccttcc cctcttttcc cagagccgtc ttccgagtcc
+     1981 accatcccca tcgtgggcat cattgctggc ctggttctgc ttggaactgt ggtcactgga
+     2041 gcggtggttg ctgctgtgat gtggaggagg aagagctcag gtgaggaagg ggtgaggagt
+     2101 ggggtctggg atttcttgtc tcactgaggg tttcaagccc caggtagaag tgtacactgt
+     2161 ctggttactg ggaagcacca tcgacactca tgggctgacc cagcctgggc cctgtgtgcc
+     2221 agcacctact cttttgtaaa gcacctgtta caatgaagga cagatttatc accttgatta
+     2281 tggtgaaggg acctgatccc agcagtcaca agtcacaagg gaaggtccct gctgaggaca
+     2341 gacctcagga gggcaattag tccaggaccc acacctgctt tcttcatgtt tcctgatcct
+     2401 gccctgggtc tgcaatcaca catttctgga aacttctctg gggtccaaga ctaggagatt
+     2461 cctataggac cttatggccc tgactccttt ctgatatctc acaggacatt ttcttcccat
+     2521 agatagataa ggagggagct actctcaggc tgcaagtaag tatgaaggag gctgatccct
+     2581 gagatccttg ggatattgtg gttgggagcc catgggggag ctcactaacc ccacagttcc
+     2641 tcctctagcc acatcttcag agggatctga ccaggtcctg tttttgttct actccaggca
+     2701 gtgacagtgc ccaaggttct gatgtgtctc tcacggcttt aaaggcgaga ccctgggggg
+     2761 cctgatgtgt gtggggtgtt ggggggaaca gtggacgcag ctgtgctgtg gggtttgttt
+     2821 gacttggatg tattgagcat gtgatgggct gtttaaagtg tcactcctaa ctgtgacaga
+     2881 tgtgaatttt ttcatgaata tgttttctat agagtga
+//
+LOCUS       Mamu-B10Ps_01_04_01_01_nov|20210901213108208        2860 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:6
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..8
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            <1..72
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(9..72,202..471,717..992,1568..1843,1948..2064,
+                     2505..2537,2644..2687)
+                     /standard_name="CDS"
+     exon            202..471
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            717..992
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1568..1843
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1948..2064
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2505..2537
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2644..>2691
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2688..2860
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2856..2860
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcggtcat ggcgccccga actctcctcc tgctgctctc gggggccctg gccctgactg
+       61 agacctgggc cggtgagtgc ggggtcggga gggaaatggc ctctgcgggg aggagcgagg
+      121 ggaccgcagg cgggggcgca ggacccgggg agccgcgcgg ggaggagggt cgggcgggtc
+      181 tcagcccctc ctcgccccca ggctcgcact cattgaggta tttcagcacc gctgtgtccc
+      241 ggcccggccg cggggagccc cgcttcatct ccttgtgcta cgtggacgac acgcagttcc
+      301 tgcggttgga cagcgacgcc gagagtccga ggatggagcc gcgggcgcgg tggttggagc
+      361 aggaggggcc ggagtattgg gaagagcaga cagggctcgc caaggacatc acacagtcct
+      421 tccgagtgaa cctgcggacc ctgcgcggct actacaacca gagcgaggcc ggtgagtggc
+      481 cccggcccgg ggcgcaggtc acgacccctc cccatccccc acggacggtc cgggtctccc
+      541 cgagtctccg ggtccgaaat ccgcccctag gccgcgcgac ccgcccagac cctcgaccgg
+      601 ggagagcccc aggcgccttt acccggcttc attttcagtt gaggccaaag tcctcgcggg
+      661 ttggtcgggg cggggcgggg atcggtgggc ggggctgacc gcgggggcgg ggccaggaac
+      721 tcacaccctc cagtggttgt ctggctgcga cctgggaccc gacgcgcgcc tcctccgcgg
+      781 atataaccag caggcctacg acggcaagga ttacatcgcc ctgaacgggg acctgagctc
+      841 ctggaccggg gcagacacgg cggctcagat aacccagcgc aagtgggagg cggcccgcga
+      901 ggcagagcag tggagagccc acctggaggg gacatgcgtg gagtggctcc gcagatacct
+      961 ggagaacggg aaggagacgc tgcagcgcgc gggtaccagg ggcagtgggg agccttcccc
+     1021 atcacctcta gatcgcccgg gatggcctcc cacgaggagg ggaggaaaat gggatcagcg
+     1081 ctagaatgtt gccctccctt gaatggagaa tggcatgagt ttcactgatt tcctctgagg
+     1141 gccccctccg ctctctagga caattaaggg atgacgtctc tgaggaaatg gaggggaaga
+     1201 cagtccctag aatactgatc aggggtcccc tttgaccacc gcagcagcct tgggcaccgt
+     1261 gaatttttgt ctcaggcctt gttctctgcc tcacactcaa tgtgtttgaa ggtctgattc
+     1321 cagcttttct gagtccctcg gcctccactc aggtcaggac cagaagtccc tgttcctccc
+     1381 tcagagacta gaactctcca aggaatagga gattatccca gatgcctgtg tccaggctgg
+     1441 tgtctggctt ctgtgctcct tcccccaccc caggtgtcct gttcattctc agggtggtca
+     1501 catgggtgct gctggggtgt cccatgagag atgcaaagcg cctgaatttt ctgactcttc
+     1561 ccatcagatc ccccaaagac acacgtgacc caccacccca tctctgacca tgaggccacc
+     1621 ctgaggtgct gggccctggg cttctaccct gcggagatca cactgacctg gcagcgggat
+     1681 ggggaggacc aaactcagga caccaaggtt gtggagacca ggccagcagg agatggaacc
+     1741 taccagaagt ggggagctgt ggtggtgcct tctggagaag agcagagata cacgtgccat
+     1801 gtgcagcata aggggctgcc ggagcccctc accctgagat ggggtaagaa gggggatgag
+     1861 gggtcatgtc tcttctcagg ggaaacagga gcccttctgg agcccttcag cagagtcagg
+     1921 gcccctcatc ttcccctcct ttcccagagc catcttccca gtccaccatc cccatcgtgg
+     1981 gcattgttgc tggcctggct ggcctagcag ttgtggtcac cggagctgtg gtcactgctg
+     2041 tgatgtggag gaggaagagc tcaggtaggg aaggggtgtg gggtggggtc tgggttttct
+     2101 tgtcccgctg ggggtttcaa acctcaggta gaagtgtttc ctgcctcatt actgggaagc
+     2161 agcatccaca caagggctaa cccagcctgg gaccctgtgt gccagcactt actcttttgt
+     2221 gcagcaatgt gacaatgaag gacggatgta tcaccttgat ggttgtgctg ttggggtcct
+     2281 gattccagca ttcacgagtc aggagaaggt ccctgctaag gatggacctt aggaggacag
+     2341 ttggtccagg atacacacct gctttcctcc tttttgctga tcctgccctc ggtctgtagt
+     2401 catagttttg gaaatttctt ttgggtccaa gactaggagg ttcctctaag atctcaagac
+     2461 cctgcttcct cccagtcccc tcacaggaca ttttcttgct acaggtggaa aaggagggag
+     2521 ctactctcag gctgcgtgta agcggtgggg gtgggagtgt ggaggagctc acccatcccg
+     2581 taattcctcc tgtcccacgt ctcctgcggg ctctgaccag gtcctgtttt tgttctaccc
+     2641 cagccagcga cagtgcccag ggctctgatg tgtctctcac ggcttgaaaa ggtgagattc
+     2701 ttggggtcta gagttggggg caggggaaca gaggggaaag gcctgcataa tggagattct
+     2761 ttgattgtga cgtttcaagt gtgtggtggg ctgttcagag tgtcatcact taccatgact
+     2821 gacttgaatt tgttcatgac tgttgttttc tgtagcctga
+//
+LOCUS       Mamu-B14Ps_175_04_02_01_nov|20210901213108206        2860 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:7
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..8
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            <1..72
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(9..72,202..471,717..992,1567..1751)
+                     /standard_name="CDS"
+     exon            202..471
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            717..992
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1567..1842
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1947..2063
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2505..2537
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2644..>2691
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2688..2860
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2856..2860
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcggtcat ggcgccccga accctcctcc tgctgctctc gggggccctg gccctgaccg
+       61 agacctgggc cggtgagtgc ggggtcggga gggaaatggc ctctgcgggg aggagcgagg
+      121 ggaccgcagg cgggggcgca ggacccgggg agccgcgcgg ggaggagggt cgggcgggtc
+      181 tcagcctctc ctcgccccca ggctcgcact ccttgaggta tttcagcgcc ggcacgtccc
+      241 ggcccggccg cggggagccc cgcttcatct ctgtgggcta cgtggacgac acgcagttcg
+      301 tgcggtttga cagcgacgcc gcgagtccga ggatggagcc gcgggcgcgg tggttggagc
+      361 aggaggggcc ggagtattgg gaagagcaga cagggctagc caaggacgtc gcacagactt
+      421 tccgagtggg cctgcggacc ctgcgcagct actacaacca gagcgaggcc ggtgagtggc
+      481 cccggcccgg ggcgcaggtc acgacccctc cctacccccg acggacggtc cgggtctccc
+      541 cgagtctccg ggtccgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg
+      601 ggagagccct aggcgccttt acccggcttc attttcagtt gaggccaaag tccccgcggg
+      661 gtggtcgggc cggggcgggg ctcggtgggc ggggatgacc gcgggggcgg ggccagggtt
+      721 tcacaccctc cagtggatgt acggctgcga cctggggccc gacgggcgcc tactccgcgg
+      781 atatcaccgg ttcgcctacg acggcaggga ttacatcgcc ctgaacccgg acctgcgctc
+      841 ctggaccgcg gcagacacgg cggctcagaa cacccagcgc aagtgggagg cggcccgcga
+      901 ggcagagcag tggagagccc acctgcaggg gacgtgcgtg gagtggctcc gcagacacct
+      961 ggagaacggg aaggacacac tgcagcgtgc tggtaccagg ggcagtgggg agccttctcc
+     1021 atcacctcta gatcgcccgg gatggcctcc cacgaggagg ggaggaaaat gggatcagcg
+     1081 ctagaatgtc ccctcccttg aatgaagaat ggcatgagtt tccctgattt cctctgaggg
+     1141 ccccctctgc tctctaggac aattaaggga tgacgtctct gaggacatgg agggaaagac
+     1201 agtccctgga atactgatca gaggtcccct ttgacccctg cagcaacttt gggcaccgtg
+     1261 aatttttctc tcaggccttg ttctctgcct cacactcaat gtgtttgaag gtctgattcc
+     1321 agcttttctg agtccctcgg cctccgctca ggtcaggacc agaagtccct gttcctccct
+     1381 cagagtctag aactctccaa ggaataggag attatcccag atgcctgtgt ccaggctggt
+     1441 gtctggcttc tgtgctcctt ccccccgccc aggtgtcctg ttcattctca gggtggtcac
+     1501 atgcgtgctg ctggggtgtc ccatgagaga tgcaaagccc ctgaattttc tgactcttcc
+     1561 catcagatcc cccaaagaca cacgtgaccc accaccccgt ctctgaccat gaggccaccc
+     1621 tgaggtgctg ggccctgggc ttctaccctg cggagatctc actgacctgg cagcgggatg
+     1681 gggaggagca aactcaggac accgagcttg tggagaccag gccaggagga gatggaacct
+     1741 accagaagta gggagctgtg gtggtgcctt ctggagaaga gcagagatac acgtgccatg
+     1801 tgcaacatga ggggctgctg gagcccctca ccctgagatg gggtaagaag ggggatgagg
+     1861 ggtcatgtct cttctcaggg gaagcaggag cccttctgga gcccttcagc agggtcaggg
+     1921 cccctcattt tcccctcctt tcccagagcc atcttcccag tccaccatcc ccatcgtggg
+     1981 cattgttgct ggcctggctg tcctagcagt tgtggtcacc ggagctgtgg tcgctgctgt
+     2041 gatgtggagg aggaagagct caggtaggga aggggtgagg ggtggggtct gggttttctt
+     2101 gtccctctgg gggtttcaaa cctcaggtag aagtgttccc tgcctcatta ctgggaagca
+     2161 gcatccacac aggggctaac ccagcctggg gccccgtgtg ccagcactta ctcttttgtg
+     2221 cagcacatgt gacaatgaag gacagatata tcaccttgat ggttttgctg ttggggtcct
+     2281 gattccagca ttcacgagtc aggggaaggt gtctgctaag gacagacctt aggagggcag
+     2341 ttggtccagg acacacacct gcttccctcc tgttttctga tcctgccctg ggtctgtagt
+     2401 catagttttg gaaatttctt ttgggtccaa gactaggagg ttcctctaag atctcatgac
+     2461 cctgcttcct cccagtcctc tcacaggaca ttttcttccc acaggtggaa aaggagggag
+     2521 ctactctcag gctgcgtgta agtggtgggg gtgggagtgt ggaggagatc acccacccca
+     2581 taattcctcc tgtcccacgt ctcctgcggg ctctgaccag gtcctgtttt tgttctaccc
+     2641 cagccagcga cagtgcccag ggctctgatg tgtctctcac ggcttgaaaa ggtgagattc
+     2701 ttggggtcta gagtgggggg caggggaaca gatgggaaag gcctgcgtaa tggagattct
+     2761 ttgattggga cgtttcaagt gtgtggtggg ctgttcagag tgtcatcact taccatgact
+     2821 gacttgattt tgttcatgac tgttgttttc tgtagcctga
+//
+LOCUS       Mamu-B16_01_12_01_01_nov|20210901213108191        3834 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:8
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..70
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            1..64
+                     /standard_name="Exon 1"
+     CDS             join(1..64,194..463,709..984,1564..1839,1944..2060,
+                     3479..3511,3618..3665,3830..3834)
+                     /standard_name="CDS"
+     exon            194..463
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            709..984
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1564..1839
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1944..2060
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            3479..3511
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            3618..>3665
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    3662..3834
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            3830..3834
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgatgcccg gaaccctcct cctgctgctc tcgggggccc tggccctgac cgagacctgg
+       61 gccggtgagt gcggggtcgg gaaggaaatg gcctctgccg ggaggagcga ggggaccgca
+      121 ggcgggggcg caggacccgg ggagccgcgc ggggaggagg gtcgggcggg tctcagcctc
+      181 tcctcgcccc caggctcgca ctcctggagg tatttcagca cctccgtgtc ccggccgggc
+      241 cgcggggagc cccgcttcat ctccgtgggc tacgtggacg acacgcagtt cctgcggttc
+      301 gacagctacg ccgccagtcc gaggatggag ccgcgggcgc cgtgggtgga gcaggagggg
+      361 ccggagtatt gggaccggga gacgcggaac gccgagggcc acgcacagac tcaccgagag
+      421 aacctgcgga ccctgctccg ctactacaac cagagcgagg ccggtgagcg accctggagc
+      481 cgggcgcagg tcatgacccc tccccatccc ccacggacga cccgggtcgc cccgagtccc
+      541 tgggtccgag atccgccccg aggccgcggg acccgcccag acccttgacc ggagagagcc
+      601 ccaggcgcct ttacccgttt tttttttcag ttgaggccga agtcccagag ggttggtcgg
+      661 ggcggggcgg ggctcggtgg gcggggctga ccgcgggggc ggggccaggg tctcacacca
+      721 tccagagggt gtttggctgc gacctggggc ccgacgggcg cctcctccgc ggatataacc
+      781 agcacgccta caatggcaag gattacatcg ccctgaacga ggacctgcgc tcctggaccg
+      841 cagcggacac tgcggctcag atcacccagc gcaagtggga ggcggccggt gtggcggagg
+      901 agtggagcgt ctacctggag ggcgagtgcg tggagtggct ccgcagatac ctggagaacg
+      961 ggaaggagac gccgcagcgc gcgggtaccc tgcaggggct gtggggagac ttcccggtct
+     1021 cctatagatc tccccggatg gcctcccatg aggaggggag gaaaatggga tcagcgctag
+     1081 aatgtcgccc tctcttgaat gaagaatggc atgagtttcc ctgatttcct ctgagggccc
+     1141 ctctgctctc taggacaatt aagggatgac gtctctgagg acatggaggg gaagacagtc
+     1201 cctagaatac tgatcagggg tcccctttga ctcctgcagc agccttgggc tttgtgactt
+     1261 tttcctctca ggccttgttc tctgcctcac actcaatgtg tctgaaggtc tgattccagc
+     1321 ttttctgagt cccttggcct ccactcgggt caggaccaga agtccctgtt cctccttcag
+     1381 agactagaac tcttcaagga ataggagatt atcccaggtg cctgtgtcca ggctggtgtc
+     1441 tggcttctgt gctcccttcc ccaccccagg tgtcctgttc attctcagga tggtcacatt
+     1501 cgtgctgctg gggtgtccca tgagagatgc aaagcccctg agttttctga ctcttcccat
+     1561 cagatccccc aaagacacac gtgacccatc accccgtctc tgaccatgag gccaccctga
+     1621 ggtgctgggc cctgggcttc taccctgcgg agatcacact gatgtggcag cgggatgggg
+     1681 aggaccaaac tgaagacacc cagcttgtgg agaccaggcc agcaggggat ggaaccttcc
+     1741 agaagtgggc agctgtggtg gtgccttctg gagaagagca gagatacacg tgccatgtgc
+     1801 agcacaaggg gctgctggag cccctcaccc tgagatgggg taagaagggg gatgaaggat
+     1861 cacgtctctc ctcagggaaa gtaggagccc ttctggagcc cttcagcagg gtcaggaccc
+     1921 ctcaccttcc cctcctttcc cagagccatc ttcccagtcc accatcccca tcgtgggcat
+     1981 cgttgctggc ctggctgtcc tagccttttt ggtcactgga gctgtggtca ctgctgtgtt
+     2041 gtggaagagg aagagctcag gtagggaagg ggtgaggggt ggagtctggg ttttcttgtc
+     2101 ccactggggg tttcaagccc caggtagaag tgtgccccgc ctcattagtg aaggggtggc
+     2161 ctgcccctcc acacctgtgg gtgtttctca ttaggtggaa ggagagactt gagaaaagaa
+     2221 atgtgacaca gagacaaagt atagagaaag aaaaagtggg cccaggggac cggcgctcag
+     2281 catacagagg acccacatcg gcaccggtct ctgagttccc ttggtattta ttgataatta
+     2341 tctttgccat cttaaagaaa aggaagtggc aggataatag gatcattgta gggagaaagt
+     2401 cagcagtaag acatatgaat aaagttctct gtgacatgaa taagtttaag gaaaagtgcc
+     2461 ttgatatgca tatgcaaaca tctccataaa cctttttagt gcataaagag cagcattgcg
+     2521 ctagcaaatc ccgcctttcg ccctaaggcg gttttctcct ttctcagtaa acagaacata
+     2581 tgatggggtt ttatacccag atgttctatt gcccagggac gggcaggaga cagatgcttt
+     2641 tctctatctc aactgccaac aaccaccaag aggccttttt tcctcttgta ctagtcctcc
+     2701 tcagcacaga cccttcacgg gtgtcaggct gggggacgat caggtctttc ccttcccacg
+     2761 aggccatatt tcagcctatc acatgggaag aaaccttgga caatacctag ctttcctagg
+     2821 cagaggtccc tgtgaccttt ggcagtgtat gtgtccctgg gtacttgaga ttaagagaat
+     2881 ggtgatgact tttaaccagc aagctgcctt caggcgcttg tttaacaaag cacaccctgc
+     2941 acagcccaaa atcctttaaa ccttgagtca ccacagcaca tgtctcttgc aaggacaagg
+     3001 ttgggggtag ggtcacagat taacagcatc tcaaatacag aacagaatgg agtctcttat
+     3061 gtctacttct ttctgtatag acacagtaac agtctgatct ttctttcttt tccccacaat
+     3121 tattgggaag cagcatccac acatgggcca tcccagcctg ggtcctgtgt gccggcactt
+     3181 actcttttgt gaagcacatg tgacaatgaa ggacaatgta tcaccttgat ggttgtggtg
+     3241 ttggggtcca gattccagca ttcatgagtc aggggaaggt ccctgctaag gacaggcctt
+     3301 aggagggccg ttggtccagc acccacccct gctttcctgg tatttcctga ttctgccctg
+     3361 ggtctgtagt cacagttccg aaaacttctc tccggtacaa gactaggagg ttccttcctc
+     3421 taaggtctcg tgtccctgcc tcctccttgt cccctcacag aacattttct tcccacaggt
+     3481 ggaaaaggag ggagctactc tcaggctgtg tgtaagtggt gggggtggga gtgtggagga
+     3541 gctcacccac cccataattc ctcctgtccc acgtttcctg cgggctctga ccagatgctg
+     3601 tttttgttct accccagcca gcaacagtgc ccagggctct gatgtgtctc tcagggattg
+     3661 taaaggtgag attcttgggg tctgaagtgg gtgggggtgg ggcaaagggg aaaggactgg
+     3721 gttatggggc ttctttgatt gggatgtttc gagtgtgtgg ggcactgttc agagtgtcat
+     3781 cacttaacat gactgacttg gatttgttta tgactattgc tttctgtagc ctga
+//
+LOCUS       Mamu-B_030_03_01_01_nov|20210901213108330        2861 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:9
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(1..73,203..472,716..991,1566..1841,1946..2062,
+                     2506..2538,2645..2688)
+                     /standard_name="CDS"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            716..991
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1566..1841
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1946..2062
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2506..2538
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2645..2692
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2857..2861
+                     /standard_name="Exon 8"
+     misc_feature    
+                     /note="Geneious type: Editing History Deletion"
+                     /standard_name="GACAACTGT"
+ORIGIN      
+        1 atgcgggtca tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc
+       61 gagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcagg gaggagcgag
+      121 gggaccgcag gcgggggcgc aggacccggg gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttcagcac caccgtgtcc
+      241 tggcccggcc gcggggagcc ccgcttcatc tccgtgggct acgtggacga catgcagttc
+      301 gtgcggttcg acagcgacgc tgagagtccg agagaggagc cgcgggtgct gtgggcggag
+      361 caggaggggc cggagtattg ggaagagcag acacggaaca cggaggccca cgcacagaat
+      421 caccgagtgt gcctgcggac cgtgcgcggc tactacaacc agagcgaggc cggtgagtga
+      481 ccccggcccg gggcgcaggt cacgacccct ccccaccccc cacggacggc ccggtggccc
+      541 cgagtctccg gatccgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg
+      601 ggagagcccc aggcgccttt acccggtttc atttccgttt aggccaaaat ccccggggat
+      661 tggtcgggct ggggcggggc tcggcgggcg gggctgaccg cgggggcggg gccagggtct
+      721 cacaccctcc agaggatgtt tggctgcgac ctggggcccg acgggcgcct cctccgcggg
+      781 tataaccagt tcgcctacga cggcaaggat tacatcgccc tgaacgagga cctgcgctcc
+      841 tggacctcgg cggacgtggc ggctcagaac acccagcgca agtgggaggc gacccgttat
+      901 gcggagcggt tcagagccta cctggaggag acgtgcgtgg agtcgctccg cagacacctg
+      961 gagaacggga aggagacgct gcagcgcgcg ggtaccaggg gcactgggga gccttcccca
+     1021 tcacctctag atcgcccggg atggcctccc acgaggaggg gaggaaaatg ggatcagcgc
+     1081 tagaatgtcc cctcccttga atgaagaatg gcatgagttt tcctgatttc ctctgagggc
+     1141 cccctctgct ctctaggaca attaagggat gacgtctctg aggacatgga ggggaggaca
+     1201 gtccctagat tactgatcag gggtctcctt tgaaccctgc agcagccttg ggcaccgtga
+     1261 atttttctct caggccttgt tctctgcctc acactcaatg tgtctgaagg tctgattcca
+     1321 gcttttctga gtccctcggc ctccactcag gtcaggacca gaagtcgctg ttcctccttc
+     1381 agagtctgga actctccaag gaataggaga ttatcccaga tgcctgtgtc caggctggtg
+     1441 tctggcttcg gtgctccctt ccccacccca ggtgtcctgt ccattctcaa gatggtcaca
+     1501 tgagtgctgc tggagtgtcc catgagagat gcaaagcgcc tgaattttct gacttttccc
+     1561 atcagacccc ccaaagacac acgtgaccca ccaccccgtc tctgaccatg aggccaccct
+     1621 gaggtgctgg gccctgggct tctaccctgc ggagatcaca ctgacctggc agcgggatgg
+     1681 ggaggagcaa actcaggaca ccgagcttgt ggagaccagg ccaggaggag atggaacctt
+     1741 ccagaagtgg gcagctgtgg tggtgccttc tggagaagag cagagataca cgtgccatgt
+     1801 gcagcacaag ggattgccag agcccctcac cctgagatgg ggtaaggagg gggatgaggg
+     1861 gtcatgtccc ttctcagggg aaacaggagc ctttctggag cccttcagca gggtcagggc
+     1921 ccctcatctt tccctccttt cccagagcca tcttcccagt ccaccatccc catcatgggc
+     1981 attgttgctg gcctggctgt cctagcagtt gtggtcaccg gagctgtggt cgcagctgtg
+     2041 atgtggagga ggaagagctc aggtagggaa gggtgagggg tggggtctgg gttttcttgt
+     2101 cctctggggg tttcaaaccc caggtaaaag tgttccctgc ctcattcctg ggaagcagca
+     2161 tccacacagg ggctaaccca gcctgggacc ctgtgtggcc agcacttact cttttgtgta
+     2221 gcacatgtga taatgaagga cggatgtatc accctgatga ttatggtatt ggggtcctga
+     2281 ttccagcatt catgagtcag gagaaggtcg ctgctaagga cagaccttag gagggcagtt
+     2341 ggtccaggac acacacctgc tttcctcctg tttcctgatc ctgcccttat agttctgcag
+     2401 tcatagttct ggaaatttct cttgggtcca agactaggag gttccgctaa ggtcttatgg
+     2461 ccctgcatcc tcccagtccc ctcacaggat attttcttcc cacaggtgga aaaggaggga
+     2521 gctactctca ggctgcgtgt aagtggtggg ggtgggagtg tggaggagct cacccattcc
+     2581 ataattcctc ctgtcccatg tctcctgcgg gctctgacca gctcctgttt ttgttctact
+     2641 ccagccagcg acagtgccca gggctctgat gtgtctctca cggcttgaaa aggtgagatt
+     2701 cttggggtct agagtggggg gggggggcga cagaggggaa aggcctgcat aatggagatt
+     2761 ctttgattgg gacgtttcaa gtgtgtggtg gctgttcaga gtgtcatcac ttaccatgac
+     2821 tgacttgaat ttgttcatga ctgttgtttt ctgtagcctg a
+//
+LOCUS       Mamu-B_054_01_02_01_|2021090121310879        2865 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:10
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..8
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            <1..72
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(9..72,202..471,717..992,1567..1784)
+                     /standard_name="CDS"
+     exon            202..471
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            717..992
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1567..1816
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1921..2037
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2478..2510
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2641..>2688
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2685..2865
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2861..2865
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcggtcat ggcgccgcga accctcctcc tgctgctctc gggggccctg gccctgaccg
+       61 agacctgggc cggtgagtgc ggggtcggga gggaaatggc ctctgcgggg aggagcgagg
+      121 ggaccgcagg cgggggcgca ggacccgggg agccgcgcgg ggaggagggt cgggcgggtc
+      181 tcagcctctc ctcgccccca ggctcgcact ccttgaggta tttcagcacc gccgtgtccc
+      241 ggcccggccg cggggagccc cgcttcatct ccgtgggcta cgtggacgac acgcagttcc
+      301 tgcggttcga cagcgacgcc gcgagtccga ggatggagcc gcgggcgccg tgggcggagc
+      361 aggaggggcc ggagtattgg gaagagcaga cagggctcgc caaggacatc acacaatctt
+      421 tccgagtgag cctggggaac ctgcgcggct actacaacca gagcgaggcg ggtgagtggc
+      481 cccggcccgg ggagcaggtc acgacccctc cccatccccc acggacggcc cgggtctccc
+      541 cgagtctccg ggttcgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg
+      601 ggagagcccc aggcgccttt acccggtttc attttcagtt gaggccaaag tcctcgcggg
+      661 ttggtcgggg cggggcgggc ctcggtgggc ggggctgacc gtgggggcgg ggccagggtc
+      721 tcacaccctc cagtggatgt acggctgcga cctggggccc gacgggcgcc ttctccacgg
+      781 gtatcaccag ttcgcctacg acggcaagga ttacatcgcc ctgaacgggg acctgcgctc
+      841 ctggaccgcg gcggacatgg cggctcagaa cacccagcgc aagtgggagg cggcccgcga
+      901 ggcagagcgg atgagagccc acctggaggg gacgtgcgtg gagtggctcc tcagacacat
+      961 ggagaacggg aaggagacgc tgcagcgcgc gggtaccagg ggcaatgggg cgccttcccc
+     1021 atcacctcta gatcgcccgg gatggcctcc catgaggagg agaggaaaat gggatcagcg
+     1081 ctataatgtc gccctccctt gaatggagaa tggcatgagt tttcctgatt tcctctgagg
+     1141 gcccctctgc tctctaggac aattaaggga tgacgtctct gaggacatgg agggaaagac
+     1201 agtccctaga atacagatca ggggtcccct ttgactcctg cagcaacttt gggcaccgtg
+     1261 aatttttctc tcaggccttg ttctctgcct cacactcaat gtgtctgaag gtctgattcc
+     1321 agcttttctg agtccctcgg cctccactca ggttaggacc agaagtccct gttcctccct
+     1381 cagagaatag aactctccaa ggaataggag attatcccag atgcctgtgt ccgggctggt
+     1441 gtctggcttc cgtgctccct tccccacccc aggtgtcctg ttcattctca gggtggtcac
+     1501 atgggtgctg ctggggtgtc ccatgagaga tgcaaagcgc ctgaattttc tgactcttcc
+     1561 catcagatcc cccaaagaca cacgtgaccc accctgaggt gctgggccct gggcttctac
+     1621 cctgcggaga tcacactgac ctggcagcgg gatggggagg accaaactca ggacaccgag
+     1681 cttgtggaga ccaggccagt aggagatgga accttccaga agtgggcagc tgtggtggtg
+     1741 ccttctggag aagagcagag atacacgtgc catgtgcagc ataaggggct gccggagccc
+     1801 ctcaccctga gatggggtaa ggagtgggat gaggggtcat gtctcttctc aggggaaaca
+     1861 ggagcccttc tggagccctt cagcagggtc agggcccttc accttcccct cctttcccag
+     1921 agccatcttc ccagtccacc atccccatcg tgggcattgt tgctggcctg gctgtcctag
+     1981 cagttgtggt cactggagct gtggtcgctg ctgtgatgtg gaggaggaag agctcaggta
+     2041 gggaaggggt gaagggtggg gtctgggtgt tcttgtcccg ctgggggttt caaaccccag
+     2101 ttagaagtgt tccctgcttc attcctggga agcagcatcc acacaggggc taacccagcc
+     2161 tgggaccctg tgtgccagca cttactcttt tgtgtagcaa tgtgacaatg aaggacagat
+     2221 gtatcacctt gatggttgtg ctgttggggt cctgattcca gcattcacga gtcaggggaa
+     2281 ggtccctcct aaggacagac cttaggaggg cagttggttc aggacccaca cctgctttcc
+     2341 tcctgtttgc tgatcctgcc ctgggtctgt agtcatagtt ctggaaattt cttttgggtc
+     2401 caagactagg aggttcctct aagatctcat gaccctgctt cctcccagtc ccctcacagg
+     2461 acattttctt gctacaggtg gaaaaggagg gagctactct ctccttacat gcaggagcta
+     2521 cacttctcct gcgtgtaagt ggtgggggtg gcagtgttgg ggagctcacc catcccgtaa
+     2581 ttcctcctgt cccacgtctc ctgtgggctc tgacgaggtc ctgtttttgt tctaccccag
+     2641 ccagtgacag tgcccagggc tctgatgtgt gtctcacggc ttgaaaaggt gagattcttg
+     2701 gggtctagag taggctgggg gggtgggggt ggggcagagg ggaaaggcct gcataatgga
+     2761 gattctttga ttgggacgtt tcaagtgtgt ggtggctgtt cagagtgtca tcacttaaca
+     2821 tgactgactt gattttgttc atgactgttg ttttctgtag cctga
+//
+LOCUS       Mamu-B_056_01_01_03_nov|20210901213108336        2852 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:11
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     CDS             join(1..73,203..472,718..993,1570..1845,1950..2066,
+                     2501..2533,2640..2683)
+                     /standard_name="CDS"
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            718..993
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1570..1845
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1950..2066
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2501..2533
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2640..2687
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2848..2852
+                     /standard_name="Exon 8"
+     misc_feature    
+                     /note="Geneious type: Editing History Deletion"
+                     /standard_name="GGTAACTGTCTTGTGTGGGA"
+ORIGIN      
+        1 atgcgggtcg tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc
+       61 gagacccagg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcgag
+      121 gggaccgcag gttggggcgc agggcccggg gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttcagcaa cgccgtgtcc
+      241 cggcccggcc gcggggagcc ccgcttcatt gccgtgggct acgtggacga cacgcagttc
+      301 gtgcggttcg acagcgacgt cgagagtccg aggatggagc cgcgggcgcc gtggatggag
+      361 caggaggggc cggagtattg ggaagagcag acacggaaag tcaaggagac cgcacagact
+      421 ttccgagtgg gcctggggaa cctgcgtggc tactacaacc agagcgaggc cggtgagtgg
+      481 cgccggcccg gggcgcaggt cacgacctct ccccatcccc cacggacggc ccgggtggcc
+      541 ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcgcaga ccctcgaccg
+      601 aggagagccc caggcgcctt tacccggttt cattttcagt tgaggccaaa gtccccgggg
+      661 gttggtcggg gcggggcggg gctcggtggg cggggctgac cgcgggggcg gggccagggt
+      721 ctcacacctt ccagtggatg tttggctgcg acctgggatc cgacgggcgc ctcctccgcg
+      781 ggtatgacca gtccgcctac gaaggcaaag attacatcgc cctgaacgag gacctgcgct
+      841 cctggaccgc ggcggatgtg gcggctcaga acacccagcg caagtgggaa gcggccggtg
+      901 aggcagagcg gatgagagcc tacttggagg gcgagtgcgt ggagtggctc cgcagatacc
+      961 tggagaacgg gaaggagatg ctgcagcgcg cgggtaccag gggcagtggg gagccttccc
+     1021 catcacctct agatcgcccg ggatggcctc ccatgaggag gagaggaaaa tgggatcagc
+     1081 gctagaatgt cgccctccct tgaatggaga atggcatgag ttttcctgat ttcctctgag
+     1141 ggccccctct gctctctagg acagttaagg gatgacgtct ctgaggacat ggaggggaag
+     1201 acagtcccta gaatactgat caggggtccc ctttgacccc tgcagcagcc ttgggcaccg
+     1261 tgtatttttc tctcaggcct tgttctctgc ctcacactca atgtgtttga aggtctgatt
+     1321 ccagcttttc tgagtccctc ggcctccact caggtcagga ccagaagtcg ctgttcctcc
+     1381 ctcagagtct agaactctcc aaggaatagg ggattatccc aggtggcctg tgtccagtct
+     1441 ggtgtctggg ttctgtgctc cctccccgac cccgggtgtc ctgttcattc tcagggtggt
+     1501 cacatgcgtg ctgctggagt gtcccatgag agaggcaaag cgcctgaatt ttctgactct
+     1561 tcccatcaga tcccccaaag acacacgtga cccaccaccc cgtctctgac catgaggcca
+     1621 ccctgaggtg ctgggccctg ggcttctacc ctgcggagat cacactgacc tggcagcggg
+     1681 atggggagga ccaaactcag gacaccgagc ttgtggagac caggccagga ggagatggaa
+     1741 ccttccagaa gtggggagct gtggtggtgc cttctggaga agagcagaga tacacgtgcc
+     1801 atgtgcagca ccaggggctg ccggagcccc tcaccctgag atggggtaag gagggggatg
+     1861 aggggtcatg tctcttctca gggaaagcag gagcccttct ggagcccttc agcagggtca
+     1921 gggcccctca ccttcccctc ctttcccaga gccatctacc cagtccacca tccccatcgt
+     1981 gggcatcgtt gctggcctgg ctgtcctagc agttgtggtc accggagctg tggtcgctgc
+     2041 tgtgatgtgg aggaggaaga gctcaggtag ggaaggggtg aggggtgggg tctgggtttt
+     2101 cttgtcccac tgggggtttc aagcaccagg tagaagtgtt ccctgcctca ttcctgggaa
+     2161 gcagcatcca cacaggggct aactcaacct gggaccctgt gtgccagcac ctactctttt
+     2221 gtgtagcaat gtgacaaaga aggacggatg tatcaccttg atgattatgg tattggggtc
+     2281 ctgattccag cattcacgag tcaggggaag gtccctgcta aggacagacc ttaggagggg
+     2341 agttggtcca cagcacacac ctgctttcct cctgtttcct gatctgggtc tgtagtcatc
+     2401 attatggaaa attctcttgg gtccaagaag aggaggttcc tctaagatct tatggccctg
+     2461 cttcctccca gtcccctcac agggtatttt cttcccgcag gtggaaaagg agggagctac
+     2521 tctcaggctg catgtaagtg gtgggggtgg gagtgtggag gagcttaccc accccataat
+     2581 tccttctgtc ccatgtctcc tgagggctct gaccagctcc tgtttttgtt ctaccccagc
+     2641 caacgacagt gcccagggct ctgatgtgtc tctcacggct tgaaaaggtg agatccttgg
+     2701 ggtctagagt ggggggcggg ggacagaggg gaaaggcctg ggtaatggag attctttgat
+     2761 tgggacgttt cgagtgtgtg gtggctgttc agagtgtcat cactaaccat gactgacttg
+     2821 aatttgttca tgatttgttt tctgtagcct ga
+//
+LOCUS       Mamu-B_098_11_01_01_nov|20210901213108242        2861 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:12
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(1..73,203..472,718..993,1568..1843,1948..2064,
+                     2506..2538,2645..2688)
+                     /standard_name="CDS"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            718..993
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1568..1843
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1948..2064
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2506..2538
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2645..>2692
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2689..2861
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2857..2861
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcgggtca tggagcaccg aaccctcctc ctgctgctct cggcggccct ggccctgacc
+       61 cagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcgag
+      121 gggaccgcag gcgggggcgc agggcccggg gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagtctct cctcgccccc aggctcgcac tccatgaggt atttcagcac ctccgtgtcc
+      241 cggcccggcc gcggggagcc gcgcttcatc gccgtgggct acgtggacga cacgcagttc
+      301 gtgcggttcg acagcgacgc cgcgagtccg aagatggagc cgcgggcgtc gtggatggag
+      361 caggaggggc cggagtattg ggaagagcag acacggagag tcaaggacgc cgcacagact
+      421 ttccgagtga gcctggggaa cctgcgcggc tactacaacc agagcgaggc cggtgagtgg
+      481 ccccggcccg gggcgcaggt cacgacccct ccccaccccc cacggacggc ccgggtctcc
+      541 ccgagtctcc gggtccgaga tccgccccga ggctgcgaga cccgcccaga ccctcgaccg
+      601 gggagagccc caggcacctt tgcccggttt cattttcagt tgagaccaaa atgcccgcgg
+      661 ggtggtcggg gcggggcggg gctcggggga cgggtctgac cgcgggggcg gggccagggt
+      721 ctcacaccct ccagacaatg tctggctgcg acctggggcc cgacgggcgc ctcctccgcg
+      781 ggtattacca gcaagcctac gacggcaggg attacatcgc cctgaacgag gacctgcgct
+      841 cctggaccgc tgcggatgag gcggctcaga acacccagcg caagtgggag gcggccggtg
+      901 tggcggagca gtggagagcc tacctggagg gagagtgcct ggagtgtctc cgcagatacc
+      961 tggagaacgg gaaggagact ctgcagcgcg cgggtaccag gggcaatggg gagccttccc
+     1021 catcacttct agatcgcccg ggatggcctc ccacgaggag gggaggaaaa tgagatcagc
+     1081 gctagaatgt cgccctccgt tgaatggaga atggcatgag tttccctaat ttcctctgag
+     1141 ggcccactct actctctagg acaattaagg gatgacgtct ctgaggacat ggaggggaag
+     1201 acagtccctg gaatacagat caggggtccc ctttgacccc tgcagcagcc ttgggcaccg
+     1261 tgaatttttc tctcaggcct tgtcctctgc ctcacactca atgtgtctga ggtctgattc
+     1321 cagcttttct gagtccctcg gcctccactc aggtcaggac cagaagtccc tgttcctccc
+     1381 tcagagacta gaactctcca aggaatagga gattatccca gatgcctgtg tccaggctgg
+     1441 tgtctgggtt ctctgctccc tcccccaccc caggtgtcct gttcattctc aggatggtca
+     1501 catgagtgct gctggggtgt cccatgagag atgcaaagcg cctgaatttt ctgactcttc
+     1561 ccatcagaac ccccaaagac acacgtgacc caccaccccg tctctgacca tgaggccacc
+     1621 ctgaggtgct gggccctggg cttctaccct gtggagatca cactgacctg gcagcgggat
+     1681 ggggaggacc aaactcagga caccgagctt gtggagacca ggccaggagg agatggaacc
+     1741 ttccagaagt ggggagctgt ggtggtgcct tctggagaag agcagagata tacgtgccat
+     1801 gtgcagcatg aggggctgcc ggagcccatc accctgagat ggggtaagga gggggatgag
+     1861 gggtcatgtc tcttctcagg gaaagcagga gcccttctgg agcccttcag cagagtcagg
+     1921 gcccctcatc ttcccctcct ttcccagagc catcttccca gtccaccatc cccatcgtgg
+     1981 gcattgttgc tggcctggct gtcctagcag ttgtggtcac tggagctgtg gttgctgctg
+     2041 tgatgtggag gaggaagagc tcaggtaggg aaggggtgag aagtggggtc tggtttttct
+     2101 tgtccctctg ggggtttcaa gccccaggta gaaatgttcc ctgcctcatt actgggaagc
+     2161 agcatccaca caggagctaa cccagcctgg gaccctgtgt gccagcactt actcttttgt
+     2221 gtagcacatg tgacaatgaa ggacggatgt atcaccttga tgattatggt attggggtcc
+     2281 tgattccagc attcatgggt cagggtaagg ttcctgctaa ggacagacct taggaggaca
+     2341 gttggtccag gacacacagc tgctttcctc ctgtttgctg atcctgctct gggtctgcag
+     2401 tcatagttct ggaaatttct cttgggtcca agactaggag gttctgctaa gatcttatgg
+     2461 ccctccatcc tcccagtccc ctcacaggat attttcttcc cacaggcgga aaaggaggga
+     2521 gctactctca ggctgcgtgt aagtggtggg ggtgggagtg tggaggagct cacccatcct
+     2581 gtaattcctc ctgtcccatg tctcctgtgg gctctgacca gctcctgttt ttgttctgct
+     2641 ccagacagcg acagtgccca gggctctgat gtgtctctca cggcttgaaa aggtgagatt
+     2701 cttggggtct agagtggggg gcgggggggc agaggggaaa ggcctgggta atggagattc
+     2761 tgtgattgta acgtttcgag tgtgtgatgg gctgttcaga gtgtcatcac ttaccatgac
+     2821 tgacttgaat ttgttcatga ctgttgtttt ctgtagcctg a
+//
+LOCUS       Mamu-B_109_01_01_01_nov|20210901213108232        2868 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:13
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     CDS             join(1..73,203..472,737..819)
+                     /standard_name="CDS"
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            737..1012
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1586..1861
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1959..2075
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2515..2547
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2654..>2701
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2698..2868
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2864..2868
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcgggtcg tggcgctccg atacctcctc ctgctgctct cggggatcct ggccctgacc
+       61 aagacctggg ccggtgagtg cggggtcggg agggaaacgg cctctgcggg gaggagcgag
+      121 gggaccgcag gcgggggcgc aggacccgag gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttctacac caccgtgtcc
+      241 cggcccggcc gcggggagcc gcgcttcatc tccgtgggct acgtggacga cacgcagttc
+      301 gtgcggttcg acagcgacgc cgagagtccg agagaggagc cgcgggcgcc gtggatggag
+      361 caggaggggc cggagtattg ggaagaggag acacggatcg ccaaggccaa cgcacagact
+      421 gaccgagcgg acctggggat cctgcgcggc tactacaacc agagcgaggc cggtgagtcg
+      481 tcccggcccg gggcgcaggt cgcgacccct ccccatcccc cacggacgac ccgggtctcc
+      541 ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg
+      601 gggagagccc caggcgcctt cacccggtta cattttcact tgaggacaaa atcctcgcgg
+      661 gttggtcggg gcggggcggg gctcggtggg cggggcgggg ctcggtgggc ggggctgacc
+      721 tcgggggcgg ggccagggtc tcacaccctc cagaagatgt gtggctgcga cctgggaccc
+      781 gacggacgcc tcctccgcgg gtattaccag gacgcctagg acggcaaaga ttacatcgcc
+      841 ctgaaccggg acctgcgctc ctggacggcc gcggacatgg cggctcagaa cacccagcgg
+      901 aagtgggaag cggccggtga ggcagagcag tggagagcct atctggaggg cgagtgcgtg
+      961 gagtcgcttc gcagatacct ggagaacggg aaggagacgc tgcagcgcgc gggtaccagg
+     1021 ggcagtgggg agccttcccc atcacctcta gatcgcccgg gatggcctcc catgaggagg
+     1081 ggaggaaaat gggatcagcg ctagaatgtc ccctcccttg aatggagaat ggcatgagtt
+     1141 ttcctgattt cctctgaggg ccccctctgc tctctaggac aattaaggga tgacgtctct
+     1201 gaggacatgg aggggaagac agtccctaga atactgatca gaggtcccct ttgacccctg
+     1261 cagcagcctt gggcaccgtg aatttttctc tcaggccttg ttctctgcct cacactcaat
+     1321 gttttgaagg tctaattcca gcttttctga gtccctcggc ctccactcag gtcaggacca
+     1381 gaagtccctg ttcctccctc agagactaga actctccaag gaataggaga ttatcccaga
+     1441 tgcctgtgtc caggctggtg tctggcttct gtgctccctt ccccacccca ggtgtcctgt
+     1501 tcattctcag ggtggtcaca tgggtgctgc tggggtgtcc catgagagat gcaaagcgcc
+     1561 tgaattttct gactctttcc atcagatccc ccaaagacac acgtgaccca ccaccccatc
+     1621 tctaaccatg aggccaccct gaggtgctgg gccctgggct tctaccctgc ggagatcaca
+     1681 ctgacctggc agcgggatgg ggaggaccaa actcaggaca ctgagcttgt ggagaccagg
+     1741 ccaggaggag atggaacctt ccagaagtgg ggagatgtgg tggtgccttc tggagaagag
+     1801 cagagataca cgtgccatgt gcagcatgag gggctaccgg agcccctcac cctgagatgg
+     1861 ggtaaggagg gggatgaggg gtcatgtctc ttctcaggga aagcaggagc ccttctggat
+     1921 cagggtcagg gcccctcatc cttcccctcc tttcccagag ccatcttccc agtccaccat
+     1981 ccccatcgtg ggcattgttg ctggcctggc tgtcctagca gttatggtca ccggagctgt
+     2041 ggtcgctgct gtgatgtgga ggaggaagag ctcaggtagg gaaggggtgt ggggtggggt
+     2101 ctgggttttc ttgtccctct gggggtttca agccccaggt agaagtgttc cctgcctcat
+     2161 tcctaggaaa cagcatccac acagggtcta acccagcctg ggaccctgtg tgccaggact
+     2221 tactcttttg tgtagcaatg tgacaatgaa ggacggatgt atcaccttga tgattatggt
+     2281 attgggtcct gattccagca ttcacgagtc aggggaaggt ccctgctaag gacagacctt
+     2341 gggagggcag tttgtccagg acacacagct gctttcctcc tgttccctga tcctgccctg
+     2401 ggtctgtagt catagttctg gaaatttctc tagggtccaa gactaggagg ttcctctaag
+     2461 atcttatggc cctgcttcct cccagcatcc tcacaggata ttttcttccc acaggtggaa
+     2521 aaggagggag ctactctcag gctacgtgta agtggtgggg gtgggagtgt ggaggagctc
+     2581 accaaccctg taattcctct tgtcccatgt cacctgcggg ctctgaccag ctcctgtttt
+     2641 tgttctaccc cagccagcaa cagtgcccag ggatctgatg tgtctctcac ggctttaaag
+     2701 ggtgagattc ttggggtcta gagtgggttg ggaggcagag gtgaaaggcc tcggtaatgg
+     2761 agattcgttg attgtaacgt ttcgagtgtg tggtgggctg ttcagaatgt catcactcac
+     2821 catgactgac ttgaattttt tgttcatgac ttgttttctg tagcctga
+//
+LOCUS       Mamu-B_109_07_01_02N_nov|20210901213108257        2832 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:14
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     CDS             join(1..73,203..472,719..888)
+                     /standard_name="CDS"
+     misc_feature    1..70
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            1..73
+                     /standard_name="Exon 1"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            719..994
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1547..1822
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1919..2035
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2475..2507
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2614..2661
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     exon            2828..2832
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcgggtcg tggcgctccg aaccctcctc ctgctgctct cggggatcct ggccctgacc
+       61 aagacctggg ccggtgagtg cggggtcggg agggaaacgg cctctgcggg gaggagcgag
+      121 gagaccgcag acgggggcgc aggacccggg gagccgcgcc gggaggaggg tcgggcgggt
+      181 ctcagcctct cctcgccccc aggctcgcac tccttgaggt atttctacac caccgtgtcc
+      241 cggcccggcc gcggggagcc ccgcttcatc tccgtgggct acgtggacga cacgcagttc
+      301 gtgcggttcg acagcgacgc cgagagtccg agagaggagc ctcgggcgcc gtggatggag
+      361 caggaggggc cggagtattg ggaagagcag acacggatcg ccaaggccaa cgcacagact
+      421 gaccgagcgg acctggggat cctgcgcggc tactacaacc agagcgaggc cggtgagtgg
+      481 tcccggcccg gggcgcaggt cacgacccct ccccatcccc caccgacgac ccgggtctcc
+      541 ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg
+      601 gggagagccc caggcacctt tacccggtta cattttcact tgaggacaaa aatcctcgcg
+      661 ggttggtcgg ggcggggcgg ggctcggtgg gcggggctga ccgcgggggc ggggccaggg
+      721 tctcacacca tccagacgat gtatggctgc gacctgggac ccgacggacg cctcctccgc
+      781 gggtattacc aggacgccta cgacggcaaa gattacatcg ccctgaacgg ggacctgcgc
+      841 tcctggaccg ccgcggacat ggcggctcag aacacccagc ggaagtgaga agcggccgat
+      901 gaggcagagc agtggagagc ctacctggag ggcgagtgcg tggagtcgct tcgcagatac
+      961 ctggagaacg ggaaggagac gctgcagcgc gcaagtacca ggggcagtgg ggacccttcc
+     1021 tcatcacctc tagatcgccc gggatggcct cccatgagga ggggaggaaa atgggagcag
+     1081 cgctagaatg tcccctccct tgaatggaga atggcatgag ttttcctgat ttcctctgag
+     1141 ggccccctct gctctctagg acaattaagg gatgacgtct ctgaggacat agaggggaag
+     1201 acagtcccct ttgacccctg cagcagcctt gggcaccgtg aattttcctc taaggccttg
+     1261 ttctctgcct cacactaaat gcgtttgaag gtctgattcc agcttttctg agtcccttgg
+     1321 cctccactca ggtcaggacc agaagtccct gttcctccct cagagactag aactctccaa
+     1381 ggaataagag attatcccag atgcctgtgt ccaggctggt gtctgggttc tatgctccct
+     1441 cccccacccc agctgtcctg ttcattctca gggtggccac atgggtgctg ctggggtgtc
+     1501 ccatgagaga tgcaaagcgc ctgaattttc tgactctttc catcagatcc cccaaagaca
+     1561 cacgtgaccc accatcccgt ctctaaccat gaggccaccc tgaggtgctg ggccctgggc
+     1621 ttctaccctg cggagatcac actgacctgg cagcgggatg gggaggacca aactcaggac
+     1681 actgagcttg tggagaccag gccaggagga gatggaacct tccagaagtg gggagctgtg
+     1741 gtggtgcctt ctggagaaga gcagagatac acgtgccatg tgcagcatga ggggctaccg
+     1801 gagcccctca ccctgagatg gggtaaggag ggggatgagg ggtcatgtct cttctcaggg
+     1861 aaagcaggag cccttctgga tcagggtcag ggcccctcac cttcccatcc tttcccagag
+     1921 ccatcttccc agtccaccat ccccatcgtg ggcattgttg ctggcctggc tgtcctagca
+     1981 gttatggtca ccggagctgt ggtcgctgct gtgatgtggg ggaggaagaa ctcaggtagg
+     2041 gaaggggtgt ggggtggggt ctgggttttc ttgtccctct gggggtttca agccccaggt
+     2101 agaagtgttc cctgactcat tcctgggaag cagcatccac acagggtcta acccagcctg
+     2161 ggaccctgtg tgccaggact tactcttttg tgtagcaatg tgacaatgaa ggacagatgt
+     2221 atcaccttga tgattatggt actgggtcct gattccagca ttcacgagtc aggggaaggt
+     2281 ccctgctaag gacagacctt gggagggcag tttgtccagg acacacagct gctttcctcc
+     2341 tgttccctga tcctgccctg ggtctgtagt catagttctg gaaatttctc tagggtccaa
+     2401 gactaggagg ttcctctaag atcttatggc cctgcttcct cccagcctcc tcacaggata
+     2461 ttttcttccc acaggtggaa aaggagggag ctactctcag gctacgtgta agtggtgggg
+     2521 gtgggagtgt ggaggagctc accaacccta taattcctct tgtcccatgt cacctgcggg
+     2581 ctctgaccag ctcctgtttt tgttctaccc cagccagcaa cagttcccag ggatctgatg
+     2641 tgtctctcac ggctttaaag ggtgagattc ttggggtcta gagtggggga cgggggggca
+     2701 gaggggaaag gcctgggtaa tggagattct ttgattgtaa cgtttcgagt gtgtggtggg
+     2761 ctgttaagag tgtcatcact taccatgact gacttgaatt tttttgttca tgacttgttt
+     2821 tctgtagcct ga
+//
+LOCUS       Mamu-B_114_02_02_01_nov|20210901213108179        2858 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:15
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     misc_feature    1..70
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            1..73
+                     /standard_name="Exon 1"
+     CDS             join(1..73,203..472,718..993,1569..1844,1948..2064,
+                     2505..2537,2644..2687)
+                     /standard_name="CDS"
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            718..993
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1569..1844
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1948..2064
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2505..2537
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2644..>2691
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2688..2858
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2854..2858
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atcccggtca tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc
+       61 gagacctggg ccggtgagtg cggggccggg agggaaaagg cctcggcggg gaggagcaag
+      121 gggaccgcag gcgggggcgc aggacccggg gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagcctct cctcgccccc aggctcccac tccttgaggt atttcggcac caccgtgtcc
+      241 cggcccggcc gcggggagcc ccgcttcatc tccgtgggct acgtggacga cacgcagttc
+      301 ctgcggttcg acagcgacgc cgagagtccg aggatggagc cgcgggcgcc gtggatggag
+      361 caggaggggc cagagtattg ggaagagcag acacggatcg ccaaggccat cgcacagact
+      421 aacctaggga ccctgcggac cgcgctccgc tactacaacc agagcgagac gggtgagtgg
+      481 ccccggcccg gggcgcaggt cacgacccct ccccatcccc cacggatggc ctgggtctcc
+      541 ccgagtctca gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg
+      601 gagagagccc caggcgcctt tacccgattt cattttccgt tgaggccaaa atgcccgcgg
+      661 gttggtcggg gcgaggcgag gctcggtggg cggggctgac cgcgggggcg gggccagggt
+      721 ctcacaccgt ccagaagatg tacggctgcg acctggggct cgacgggcgc ctcctccgcg
+      781 gatattacca gttcgcctac gacggcaggg attacatcgc cctgaacgag gacctgcgct
+      841 cctggaccgc tacggatgag gcggctcaga acacccagcg caagtgggag gcggccggtg
+      901 tggcggagca gatgagagcc cacctggagg ggacgtgcgt ggagtggctc cgcagatacc
+      961 tggagaacgg gaaggagacg ctgcagcgcg cgggtaccag gggcagtggg gagccttccc
+     1021 catcacctct agattccccg ggatggcctc ccacgaggac gggaggaaaa tgggatcagc
+     1081 gctagaatgt cgccctccct tgaatggaga atggcgtgag tttccctgat ttcctctgag
+     1141 ggccccctct gtgctctagg acaattaagg gatgacgtct ctgaggacat ggaggggaag
+     1201 acagtccctg gaatactgat caggggtccc ctttgactcc tgcagcagcc ttgggcaccg
+     1261 tgaatttttc tctcaggcct tgtcctctgc ctcacactca atgtgtctga aggtctgatt
+     1321 ccagcttttc tgagtccctc ggcctccact caggtcagga ccagaagtcc ctgttcctcc
+     1381 ctcagagact agaactctcc aaggaatagg agattatccc agatgcctgt gtccgggctg
+     1441 gtgtctggct tctgtgctcc cttccccacc ccaagtgtcc tgtccattct cagggtggtc
+     1501 acatgcgtgc tgctggagtg tcccatgaga gatgcaaagc gcctgaattt tctgactctt
+     1561 cctatcagat cccccaaaga cacacgtgac ccaccacccc atctctgacc atgaggctac
+     1621 cctgaggtgc tgggccctgg gcttctaccc tccagagatc acactgacct ggcagcggga
+     1681 tggggaggac caaactcagg acaccgagct tgtggagacc aggccaggag gagatggaac
+     1741 cttccagaag tggggagctg tggtggtgcc ttctggagaa gagcagagat acacgtgcca
+     1801 tgtgcagcat gaggggctgc cgaagcccct caccctgaga tggggtaagg aggggatgag
+     1861 gggtcatgtc tcttctcagg gaaagcagga gcccttctgg agcccttcag cagggtcagg
+     1921 gcccctcatc ttcccctcct ttcccagagc catcttccca gtccaccatc cccatcgtgg
+     1981 gcattgttgt tggcctggct gtcctagcag ttgtggtcac cggagctgtg gtcgctgctg
+     2041 ggatgtggag gaggaagagc tcaggtaggg aaggggtgtg gggtggggtc tggcttttct
+     2101 tgtcctctgg gggtttcaag ccccaggtag aaatgttcac tgcctcattc ctgggaagca
+     2161 gcatccacac aggggctaac ccagcctggg accctgtgtg ccagcactta ctcttttgtg
+     2221 tagcacatgt gacaatgaag gacggatgta tcaccttgat gattatggta ttggggtcct
+     2281 gattccagca ttcacgagtc aggggaaggt ccctgctaag gacagacctt aggaggacag
+     2341 ttggtccagg acacacacct gctttcctcc agtttcctga tcctgccctg ggtctgcagt
+     2401 catagttctg gaaatttttc ttgggtccaa gactagcagg ttccactaag atcttatggt
+     2461 cctacttcct cccagtcccc tcacaggata ttttcttccc acaggtggaa aaggagggag
+     2521 ctactctcag gctgcgtgta agtggtgggg gtgggagtgt ggaggagctc acccatcccg
+     2581 taattcctcc tgtcccacgt ctcctgcggg ctctgaccag ctcctgtttt tgttctaccc
+     2641 cagccagcga cagtgcccag ggctctgatg tgtctctcac ggcttgaaaa ggtgagattc
+     2701 ttggggtcta gagtgggggg cggggacaga ggcgaaaggc ctcagtaatg gagattcttt
+     2761 gattgggacg tttcgagtgt gtggtgggct gttcagagtg tcatcactta ccatgactga
+     2821 cttgaatttg ttcatgactg ttgttttctg tagcctga
+//
+LOCUS       Mamu-B_187_03_01_01_nov|20210901213108114        2850 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:16
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(1..73,203..472,718..993,1566..1841,1946..2059,
+                     2501..2533,2639..2682)
+                     /standard_name
+     exon            203..472
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            718..993
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1566..1841
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1946..2059
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2501..2533
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2639..>2686
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2683..2850
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2846..2850
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcagatca tggcgccccg aaccctcctc ctgctgctct cgggggccct ggccctgacc
+       61 gagacctggg ccggtgagtg cggggtcggg agggaaatgg cctctgcggg gaggagcaag
+      121 gggaccgcag gcaggggcgc aggacccggg gagccgcgcg gggaggaggg tcgggcgggt
+      181 ctcagcctct ccttgccccc aggctcccac tccatgaggt atttcagcac cgccgtgtcc
+      241 cggcctggcc gccgggaacc ctggtatctc gaagtcggct acgtggacga cacgcagttc
+      301 gtgtggttcg acagcgacgc cgagagtccg aggatggagc cgcgggcgcc gtgggtggag
+      361 caggaggggc cggagtattg ggaccggaac acacggaacg ccaagggcca cgcacagact
+      421 ttccgaggga acctgaggac agcgctccgc tactacaacc agagcgaggg gggtgagtgg
+      481 ccccggcccg gggcgcaggt cacgacccct ccccatcccc cacggacggc ccgggtctcc
+      541 ccgagtctcc gggtccgaga tccgccccga ggccgcggga cccgcccaga ccctcgaccg
+      601 gggagagccc caggcgcctt tacccggttt cattttcagt tgaggccaaa atccctgcgg
+      661 gttgggcggg gcggggcggg gctcggaggg cggggctgac cgcgggggcg gggccagggt
+      721 ctcacaccct ccagtggatg tacggctgtg acctggggcc cgacgggcgc ctcctccgcg
+      781 ggtatcacca gttcgcctac gacggcaagg attacatcgc cctgaacgag gacctgcgct
+      841 cctggaccgc cgcggacatg gcggctcggt tcacccagcg caagtgggag gcggcccgcg
+      901 aggcagagca gcagagggcc tacctggagg gcgagtgcct ggagtggctc cgcagatacc
+      961 tggagaatgg gaaggagaca ctgcagcgcg cgggtaccag gggcagtggg aagacttccc
+     1021 catcacctct agatcgcccg ggatggcctc ccatgaggag gggaggaaaa tgagatcagc
+     1081 gctagaatgt cgccctccct tgaatggaga atggcatgag ttttcctgag tttcctctga
+     1141 agaccccctc tgctctctag gacaattaag ggatgacgtc tcgacatgga ggggaagaca
+     1201 gtccccagaa tactgatcag gggtgccctt tattccctgc agcagccttg ggaaccgtga
+     1261 acttttctct caggccttgt tctctgcctc acactcaatg tgtctgaagg tctgattcca
+     1321 gcttttctga gtccctcggc ctccactcag gtcaggacca gaagtccctg ttcctccctc
+     1381 agagactaga actctccaag gaataggaga ttatcccaga tgcctgtgtc caggctggtg
+     1441 tctgggttct gtgctccctc cccgaccccg ggtgtcctgt ccattctcag ggtggtcaca
+     1501 tgcgtgctgg tgggatgtcg catgagagat gcaaagcgcc tgaattttct ggctcttccc
+     1561 atcagatccc ccaaagacac acgtgaccca ccaccccgtc tctgaccatg aggccaccct
+     1621 gaggtgctgg gctctgggct tctaccctgc ggagatcacg ctgacctggc agcgggatgg
+     1681 ggaggatcaa actcaggaca ccgagcttgt ggagaccagg ccaggaggag atggaacctt
+     1741 ccaaaagtgg ggagctgtgg tggtgccttc tggagaagag cagagataca catgccatgt
+     1801 acagcacgag ggattgccgg agcccctcac cctgagatgg ggtaaggagt gggatgaagg
+     1861 gtcatgtctg ttctcaggga aagcaggagc ccttctggag cccttcagca gggtcagggc
+     1921 ccctcatctt cccctccttt cccagagcca tcttcccagt ccaccatcgc catcgtgggc
+     1981 attgttgctg gcctggctgt cctagcagtt gtcaccggag ctgtggtcgc tgctgtgatg
+     2041 tggaggagga agagctcagg tagggaaggg gtgaggggtg gggtctgggt gttcttgtcc
+     2101 cactgggggt ttcaagcccc aggtagaagt gttccctgcc tcattcctgg gaagcagcat
+     2161 ccacacaggg gctaactcaa cctgggaacc tgtgtgccag cacttactct tttgtgtagc
+     2221 acatgtgaca atgaaggacg gatgtatcac cttgatgatt atggtattgg ggtcctgatt
+     2281 ccagcattcg tgagtcaagg gaaggtccct actaaggaca gaccttggga gggcagttgg
+     2341 tccaggacac acagctgctt tcctcctgtt ccctgttcct gccctgggtc tgtagtcata
+     2401 gttctggaaa tttctcttgg gtccaagact aggaggttcc tctaagatct tatggccttg
+     2461 cttcctccca gcccactcac aggacatttt cttcccacag gtggaaaagg agggagctac
+     2521 tttcaggctg catgtaagtg gtgggggtgg gagtgtggag gagctcaccc accccataat
+     2581 tcctcctgtc catgtctcct gcgggctctg accaggtcct gtttttgttc taccccagcc
+     2641 aaggacagtc cccagggctc tgatgagtct ctcatggctt gaaaaggtga gattcttggc
+     2701 gttgagtggg ttggggggca gaggggaaag gcctcggtaa tggagattct ttgattgtaa
+     2761 cgtttcgagt gtgtggtggc tgttcggagt gtcatcactt accatgattg acttgaattt
+     2821 tttgttcatg acttgttttc tgtagcctga
+//
+LOCUS       Mamu-I_01_01_01_01_nov1|20210901213108166        2858 bp    DNA     linear   UNA 20-MAY-2022
+DEFINITION  .
+ACCESSION   geneious|urn:local:
+VERSION     geneious|urn:local:.:y-eupv0p9:17
+KEYWORDS    .
+SOURCE      
+  ORGANISM  .
+FEATURES             Location/Qualifiers
+     exon            1..73
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 1"
+     CDS             join(1..73,202..471,717..992,1567..1842,1947..2063,
+                     2504..2536,2643..2686)
+                     /standard_name="CDS"
+     exon            202..471
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 2"
+     exon            717..992
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 3"
+     exon            1567..1842
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 4"
+     exon            1947..2063
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 5"
+     exon            2504..2536
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 6"
+     exon            2643..>2690
+                     /note="Derived using Geneious Prime 2020.1.2 'Annotate
+                     from Database' based on nucleotide similarity"
+                     /standard_name="Exon 7"
+     misc_feature    2687..2858
+                     /note="Geneious type: Editing History Insertion"
+                     /standard_name
+     exon            2854..2858
+                     /standard_name="Exon 8"
+ORIGIN      
+        1 atgcgggtca tggcgcccgg aaccctcctc ctgctgctct cgggggccct ggccctgacc
+       61 gagacctggg ccggtgagtg ctgggccggg agggaaaagg actcggcggg aggggcgagg
+      121 ggaccgcagg cgggggcgca gggcccgggg agccgggcgg ggaggagggt cgggcgagtc
+      181 tcagcctctc ctcgccccca ggctcccact ccttgaggta tttcggcacc acagtgtccc
+      241 ggcccggccg cggggagccg cgcttcatcg ccgtgggcta cgtggacgac acgcagttcg
+      301 tgcggttcga cagcgacgcc gagagtccga ggatggagcc gcgggcgccg tggatggagc
+      361 aggaggggcc ggagtattgg gaagaggaga cacggatcgc caaggcccgc gcacagactg
+      421 agcgagggaa cctgcggacc gcgctccgct actacaacca gagcgagggg ggtgagtggc
+      481 cccggcccgg ggcgcaggtc acgacccctc cccacccccg acagacggcc cgggtctccc
+      541 cgagtctcag ggtccgagat ccgccccgag gccgcgggac ccgcccagac cctcgaccgg
+      601 agagagcccc aggctccttt atccggtttc attttcagtt gccgccaaag tccccgcggg
+      661 gtggtcgggg cggggcgggg ctcggtgggc ggggctgacc gcgggggcgg ggccagggtc
+      721 tcacaccctc cagaagatgt gtggctgcga cctggggccg gacgggcgcc tcctccgcgg
+      781 gtattaccag tccgcctacg acggcaggga ttacatcgcc ctgaacgagg acctgcgctc
+      841 ctggaccgct gcgggtgagg cggctcagaa cacccagcgc aagtgggagg cggccggtga
+      901 ggcagagcag cggagagcct acctggaggg ccggtgcgtg gagtggctcc gcagatacct
+      961 ggagaagggg aaggagacgc tgcagcgcgc gggtaccagg ggcactgggg agccttcccc
+     1021 atcacctcta gatctccctg gatggcctcc catgaggagg ggaggaaaat gggatcagcg
+     1081 ctagaatgtc gccctccctt aaatggagaa tggcatgagt tttcctgatt tcctctgagg
+     1141 gcccctctgc tctctaggac aattaaggga tgacgtctct gaggaaatgg aggggaagac
+     1201 agtccctgga atacagatca ggggtcctct ttgactcctg cagcagcctt gggcaccgtg
+     1261 aatttttctc tcaggccttg ttctctgcct cacactcaat gtgtttgaag gtctgattcc
+     1321 agcttttctg agtccctcgg cctccactca ggtcaggacc agaagtccct gttcctccct
+     1381 cagagaatag aactctccaa ggaataggag attatcccag atgcctgtgt ccagtctggt
+     1441 gtctggcttc tgtgctccct tccccacccc aagtgtcctg tccattctca gggtggtcac
+     1501 atgcgtgctg ctggggtgtc ccatgagaga tgcaaagcgc ctgaattttc tgacttttcc
+     1561 catcagatcc cccaaagaca cacgtgaccc accaccccgt ctctgaccat gaggccaccc
+     1621 tgaggtgctg ggccctgggc ttctaccctg cggagatcac actgacctgg cagcgggatg
+     1681 gggaggagca aactcaggac accgagcttg tggagaccag gccaggagga gatggaaact
+     1741 tccagaagtg ggcagctgtg gtggtgcctt ctggagaaga gcagagatac acgtgccatg
+     1801 tgcagcatga ggggctgccg gagcccctca ccctgagatg gggtaaggag ggggatgagg
+     1861 agtcatgtct cttctcaggg gaaacaggag cccttctgga gcccttcagc agggtcaggt
+     1921 cccctcacct tcccctcctt tcccagagcc atcttcccag tccaccatcc ccatcatggg
+     1981 cattgttgct ggcctggctg tcctagcagt tgtggtcacc ggagctgtgg tcgcagctgt
+     2041 gatgtggagg aggaagagct caggtaggga aggggtgagg agtgggatct tgcttttctt
+     2101 gtcctctggg ggtttcaagc ccaaggtaga aatgttcact gcctcattcc tgggaagcag
+     2161 catccacaca gggcctaacc cagcctggga ccctgtgtgc cagcacttac tcttttgtgc
+     2221 agcacatgtg acaatgaagg acggatgtat caccttgatg attatggtat tggggtcctg
+     2281 attccagcat tcatgagtca gggtaaggtc cctgctaagg acaaacctta ggaggacagt
+     2341 ttgcccaaga cacacagctg ctttcctcct gtttcctgat cctgccctgg gtctgcagtc
+     2401 atagttctgg aaatttctct tgggtccaag actaggaggt tccgctaaga tcttgtggcc
+     2461 ctgcttcctc ccagtcccct cacaggatat tttcttccca caggtggaaa aggagggagc
+     2521 tactctcagg ctgcgtgtaa gtggtggggg tgggagtgtg gaggagctca cccatcctgt
+     2581 aattcctcct gtcccacgtc tcctgcgggc tctgaccagc tcctgttttt gttctactcc
+     2641 agccagcaac agtgcccagg gctctgatgt gtctctcaca gcttgaaaag gtgagattct
+     2701 tgggatctag agtgggggga cggggggcag agggaaaggt cctggtaata gagattcttt
+     2761 gattgggatg tttcaggtgt gtggtggctg ttcagagtgt catcacttac catgactgac
+     2821 ttgaattttg ttcatgactg ttgttttctg tagcctga
+//
