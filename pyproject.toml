@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "embl-my-genbank"
+version = "0.1.0"
+description = "Convert a Genbank file with many extraneous Geneious annotations to EMBL format (even with as strict requirements as IPD)"
+authors = ["Nicholas Minor <nrminor@wisc.edu>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+biopython = "^1.83"
+
+
+[tool.poetry.group.dev.dependencies]
+marimo = "^0.3.1"
+jupyter = "^1.0.0"
+ipykernel = "^6.29.3"
+ruff = "^0.3.1"
+pdoc = "^14.4.0"
+blackdoc = "^0.3.9"
+pre-commit = "^3.6.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+"emb_my_gbk" = "embl_my_genbank.__main__:main"
