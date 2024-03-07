@@ -1,4 +1,4 @@
-# Python module for converting a complicated Genbank file to a barebones EMBL file
+# EMBL-my-Genbank: Convert a complicated Genbank file to a barebones EMBL file
 
 ### Usage
 
