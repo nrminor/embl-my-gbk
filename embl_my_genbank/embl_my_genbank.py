@@ -63,10 +63,8 @@ def parse_command_line_args() -> Tuple[Path, str, str, bool]:
     parser.add_argument(
         "--view_intermediate",
         "-v",
-        type=bool,
-        required=False,
-        default=True,
-        help="Boolean; whether to write out the intermediate cleaned Genbank file for inspection.",
+        action='store_true',
+        help="Whether to write out the intermediate cleaned Genbank file for inspection.",
     )
 
     args = parser.parse_args()
@@ -426,6 +424,8 @@ def id_line_replacement(
                 continue
             # Write the original line to the output file
             outfile.write(line)
+            
+    os.remove(int_embl)
 
 
 def write_output(
