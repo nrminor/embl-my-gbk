@@ -170,3 +170,6 @@ poetry.lock
 *input*
 
 *asciigenome**
+sandbox/
+scratch/
+dev/
