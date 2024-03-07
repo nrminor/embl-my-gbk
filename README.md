@@ -2,7 +2,7 @@
 
 ### Usage
 
-This repo contains a minimal-dependency, Ruff-formatted Python module that can be accessed directly through a script, e.g.,
+This repo contains a minimal-dependency, Ruff-formatted, pure Python module that can be accessed directly through a script, e.g.,
 
 ```bash
 python3 embl_my_genbank/embl_my_genbank.py -g file.gb -s "Homo sapiens"
@@ -13,6 +13,8 @@ Or, after running `poetry install`, as a command line command:
 ```bash
 emb_my_gbk -g file.gb -s "Homo sapiens"
 ```
+
+The repo comes with a `pyproject.toml` and `requirements.txt` that can be used with `pip`, `pipx`, `uv`, `Poetry`, or whatever declarative Python manager you prefer, to reproduce our dev environemnt--though really, the only non-stdlib dependency is [BioPython](https://biopython.org/)!
 
 For complete documentation of the API, see the HTML in `docs/`. Recommended usage looks like this:
 
