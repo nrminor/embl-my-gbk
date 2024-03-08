@@ -10,17 +10,20 @@ additional restrictions to the Immuno-Polymorphism Database flavor of the
 EMBL format.
 
 ```
-usage: embl_my_genbank.py [-h] --gb_path GB_PATH --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate VIEW_INTERMEDIATE]
+usage: embl_my_genbank.py [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate]
 
 options:
   -h, --help            show this help message and exit
   --gb_path GB_PATH, -g GB_PATH
                         Genbank file to be converted.
+  --metadata METADATA, -m METADATA
+                        Metadata file with, at minimum, a column of allele names and a column of representative animals.
   --species SPECIES, -s SPECIES
                         Scientific name for the species under examination.
   --out_fmt OUT_FMT, -o OUT_FMT
                         Format to convert to. Can convert to EMBL, IPD_EMBL, and FASTA.
-  --view_intermediate VIEW_INTERMEDIATE, -v VIEW_INTERMEDIATE
+  --view_intermediate, -v
+                        Whether to write out the intermediate cleaned Genbank file for inspection.
 ```
 """
 
@@ -29,8 +32,9 @@ import os
 from enum import Enum, auto
 from itertools import filterfalse
 from pathlib import Path
-from typing import List, Tuple
+from typing import Dict, List, Optional, Tuple
 
+import polars as pl
 from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 
@@ -44,6 +48,14 @@ def parse_command_line_args() -> Tuple[Path, str, str, bool]:
         type=Path,
         required=True,
         help="Genbank file to be converted.",
+    )
+    parser.add_argument(
+        "--metadata",
+        "-m",
+        type=Optional[Path],
+        required=False,
+        default=None,
+        help="Metadata file with, at minimum, a column of allele names and a column of representative animals.",
     )
     parser.add_argument(
         "--species",
@@ -63,12 +75,18 @@ def parse_command_line_args() -> Tuple[Path, str, str, bool]:
     parser.add_argument(
         "--view_intermediate",
         "-v",
-        action='store_true',
+        action="store_true",
         help="Whether to write out the intermediate cleaned Genbank file for inspection.",
     )
 
     args = parser.parse_args()
-    return args.gb_path, args.species, args.out_fmt, args.view_intermediate
+    return (
+        args.gb_path,
+        args.metadata,
+        args.species,
+        args.out_fmt,
+        args.view_intermediate,
+    )
 
 
 class OutType(Enum):
@@ -163,7 +181,8 @@ def handle_allele_id_placement(record: SeqRecord) -> SeqRecord:
     Raises:
         AssertionError: If the allele name is not properly propagated to the accession annotation
         after the function's execution, an AssertionError is raised. This serves as a check to
-        ensure that the intended modifications have been successfully applied to the sequence record.
+        ensure that the intended modifications have been successfully applied to the sequence
+        record.
 
     Example:
         >>> from Bio.Seq import Seq
@@ -183,9 +202,6 @@ def handle_allele_id_placement(record: SeqRecord) -> SeqRecord:
 
     # parse out the working name of the allele
     allele = record.name
-
-    # parse out the gene name from the allele name
-    # gene = allele.split("_")[1]
 
     # move the allele name into the id position, replacing a geneious annotation
     record.id = allele
@@ -249,7 +265,7 @@ def remove_geneious_annotations(record: SeqRecord) -> SeqRecord:
 
     Geneious software is known to add certain annotations to sequence records that may not
     be desired in all contexts. This function specifically targets and removes:
-    
+
     1. "misc_feature" features that Geneious adds, often related to manual editing history.
     2. "/note" qualifiers within any feature, which can include comments or metadata added
     by Geneious.
@@ -278,7 +294,7 @@ def remove_geneious_annotations(record: SeqRecord) -> SeqRecord:
         >>> cleaned_record = remove_geneious_annotations(record)
         >>> len(cleaned_record.features)
         0
-    
+
     Note:
         The function modifies the input SeqRecord object in place, but also returns it for convenience.
         This allows for the modified record to be reassigned to the same or a different variable if
@@ -307,7 +323,7 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
         unnecessary for our purposes, namely "standard_name" and "gene". This function does
         away with those as well, and also adds species and DNA information to the source
         feature, if available.
-    
+
     Args:
         record (SeqRecord): The sequence record to be cleaned and updated. A SeqRecord object
             from Biopython that contains features which may include "gene", "CDS", and "source"
@@ -324,7 +340,8 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
 
     Note:
         The function directly modifies the input SeqRecord object and also returns this modified
-        object. Therefore, the changes will be reflected in the original SeqRecord passed to the function.
+        object. Therefore, the changes will be reflected in the original SeqRecord passed to the
+        function.
     """
 
     # filter out genes
@@ -338,12 +355,116 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
         # Update source feature with organism and mol_type
         if feature.type == "source":
             feature.qualifiers["organism"] = [species]
-            feature.qualifiers["molecule_type"] = ["genomic DNA"]
+            feature.qualifiers["mol_type"] = ["genomic DNA"]
 
     return record
 
 
-def clean_genbank(record: SeqRecord, species: str) -> SeqRecord:
+def read_metadata(meta_path: Path) -> Dict[str, str]:
+    """
+    Reads metadata from an Excel file and converts it to a dictionary.
+
+    This function reads an Excel file containing metadata, specifically looking for
+    columns named 'Local designation' and 'Animal ID'. It then constructs a dictionary
+    where 'Local designation' values serve as keys and 'Animal ID' values as corresponding
+    values.
+
+    Args:
+        meta_path (Path): A Path object pointing to the Excel file containing metadata.
+
+    Returns:
+        Dict[str, str]: A dictionary mapping 'Local designation' to 'Animal ID'.
+
+    Raises:
+        AssertionError: If either 'Local designation' or 'Animal ID' columns are missing
+        from the Excel file.
+
+    Example:
+        >>> read_metadata(Path('metadata.xlsx'))
+        {'Designation1': 'ID1', 'Designation2': 'ID2', ...}
+
+    Note:
+        The function assumes the Excel file is structured with the specified columns. It
+        raises an assertion error if the expected columns are not found, ensuring the
+        presence of necessary data for further processing.
+    """
+
+    # read the provided table
+    meta_df = pl.read_excel(source=meta_path)
+
+    # run some checks to make sure the expected column headers are present
+    assert (
+        "Local designation" in meta_df.columns
+    ), "Expected column named 'Local designation' is missing"
+    assert (
+        "Animal ID" in meta_df.columns
+    ), "Expected column named 'Animal ID' is missing"
+
+    # select the two columns
+    meta_dicts = meta_df.select("Animal ID", "Local designation").to_dicts()
+    meta_dict = {mapping['Local designation']: mapping['Animal ID'] for mapping in meta_dicts}
+
+    return meta_dict
+
+
+def construct_description(
+    record: SeqRecord, species: str, isolate_dict: dict[str]
+) -> SeqRecord:
+    """
+    Constructs a descriptive string for a SeqRecord based on provided metadata.
+
+    This function updates the description field of a SeqRecord object based on allele
+    information, species name, and a dictionary mapping alleles to animal isolates. The
+    constructed description follows a specific format incorporating these elements.
+
+    Args:
+        record (SeqRecord): The SeqRecord object to be updated with a new description.
+        species (str): The scientific name of the species.
+        isolate_dict (Dict[str, str]): A dictionary mapping allele names (keys) to
+            animal isolate identifiers (values).
+
+    Returns:
+        SeqRecord: The updated SeqRecord object with a new description.
+
+    Example:
+        >>> from Bio.Seq import Seq
+        >>> record = SeqRecord(Seq("ATGC"), id="allele_1", name="allele_1")
+        >>> construct_description(record, "Homo sapiens", {"allele_1": "isolate_1"})
+        SeqRecord(description="Homo sapiens gene for MHC class I antigen (allele_1 gene),
+        isolate isolate_1, allele allele_1")
+
+    Note:
+        If the allele from the SeqRecord is not found in the provided isolate_dict, the function
+        prints a warning message and returns the SeqRecord unchanged. This ensures the integrity
+        of the SeqRecord's description in cases where metadata may be incomplete or incorrect.
+    """
+
+    # parse out the working name of the allele
+    allele = record.name
+
+    # check that the allele is actually represented in the provided dict
+    if allele not in isolate_dict.keys():
+        print(f"Allele {allele} is missing in the provided table of metadata./n")
+        return record
+
+    # parse out a gene name with the locus
+    gene = "_".join(allele.split("_")[:1])
+
+    # pull out the representative animal isolate for this allele
+    isolate = isolate_dict.get(allele)
+
+    # construct the description
+    description = f"{species} gene for MHC class I antigen ({gene} gene), isolate {isolate}, allele {allele}"
+
+    # add the description to the SeqRecord object
+    record.description = description
+
+    return record
+
+
+def clean_genbank(
+    record: SeqRecord, species: str, meta_path: Optional[Path]
+) -> SeqRecord:
     """
     Cleans a GenBank record by updating allele IDs, assigning species names, and
     removing Geneious annotations.
@@ -379,6 +500,15 @@ def clean_genbank(record: SeqRecord, species: str) -> SeqRecord:
     # clean up the many features appended to each Genbank record,
     # which BioPython represents as a dictionary
     record = clean_record_features(record, species)
+
+    # if not metadata path was provided, finish here
+    if meta_path is None:
+        return record
+
+    # if isolate metadata is available, use it to construct record
+    # descriptions
+    isolate_dict = read_metadata(meta_path)
+    record = construct_description(record, species, isolate_dict)
 
     return record
 
@@ -424,7 +554,7 @@ def id_line_replacement(
                 continue
             # Write the original line to the output file
             outfile.write(line)
-            
+
     os.remove(int_embl)
 
 
@@ -477,9 +607,14 @@ def main() -> None:
     """
 
     # parse command line arguments
-    gb_path, species, out_format, view_intermediate = parse_command_line_args()
+    gb_path, meta_path, species, out_format, view_intermediate = (
+        parse_command_line_args()
+    )
 
-    assert os.path.isfile(gb_path), "Provided file path does not exist"
+    # run some checks to catch if the specified files don't exist
+    assert os.path.isfile(gb_path), "Provided Genbank file path does not exist"
+    if meta_path is not None:
+        assert os.path.isfile(meta_path), "Provided metadata file path does not exist"
 
     # parse out a name for the output file based on the input file
     basename = os.path.basename(gb_path).replace(".gb", "")
@@ -487,7 +622,8 @@ def main() -> None:
 
     # revise and clean all records in the Genbank file
     records = [
-        clean_genbank(record, species) for record in SeqIO.parse(gb_path, "genbank")
+        clean_genbank(record, species, meta_path)
+        for record in SeqIO.parse(gb_path, "genbank")
     ]
 
     # write output in the desired format

@@ -14,7 +14,7 @@ Or, after running `poetry install`, as a command line command:
 emb_my_gbk -g file.gb -s "Homo sapiens"
 ```
 
-The repo comes with a `pyproject.toml` and `requirements.txt` that can be used with `pip`, `pipx`, `uv`, `Poetry`, or whatever declarative Python manager you prefer, to reproduce our dev environemnt--though really, the only non-stdlib dependency is [BioPython](https://biopython.org/)!
+The repo comes with a `pyproject.toml` and `requirements.txt` that can be used with `pip`, `pipx`, `uv`, `Poetry`, or whatever declarative Python manager you prefer, to reproduce our dev environemnt--though really, the only non-stdlib dependencies are [BioPython](https://biopython.org/) and [Polars](https://pola.rs/).
 
 For complete documentation of the API, see the HTML in `docs/`. Recommended usage looks like this:
 
