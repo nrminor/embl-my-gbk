@@ -52,7 +52,7 @@ def parse_command_line_args() -> Tuple[Path, str, str, bool]:
     parser.add_argument(
         "--metadata",
         "-m",
-        type=Optional[Path],
+        type=Path,
         required=False,
         default=None,
         help="Metadata file with, at minimum, a column of allele names and a column of representative animals.",
@@ -343,6 +343,9 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
         object. Therefore, the changes will be reflected in the original SeqRecord passed to the
         function.
     """
+    
+    # separate out non-species-specific gene name
+    gene = record.name.split("_")[1]
 
     # filter out genes
     record.features = list(filterfalse(lambda f: f.type == "gene", record.features))
@@ -351,6 +354,14 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
         # Remove standard_name qualifier from CDS features
         if feature.type == "CDS" and "standard_name" in feature.qualifiers:
             del feature.qualifiers["standard_name"]
+
+        # in-place mutate the allele name in the CDS, if present
+        if feature.type == "CDS" and "allele" in feature.qualifiers:
+            feature.qualifiers["allele"] = record.name
+
+        # in-place mutate the allele name in the CDS, if present
+        if feature.type == "CDS" and "gene" in feature.qualifiers:
+            feature.qualifiers["gene"] = gene
 
         # Update source feature with organism and mol_type
         if feature.type == "source":
@@ -401,8 +412,20 @@ def read_metadata(meta_path: Path) -> Dict[str, str]:
     ), "Expected column named 'Animal ID' is missing"
 
     # select the two columns
-    meta_dicts = meta_df.select("Animal ID", "Local designation").to_dicts()
-    meta_dict = {mapping['Local designation']: mapping['Animal ID'] for mapping in meta_dicts}
+    meta_dicts = (
+        meta_df
+        .select("Animal ID", "Local designation")
+        .with_columns(
+            [
+                pl.col("Animal ID").str.strip_chars().alias("Animal ID"),
+                pl.col("Local designation").str.strip_chars().alias("Local designation")
+            ]
+        )
+        .to_dicts()
+    )
+    meta_dict = {
+        mapping["Local designation"]: mapping["Animal ID"] for mapping in meta_dicts
+    }
 
     return meta_dict
 
@@ -444,11 +467,11 @@ def construct_description(
 
     # check that the allele is actually represented in the provided dict
     if allele not in isolate_dict.keys():
-        print(f"Allele {allele} is missing in the provided table of metadata./n")
+        print(f"Allele {allele} is missing in the provided table of metadata.")
         return record
 
     # parse out a gene name with the locus
-    gene = "_".join(allele.split("_")[:1])
+    gene = "-".join(allele.split("_")[:2])
 
     # pull out the representative animal isolate for this allele
     isolate = isolate_dict.get(allele)
@@ -607,9 +630,13 @@ def main() -> None:
     """
 
     # parse command line arguments
-    gb_path, meta_path, species, out_format, view_intermediate = (
-        parse_command_line_args()
-    )
+    (
+        gb_path,
+        meta_path,
+        species,
+        out_format,
+        view_intermediate,
+    ) = parse_command_line_args()
 
     # run some checks to catch if the specified files don't exist
     assert os.path.isfile(gb_path), "Provided Genbank file path does not exist"
