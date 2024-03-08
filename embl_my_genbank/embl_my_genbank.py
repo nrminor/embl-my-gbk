@@ -592,7 +592,7 @@ def write_output(
 
     # check if an IPC intermediate embl is needed
     if "IPD" in requested_format.upper():
-        int_embl = "intermediate.emb"
+        int_embl = "intermediate.embl"
         id_line_replacement(records, int_embl, final_out, out_type)
         return
 
@@ -617,8 +617,8 @@ def main() -> None:
         assert os.path.isfile(meta_path), "Provided metadata file path does not exist"
 
     # parse out a name for the output file based on the input file
-    basename = os.path.basename(gb_path).replace(".gb", "")
-    out_path = f"{basename}.emb"
+    basename = os.path.basename(gb_path).replace(".gb", "").replace(".gbk", "")
+    out_path = f"{basename}.embl"
 
     # revise and clean all records in the Genbank file
     records = [
