@@ -41,7 +41,7 @@ from Bio import SeqIO
 from Bio.SeqRecord import SeqRecord
 
 
-def parse_command_line_args() -> Tuple[Path, str, str, bool]:
+def parse_command_line_args() -> Tuple[Path, Path, str, str, bool, bool]:
     """Parse command line arguments."""
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -440,7 +440,7 @@ def read_metadata(meta_path: Path) -> Dict[str, str]:
 
 
 def construct_description(
-    record: SeqRecord, species: str, isolate_dict: dict[str]
+    record: SeqRecord, species: str, isolate_dict: dict[str, str]
 ) -> SeqRecord:
     """
     Constructs a descriptive string for a SeqRecord based on provided metadata.
@@ -656,7 +656,6 @@ def write_output(
     # if multi output mode is on, write each EMBL record into its own file
     if multi_output:
         handle_multi_output(records, out_type)
-        os.remove(int_embl)
         return
 
     # if multi output mode is not on, write all the records into a single file
