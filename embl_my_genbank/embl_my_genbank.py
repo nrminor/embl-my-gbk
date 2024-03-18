@@ -10,7 +10,7 @@ additional restrictions to the Immuno-Polymorphism Database flavor of the
 EMBL format.
 
 ```
-usage: embl_my_genbank.py [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate]
+usage: embl_my_genbank.py [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate] [--multi_output]
 
 options:
   -h, --help            show this help message and exit
@@ -24,12 +24,14 @@ options:
                         Format to convert to. Can convert to EMBL, IPD_EMBL, and FASTA.
   --view_intermediate, -v
                         Whether to write out the intermediate cleaned Genbank file for inspection.
+  --multi_output        Whether to split each output record into its own embl file.
 ```
 """
 
 import argparse
 import os
 from enum import Enum, auto
+import glob
 from itertools import filterfalse
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
@@ -78,6 +80,11 @@ def parse_command_line_args() -> Tuple[Path, str, str, bool]:
         action="store_true",
         help="Whether to write out the intermediate cleaned Genbank file for inspection.",
     )
+    parser.add_argument(
+        "--multi_output",
+        action="store_true",
+        help="Whether to split each output record into its own embl file.",
+    )
 
     args = parser.parse_args()
     return (
@@ -86,6 +93,7 @@ def parse_command_line_args() -> Tuple[Path, str, str, bool]:
         args.species,
         args.out_fmt,
         args.view_intermediate,
+        args.multi_output,
     )
 
 
@@ -343,7 +351,7 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
         object. Therefore, the changes will be reflected in the original SeqRecord passed to the
         function.
     """
-    
+
     # separate out non-species-specific gene name
     gene = record.name.split("_")[1]
 
@@ -413,12 +421,13 @@ def read_metadata(meta_path: Path) -> Dict[str, str]:
 
     # select the two columns
     meta_dicts = (
-        meta_df
-        .select("Animal ID", "Local designation")
+        meta_df.select("Animal ID", "Local designation")
         .with_columns(
             [
                 pl.col("Animal ID").str.strip_chars().alias("Animal ID"),
-                pl.col("Local designation").str.strip_chars().alias("Local designation")
+                pl.col("Local designation")
+                .str.strip_chars()
+                .alias("Local designation"),
             ]
         )
         .to_dicts()
@@ -536,8 +545,22 @@ def clean_genbank(
     return record
 
 
+def handle_multi_output(records: List[SeqRecord], out_type: str) -> None:
+    """
+    TODO
+    """
+    for record in records:
+        allele_embl_name = f"{record.name}.{out_type}"
+        with open(allele_embl_name, "w", encoding="utf8") as per_record:
+            SeqIO.write(record, per_record, out_type)
+
+
 def id_line_replacement(
-    records: List[SeqRecord], int_embl: str, final_out: str, out_type: str
+    records: List[SeqRecord],
+    int_embl: str,
+    final_out: str,
+    out_type: str,
+    multi_output: bool,
 ) -> None:
     """
     Replaces the ID line in EMBL-formatted files and writes the modified
@@ -565,19 +588,29 @@ def id_line_replacement(
         for record in records:
             SeqIO.write(record, int_handle, out_type)
 
-    # Open the input file for reading and the output file for writing
-    with open(int_embl, "r", encoding="utf8") as infile, open(
-        final_out, "w", encoding="utf8"
-    ) as outfile:
-        for line in infile:
-            # Check if the line starts with "ID"
-            if line.startswith("ID"):
-                # Write the replacement text to the output file
-                outfile.write(new_id_line)
-                continue
-            # Write the original line to the output file
-            outfile.write(line)
+    # split up the intermediate file if multi output mode is on
+    if multi_output:
+        with open(int_embl, "r", encoding="utf8") as multi_input:
+            records = list(SeqIO.parse(multi_input, out_type))
+            handle_multi_output(records, out_type)
 
+    # collect the intermediate files to be corrected if ipd files are called for
+    intermediate_files = glob.glob(f"*.{out_type}", recursive=False)
+
+    # go through the intermediate files
+    for int_file in intermediate_files:
+        # Open the input file for reading and the output file for writing
+        with open(int_file, "r", encoding="utf8") as infile, open(
+            final_out, "w", encoding="utf8"
+        ) as outfile:
+            for line in infile:
+                # Check if the line starts with "ID"
+                if line.startswith("ID"):
+                    # Write the replacement text to the output file
+                    outfile.write(new_id_line)
+                    continue
+                # Write the original line to the output file
+                outfile.write(line)
     os.remove(int_embl)
 
 
@@ -586,6 +619,7 @@ def write_output(
     final_out: str,
     requested_format: str,
     view_intermediate: bool,
+    multi_output: bool,
 ) -> None:
     """
     Writes sequence records to an output file in a specified format, with
@@ -616,9 +650,16 @@ def write_output(
     # check if an IPC intermediate embl is needed
     if "IPD" in requested_format.upper():
         int_embl = "intermediate.embl"
-        id_line_replacement(records, int_embl, final_out, out_type)
+        id_line_replacement(records, int_embl, final_out, out_type, multi_output)
         return
 
+    # if multi output mode is on, write each EMBL record into its own file
+    if multi_output:
+        handle_multi_output(records, out_type)
+        os.remove(int_embl)
+        return
+
+    # if multi output mode is not on, write all the records into a single file
     with open(final_out, "w", encoding="utf8") as out_file:
         for record in records:
             SeqIO.write(record, out_file, out_type)
@@ -636,6 +677,7 @@ def main() -> None:
         species,
         out_format,
         view_intermediate,
+        multi_output,
     ) = parse_command_line_args()
 
     # run some checks to catch if the specified files don't exist
@@ -654,7 +696,7 @@ def main() -> None:
     ]
 
     # write output in the desired format
-    write_output(records, out_path, out_format, view_intermediate)
+    write_output(records, out_path, out_format, view_intermediate, multi_output)
 
 
 if __name__ == "__main__":

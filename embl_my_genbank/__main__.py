@@ -5,7 +5,7 @@
 that can be accessed when built into a cli tool:
 
 ```
-usage: emb_my_gbk [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate]
+usage: emb_my_gbk [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate] [--multi_output]
 
 options:
   -h, --help            show this help message and exit
@@ -19,6 +19,7 @@ options:
                         Format to convert to. Can convert to EMBL, IPD_EMBL, and FASTA.
   --view_intermediate, -v
                         Whether to write out the intermediate cleaned Genbank file for inspection.
+  --multi_output        Whether to split each output record into its own embl file.
 ```
 """
 
