@@ -10,7 +10,7 @@ additional restrictions to the Immuno-Polymorphism Database flavor of the
 EMBL format.
 
 ```
-usage: embl_my_genbank.py [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate] [--multi_output]
+usage: embl_my_genbank.py [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate] [--divide]
 
 options:
   -h, --help            show this help message and exit
@@ -24,7 +24,7 @@ options:
                         Format to convert to. Can convert to EMBL, IPD_EMBL, and FASTA.
   --view_intermediate, -v
                         Whether to write out the intermediate cleaned Genbank file for inspection.
-  --multi_output        Whether to split each output record into its own embl file.
+  --divide, -d          Whether to divide the batch into one file per record.
 ```
 """
 
@@ -38,6 +38,7 @@ from typing import Dict, List, Optional, Tuple
 
 import polars as pl
 from Bio import SeqIO
+from Bio.SeqFeature import SeqFeature, FeatureLocation
 from Bio.SeqRecord import SeqRecord
 
 
@@ -81,9 +82,10 @@ def parse_command_line_args() -> Tuple[Path, Path, str, str, bool, bool]:
         help="Whether to write out the intermediate cleaned Genbank file for inspection.",
     )
     parser.add_argument(
-        "--multi_output",
+        "--divide",
+        "-d",
         action="store_true",
-        help="Whether to split each output record into its own embl file.",
+        help="Whether to divide the batch into one file per record.",
     )
 
     args = parser.parse_args()
@@ -93,7 +95,7 @@ def parse_command_line_args() -> Tuple[Path, Path, str, str, bool, bool]:
         args.species,
         args.out_fmt,
         args.view_intermediate,
-        args.multi_output,
+        args.divide,
     )
 
 
@@ -354,11 +356,14 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
 
     # separate out non-species-specific gene name
     gene = record.name.split("_")[1]
+    
+    # separate out record sequence length
+    seq_length = len(record.seq)
 
     # filter out genes
     record.features = list(filterfalse(lambda f: f.type == "gene", record.features))
 
-    for feature in record.features:
+    for i, feature in enumerate(record.features):
         # Remove standard_name qualifier from CDS features
         if feature.type == "CDS" and "standard_name" in feature.qualifiers:
             del feature.qualifiers["standard_name"]
@@ -371,10 +376,21 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
         if feature.type == "CDS" and "gene" in feature.qualifiers:
             feature.qualifiers["gene"] = gene
 
-        # Update source feature with organism and mol_type
+        # Update source feature with organism and mol_type, while making
+        # sure it has the correct coordinates
         if feature.type == "source":
             feature.qualifiers["organism"] = [species]
             feature.qualifiers["mol_type"] = ["genomic DNA"]
+            if feature.location.end != seq_length:
+                source_start = feature.location.start
+                source_end = seq_length
+            else:
+                source_start = feature.location.start
+                source_end = feature.location.end
+            source_location = FeatureLocation(source_start, source_end)
+            new_source = SeqFeature(location=source_location, type="source")
+            new_source.qualifiers = record.features[i].qualifiers
+            record.features[i] = new_source
 
     return record
 
@@ -550,7 +566,7 @@ def handle_multi_output(records: List[SeqRecord], out_type: str) -> None:
     TODO
     """
     for record in records:
-        allele_embl_name = f"{record.name}.{out_type}"
+        allele_embl_name = f"{record.name}.tmp.{out_type}"
         with open(allele_embl_name, "w", encoding="utf8") as per_record:
             SeqIO.write(record, per_record, out_type)
 
@@ -560,7 +576,7 @@ def id_line_replacement(
     int_embl: str,
     final_out: str,
     out_type: str,
-    multi_output: bool,
+    divide: bool,
 ) -> None:
     """
     Replaces the ID line in EMBL-formatted files and writes the modified
@@ -581,15 +597,16 @@ def id_line_replacement(
     formats not directly supported by the original exporting tool.
     """
 
-    new_id_line: str = "ID   XXX; XXX; linear; XXX; XXX; XXX;\n"
+    # new_id_line: str = "ID   XXX; XXX; linear; genomic DNA; XXX; XXX;\n"
 
     # make an intermediate embl file first
     with open(int_embl, "w", encoding="utf8") as int_handle:
         for record in records:
+            record.annotations["keywords"] = ["."]
             SeqIO.write(record, int_handle, out_type)
 
     # split up the intermediate file if multi output mode is on
-    if multi_output:
+    if divide:
         with open(int_embl, "r", encoding="utf8") as multi_input:
             records = list(SeqIO.parse(multi_input, out_type))
             handle_multi_output(records, out_type)
@@ -599,18 +616,22 @@ def id_line_replacement(
 
     # go through the intermediate files
     for int_file in intermediate_files:
+        final_handle = final_out if len(intermediate_files) == 1 else int_file.replace(".tmp", "")
         # Open the input file for reading and the output file for writing
         with open(int_file, "r", encoding="utf8") as infile, open(
-            final_out, "w", encoding="utf8"
+            final_handle, "w", encoding="utf8"
         ) as outfile:
             for line in infile:
                 # Check if the line starts with "ID"
                 if line.startswith("ID"):
                     # Write the replacement text to the output file
+                    new_id_line = line.replace("; DNA", "; genomic DNA")
                     outfile.write(new_id_line)
                     continue
                 # Write the original line to the output file
                 outfile.write(line)
+        if int_file != "intermediate.embl":
+            os.remove(int_file)
     os.remove(int_embl)
 
 
@@ -619,7 +640,7 @@ def write_output(
     final_out: str,
     requested_format: str,
     view_intermediate: bool,
-    multi_output: bool,
+    divide: bool,
 ) -> None:
     """
     Writes sequence records to an output file in a specified format, with
@@ -650,11 +671,11 @@ def write_output(
     # check if an IPC intermediate embl is needed
     if "IPD" in requested_format.upper():
         int_embl = "intermediate.embl"
-        id_line_replacement(records, int_embl, final_out, out_type, multi_output)
+        id_line_replacement(records, int_embl, final_out, out_type, divide)
         return
 
     # if multi output mode is on, write each EMBL record into its own file
-    if multi_output:
+    if divide:
         handle_multi_output(records, out_type)
         return
 
@@ -676,7 +697,7 @@ def main() -> None:
         species,
         out_format,
         view_intermediate,
-        multi_output,
+        divide,
     ) = parse_command_line_args()
 
     # run some checks to catch if the specified files don't exist
@@ -695,7 +716,7 @@ def main() -> None:
     ]
 
     # write output in the desired format
-    write_output(records, out_path, out_format, view_intermediate, multi_output)
+    write_output(records, out_path, out_format, view_intermediate, divide)
 
 
 if __name__ == "__main__":
