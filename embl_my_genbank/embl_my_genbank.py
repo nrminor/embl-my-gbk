@@ -10,13 +10,13 @@ additional restrictions to the Immuno-Polymorphism Database flavor of the
 EMBL format.
 
 ```
-usage: embl_my_genbank.py [-h] --gb_path GB_PATH [--metadata METADATA] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate] [--divide]
+usage: embl_my_genbank.py [-h] --gb_path GB_PATH [--metapath METAPATH] --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate] [--divide]
 
 options:
   -h, --help            show this help message and exit
   --gb_path GB_PATH, -g GB_PATH
                         Genbank file to be converted.
-  --metadata METADATA, -m METADATA
+  --metapath METAPATH, -m METAPATH
                         Metadata file with, at minimum, a column of allele names and a column of representative animals.
   --species SPECIES, -s SPECIES
                         Scientific name for the species under examination.
@@ -53,7 +53,7 @@ def parse_command_line_args() -> Tuple[Path, Path, str, str, bool, bool]:
         help="Genbank file to be converted.",
     )
     parser.add_argument(
-        "--metadata",
+        "--meta_path",
         "-m",
         type=Path,
         required=False,
@@ -89,14 +89,7 @@ def parse_command_line_args() -> Tuple[Path, Path, str, str, bool, bool]:
     )
 
     args = parser.parse_args()
-    return (
-        args.gb_path,
-        args.metadata,
-        args.species,
-        args.out_fmt,
-        args.view_intermediate,
-        args.divide,
-    )
+    return args
 
 
 class OutType(Enum):
@@ -364,29 +357,38 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
     record.features = list(filterfalse(lambda f: f.type == "gene", record.features))
 
     for i, feature in enumerate(record.features):
+
+        # skips current iteration immediately
+        if feature.type != "CDS" and feature.type != "source":
+            continue
+
         # Remove standard_name qualifier from CDS features
-        if feature.type == "CDS" and "standard_name" in feature.qualifiers:
-            del feature.qualifiers["standard_name"]
+        if feature.type == "CDS":
+            if "standard_name" in feature.qualifiers:
+                del feature.qualifiers["standard_name"]
 
-        # in-place mutate the allele name in the CDS, if present
-        if feature.type == "CDS" and "allele" in feature.qualifiers:
-            feature.qualifiers["allele"] = record.name
+            # in-place mutate the allele name in the CDS, if present
+            elif "allele" in feature.qualifiers:
+                feature.qualifiers["allele"] = record.name
 
-        # in-place mutate the allele name in the CDS, if present
-        if feature.type == "CDS" and "gene" in feature.qualifiers:
-            feature.qualifiers["gene"] = gene
+            # in-place mutate the allele name in the CDS, if present
+            elif "gene" in feature.qualifiers:
+                feature.qualifiers["gene"] = gene        
+
 
         # Update source feature with organism and mol_type, while making
         # sure it has the correct coordinates
         if feature.type == "source":
             feature.qualifiers["organism"] = [species]
             feature.qualifiers["mol_type"] = ["genomic DNA"]
-            if feature.location.end != seq_length:
+            # TODO check if features.location indexes from 0 or 1
+            if int(feature.location.end) != seq_length: # .end method returns a int-like type but I think the int() annotation handles errors well just in case
                 source_start = feature.location.start
                 source_end = seq_length
             else:
-                source_start = feature.location.start
+                source_start = feature.location.start # immutable
                 source_end = feature.location.end
+                
             source_location = FeatureLocation(source_start, source_end)
             new_source = SeqFeature(location=source_location, type="source")
             new_source.qualifiers = record.features[i].qualifiers
@@ -441,9 +443,7 @@ def read_metadata(meta_path: Path) -> Dict[str, str]:
         .with_columns(
             [
                 pl.col("Animal ID").str.strip_chars().alias("Animal ID"),
-                pl.col("Local designation")
-                .str.strip_chars()
-                .alias("Local designation"),
+                pl.col("Local designation").str.strip_chars().alias("Local designation"),
             ]
         )
         .to_dicts()
@@ -532,7 +532,7 @@ def clean_genbank(
     The function is a wrapper that sequentially applies several specific cleaning and
     updating operations, making it convenient to perform multiple adjustments through a
     single function call.
-    """
+    """ 
 
     # shift around the allele ID into different slots than
     # Geneious places it by default (i.e., Accession and )
@@ -630,6 +630,7 @@ def id_line_replacement(
                     continue
                 # Write the original line to the output file
                 outfile.write(line)
+
         if int_file != "intermediate.embl":
             os.remove(int_file)
     os.remove(int_embl)
@@ -691,32 +692,25 @@ def main() -> None:
     """
 
     # parse command line arguments
-    (
-        gb_path,
-        meta_path,
-        species,
-        out_format,
-        view_intermediate,
-        divide,
-    ) = parse_command_line_args()
+    args = parse_command_line_args()
 
     # run some checks to catch if the specified files don't exist
-    assert os.path.isfile(gb_path), "Provided Genbank file path does not exist"
-    if meta_path is not None:
-        assert os.path.isfile(meta_path), "Provided metadata file path does not exist"
+    assert os.path.isfile(args.gb_path), "Provided Genbank file path does not exist"
+    if args.meta_path is not None:
+        assert os.path.isfile(args.meta_path), "Provided metadata file path does not exist"
 
     # parse out a name for the output file based on the input file
-    basename = os.path.basename(gb_path).replace(".gb", "").replace(".gbk", "")
+    basename = os.path.basename(args.gb_path).replace(".gb", "").replace(".gbk", "")
     out_path = f"{basename}.embl"
 
     # revise and clean all records in the Genbank file
     records = [
-        clean_genbank(record, species, meta_path)
-        for record in SeqIO.parse(gb_path, "genbank")
+        clean_genbank(record, args.species, args.meta_path)
+        for record in SeqIO.parse(args.gb_path, "genbank")
     ]
 
     # write output in the desired format
-    write_output(records, out_path, out_format, view_intermediate, divide)
+    write_output(records, out_path, args.out_fmt, args.view_intermediate, args.divide)
 
 
 if __name__ == "__main__":
