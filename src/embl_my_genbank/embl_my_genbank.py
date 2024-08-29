@@ -28,21 +28,24 @@ options:
 ```
 """
 
+from __future__ import annotations
+
 import argparse
-import os
 from enum import Enum, auto
-import glob
 from itertools import filterfalse
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import TYPE_CHECKING
 
 import polars as pl
 from Bio import SeqIO
-from Bio.SeqFeature import SeqFeature, FeatureLocation
-from Bio.SeqRecord import SeqRecord
+from Bio.SeqFeature import FeatureLocation, SeqFeature
+from loguru import logger
+
+if TYPE_CHECKING:
+    from Bio.SeqRecord import SeqRecord
 
 
-def parse_command_line_args() -> Tuple[Path, Path, str, str, bool, bool]:
+def parse_command_line_args() -> argparse.Namespace:
     """Parse command line arguments."""
     parser = argparse.ArgumentParser()
     parser.add_argument(
@@ -88,8 +91,7 @@ def parse_command_line_args() -> Tuple[Path, Path, str, str, bool, bool]:
         help="Whether to divide the batch into one file per record.",
     )
 
-    args = parser.parse_args()
-    return args
+    return parser.parse_args()
 
 
 class OutType(Enum):
@@ -140,7 +142,8 @@ def choose_out_type(format_choice: str) -> str:
     try:
         choice_str = OutType.__members__[format_choice.upper()]
     except KeyError as exc:
-        raise ValueError(f"Invalid file type selected: {format_choice}") from exc
+        msg = f"Invalid file type selected: {format_choice}"
+        raise ValueError(msg) from exc
 
     out_type: str
     match choice_str:
@@ -153,7 +156,8 @@ def choose_out_type(format_choice: str) -> str:
         case OutType.FASTA:
             out_type = "fasta"
         case _:
-            raise ValueError(f"Invalid output file type selected: {format_choice}")
+            msg = f"Invalid output file type selected: {format_choice}"
+            raise ValueError(msg)
     return out_type
 
 
@@ -307,7 +311,7 @@ def remove_geneious_annotations(record: SeqRecord) -> SeqRecord:
     # get rid of the misc features Geneious adds in for where parts of annotations
     # were manually deleted
     record.features = list(
-        filterfalse(lambda f: f.type == "misc_feature", record.features)
+        filterfalse(lambda f: f.type == "misc_feature", record.features),
     )
 
     # delete geneious notes
@@ -349,7 +353,7 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
 
     # separate out non-species-specific gene name
     gene = record.name.split("_")[1]
-    
+
     # separate out record sequence length
     seq_length = len(record.seq)
 
@@ -357,9 +361,8 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
     record.features = list(filterfalse(lambda f: f.type == "gene", record.features))
 
     for i, feature in enumerate(record.features):
-
         # skips current iteration immediately
-        if feature.type != "CDS" and feature.type != "source":
+        if feature.type not in ("CDS", "source"):
             continue
 
         # Remove standard_name qualifier from CDS features
@@ -373,22 +376,22 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
 
             # in-place mutate the allele name in the CDS, if present
             elif "gene" in feature.qualifiers:
-                feature.qualifiers["gene"] = gene        
-
+                feature.qualifiers["gene"] = gene
 
         # Update source feature with organism and mol_type, while making
         # sure it has the correct coordinates
         if feature.type == "source":
             feature.qualifiers["organism"] = [species]
             feature.qualifiers["mol_type"] = ["genomic DNA"]
-            # TODO check if features.location indexes from 0 or 1
-            if int(feature.location.end) != seq_length: # .end method returns a int-like type but I think the int() annotation handles errors well just in case
+            if (
+                int(feature.location.end) != seq_length
+            ):  # .end method returns a int-like type but I think the int() annotation handles errors well just in case
                 source_start = feature.location.start
                 source_end = seq_length
             else:
-                source_start = feature.location.start # immutable
+                source_start = feature.location.start  # immutable
                 source_end = feature.location.end
-                
+
             source_location = FeatureLocation(source_start, source_end)
             new_source = SeqFeature(location=source_location, type="source")
             new_source.qualifiers = record.features[i].qualifiers
@@ -397,7 +400,7 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
     return record
 
 
-def read_metadata(meta_path: Path) -> Dict[str, str]:
+def read_metadata(meta_path: Path) -> dict[str, str]:
     """
     Reads metadata from an Excel file and converts it to a dictionary.
 
@@ -443,20 +446,23 @@ def read_metadata(meta_path: Path) -> Dict[str, str]:
         .with_columns(
             [
                 pl.col("Animal ID").str.strip_chars().alias("Animal ID"),
-                pl.col("Local designation").str.strip_chars().alias("Local designation"),
-            ]
+                pl.col("Local designation")
+                .str.strip_chars()
+                .alias("Local designation"),
+            ],
         )
         .to_dicts()
     )
-    meta_dict = {
+
+    return {
         mapping["Local designation"]: mapping["Animal ID"] for mapping in meta_dicts
     }
 
-    return meta_dict
-
 
 def construct_description(
-    record: SeqRecord, species: str, isolate_dict: dict[str, str]
+    record: SeqRecord,
+    species: str,
+    isolate_dict: dict[str, str],
 ) -> SeqRecord:
     """
     Constructs a descriptive string for a SeqRecord based on provided metadata.
@@ -491,8 +497,8 @@ def construct_description(
     allele = record.name
 
     # check that the allele is actually represented in the provided dict
-    if allele not in isolate_dict.keys():
-        print(f"Allele {allele} is missing in the provided table of metadata.")
+    if allele not in isolate_dict:
+        logger.warning(f"Allele {allele} is missing in the provided table of metadata.")
         return record
 
     # parse out a gene name with the locus
@@ -511,7 +517,9 @@ def construct_description(
 
 
 def clean_genbank(
-    record: SeqRecord, species: str, meta_path: Optional[Path]
+    record: SeqRecord,
+    species: str,
+    meta_path: Path | None,
 ) -> SeqRecord:
     """
     Cleans a GenBank record by updating allele IDs, assigning species names, and
@@ -532,7 +540,7 @@ def clean_genbank(
     The function is a wrapper that sequentially applies several specific cleaning and
     updating operations, making it convenient to perform multiple adjustments through a
     single function call.
-    """ 
+    """
 
     # shift around the allele ID into different slots than
     # Geneious places it by default (i.e., Accession and )
@@ -556,23 +564,22 @@ def clean_genbank(
     # if isolate metadata is available, use it to construct record
     # descriptions
     isolate_dict = read_metadata(meta_path)
-    record = construct_description(record, species, isolate_dict)
 
-    return record
+    return construct_description(record, species, isolate_dict)
 
 
-def handle_multi_output(records: List[SeqRecord], out_type: str) -> None:
+def handle_multi_output(records: list[SeqRecord], out_type: str) -> None:
     """
     TODO
     """
     for record in records:
         allele_embl_name = f"{record.name}.tmp.{out_type}"
-        with open(allele_embl_name, "w", encoding="utf8") as per_record:
+        with Path(allele_embl_name).open("w", encoding="utf8") as per_record:
             SeqIO.write(record, per_record, out_type)
 
 
 def id_line_replacement(
-    records: List[SeqRecord],
+    records: list[SeqRecord],
     int_embl: str,
     final_out: str,
     out_type: str,
@@ -597,29 +604,32 @@ def id_line_replacement(
     formats not directly supported by the original exporting tool.
     """
 
-    # new_id_line: str = "ID   XXX; XXX; linear; genomic DNA; XXX; XXX;\n"
+    _new_id_line: str = "ID   XXX; XXX; linear; genomic DNA; XXX; XXX;\n"
 
     # make an intermediate embl file first
-    with open(int_embl, "w", encoding="utf8") as int_handle:
+    with Path(int_embl).open("w", encoding="utf8") as int_handle:
         for record in records:
             record.annotations["keywords"] = ["."]
             SeqIO.write(record, int_handle, out_type)
 
     # split up the intermediate file if multi output mode is on
     if divide:
-        with open(int_embl, "r", encoding="utf8") as multi_input:
+        with Path(int_embl).open("w", encoding="utf8") as multi_input:
             records = list(SeqIO.parse(multi_input, out_type))
             handle_multi_output(records, out_type)
 
     # collect the intermediate files to be corrected if ipd files are called for
-    intermediate_files = glob.glob(f"*.{out_type}", recursive=False)
+    intermediate_files = [path.name for path in Path.cwd().glob(f"*tmp*.{out_type}")]
 
     # go through the intermediate files
     for int_file in intermediate_files:
-        final_handle = final_out if len(intermediate_files) == 1 else int_file.replace(".tmp", "")
+        final_handle = (
+            final_out if len(intermediate_files) == 1 else int_file.replace(".tmp", "")
+        )
         # Open the input file for reading and the output file for writing
-        with open(int_file, "r", encoding="utf8") as infile, open(
-            final_handle, "w", encoding="utf8"
+        with Path(int_file).open(encoding="utf8") as infile, Path(final_handle).open(
+            "w",
+            encoding="utf8",
         ) as outfile:
             for line in infile:
                 # Check if the line starts with "ID"
@@ -631,13 +641,13 @@ def id_line_replacement(
                 # Write the original line to the output file
                 outfile.write(line)
 
-        if int_file != "intermediate.embl":
-            os.remove(int_file)
-    os.remove(int_embl)
+        if int_file != int_embl:
+            Path.unlink(int_file)
+    Path.unlink(int_embl)
 
 
 def write_output(
-    records: List[SeqRecord],
+    records: list[SeqRecord],
     final_out: str,
     requested_format: str,
     view_intermediate: bool,
@@ -667,21 +677,25 @@ def write_output(
     out_type = choose_out_type(requested_format)
 
     if view_intermediate:
+        logger.info(
+            "Writing intermediate cleaned genbank file called 'intermediate.gbk' for manual inspection.",
+        )
         SeqIO.write(records, "intermediate.gbk", "genbank")
 
     # check if an IPC intermediate embl is needed
     if "IPD" in requested_format.upper():
-        int_embl = "intermediate.embl"
+        int_embl = "tmp.embl"
         id_line_replacement(records, int_embl, final_out, out_type, divide)
         return
 
     # if multi output mode is on, write each EMBL record into its own file
     if divide:
+        logger.info("Writing outputs with one file per record.")
         handle_multi_output(records, out_type)
         return
 
     # if multi output mode is not on, write all the records into a single file
-    with open(final_out, "w", encoding="utf8") as out_file:
+    with Path(final_out).open("w", encoding="utf8") as out_file:
         for record in records:
             SeqIO.write(record, out_file, out_type)
 
@@ -695,21 +709,26 @@ def main() -> None:
     args = parse_command_line_args()
 
     # run some checks to catch if the specified files don't exist
-    assert os.path.isfile(args.gb_path), "Provided Genbank file path does not exist"
+    assert Path(args.gb_path).is_file(), "Provided Genbank file path does not exist"
     if args.meta_path is not None:
-        assert os.path.isfile(args.meta_path), "Provided metadata file path does not exist"
+        assert Path(
+            args.gb_path,
+        ).is_file(), "Provided metadata file path does not exist"
 
     # parse out a name for the output file based on the input file
-    basename = os.path.basename(args.gb_path).replace(".gb", "").replace(".gbk", "")
+    basename = Path(args.gb_path).name.replace(".gb", "").replace(".gbk", "")
     out_path = f"{basename}.embl"
+    logger.info(f"Parsing records from {args.gb_path}.")
 
     # revise and clean all records in the Genbank file
     records = [
         clean_genbank(record, args.species, args.meta_path)
         for record in SeqIO.parse(args.gb_path, "genbank")
     ]
+    logger.info(f"Successfully cleaned {len(records)} records.")
 
     # write output in the desired format
+    logger.info(f"Writing cleaned and formatted records to {out_path}")
     write_output(records, out_path, args.out_fmt, args.view_intermediate, args.divide)
 
 

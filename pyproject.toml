@@ -1,30 +1,31 @@
-[tool.poetry]
+[project]
 name = "embl-my-genbank"
 version = "0.1.0"
 description = "Convert a Genbank file with many extraneous Geneious annotations to EMBL format (even with as strict requirements as IPD)"
-authors = ["Nicholas Minor <nrminor@wisc.edu>"]
+authors = [{ name = "Nicholas Minor", email = "nrminor@wisc.edu" }]
 license = "MIT"
 readme = "README.md"
-
-[tool.poetry.dependencies]
-python = "^3.10"
-biopython = "^1.83"
-polars = "^0.20.14"
-xlsx2csv = "^0.8.2"
-
-
-[tool.poetry.group.dev.dependencies]
-marimo = "^0.3.1"
-jupyter = "^1.0.0"
-ipykernel = "^6.29.3"
-ruff = "^0.3.1"
-pdoc = "^14.4.0"
-blackdoc = "^0.3.9"
-pre-commit = "^3.6.2"
+requires-python = ">=3.11"
+dependencies = [
+    "biopython>=1.84",
+    "polars>=1.6.0",
+    "xlsx2csv>=0.8.3",
+    "loguru>=0.7.2",
+]
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
-[tool.poetry.scripts]
+[tool.uv]
+dev-dependencies = [
+    "marimo>=0.8.4",
+    "ruff>=0.6.2",
+    "jupyter>=1.1.0",
+    "ipykernel>=6.29.5",
+    "blackdoc>=0.3.9",
+    "pre-commit>=3.8.0",
+]
+
+[project.scripts]
 "emb_my_gbk" = "embl_my_genbank.__main__:main"

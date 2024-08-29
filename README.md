@@ -5,16 +5,22 @@
 This repo contains a minimal-dependency, Ruff-formatted, pure Python module that can be accessed directly through a script, e.g.,
 
 ```bash
-python3 embl_my_genbank/embl_my_genbank.py -g file.gb -s "Homo sapiens"
+python3 src/embl_my_genbank/embl_my_genbank.py -g file.gb -s "Homo sapiens"
 ```
 
-Or, after running `poetry install`, as a command line command:
+Or, after running `uv venv`, `source .venv/bin/activate`, and `uv sync`, as a command:
 
 ```bash
 emb_my_gbk -g file.gb -s "Homo sapiens"
 ```
 
-The repo comes with a `pyproject.toml` and `requirements.txt` that can be used with `pip`, `pipx`, `uv`, `Poetry`, or whatever declarative Python manager you prefer, to reproduce our dev environemnt--though really, the only non-stdlib dependencies are [BioPython](https://biopython.org/) and [Polars](https://pola.rs/).
+Or simplest of all, with:
+
+```bash
+uv run src/embl_my_genbank/embl_my_genbank.py -g file.gb -s "Homo sapiens"
+```
+
+The repo comes with a `uv`-generated `pyproject.toml` to reproduce our dev environment really, the only non-stdlib dependencies are [BioPython](https://biopython.org/), [Polars](https://pola.rs/), and [Loguru](https://github.com/Delgan/loguru).
 
 For complete documentation of the API, see the HTML in `docs/`. Recommended usage looks like this:
 
