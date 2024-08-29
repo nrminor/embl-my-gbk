@@ -614,7 +614,7 @@ def id_line_replacement(
 
     # split up the intermediate file if multi output mode is on
     if divide:
-        with Path(int_embl).open("w", encoding="utf8") as multi_input:
+        with Path(int_embl).open("r", encoding="utf8") as multi_input:
             records = list(SeqIO.parse(multi_input, out_type))
             handle_multi_output(records, out_type)
 
