@@ -8,21 +8,21 @@ This repo contains a minimal-dependency, Ruff-formatted, pure Python module that
 python3 src/embl_my_genbank/embl_my_genbank.py -g file.gb -s "Homo sapiens"
 ```
 
-Or, after running `uv venv`, `source .venv/bin/activate`, and `uv sync`, as a command:
+You can also reproduce the project environment with `uv` and the repo's `pyproject.toml`. To do so, [make sure you have `uv` installed](https://docs.astral.sh/uv/getting-started/installation/), and then set up the environment with the commands `uv venv`, `source .venv/bin/activate`, and `uv sync`. From there, the tool will be available as the command `emb_my_gbk`, like so:
 
 ```bash
 emb_my_gbk -g file.gb -s "Homo sapiens"
 ```
 
-Or simplest of all, with:
+The simplest set up option of all, again using `uv`, is `uv run`:
 
 ```bash
 uv run src/embl_my_genbank/embl_my_genbank.py -g file.gb -s "Homo sapiens"
 ```
 
-The repo comes with a `uv`-generated `pyproject.toml` to reproduce our dev environment really, the only non-stdlib dependencies are [BioPython](https://biopython.org/), [Polars](https://pola.rs/), and [Loguru](https://github.com/Delgan/loguru).
+All said, feel free to use whichever Python environment manager you're used to——the only non-standard-library dependencies are [BioPython](https://biopython.org/), [Polars](https://pola.rs/), and [Loguru](https://github.com/Delgan/loguru).
 
-For complete documentation of the API, see the HTML in `docs/`. Recommended usage looks like this:
+For documentation of the API, see the HTML in `docs/`. Recommended usage looks like this:
 
 ```bash
 usage: emb_my_gbk [-h] --gb_path GB_PATH --species SPECIES [--out_fmt OUT_FMT] [--view_intermediate VIEW_INTERMEDIATE]

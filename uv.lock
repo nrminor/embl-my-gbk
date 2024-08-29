@@ -408,7 +408,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "biopython", specifier = ">=1.84" },
-    { name = "loguru" },
+    { name = "loguru", specifier = ">=0.7.2" },
     { name = "polars", specifier = ">=1.6.0" },
     { name = "xlsx2csv", specifier = ">=0.8.3" },
 ]
