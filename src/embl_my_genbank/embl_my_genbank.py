@@ -22,15 +22,18 @@ options:
                         Scientific name for the species under examination.
   --out_fmt OUT_FMT, -o OUT_FMT
                         Format to convert to. Can convert to EMBL, IPD_EMBL, and FASTA.
-  --view_intermediate, -v
+  --view_intermediate, -i
                         Whether to write out the intermediate cleaned Genbank file for inspection.
   --divide, -d          Whether to divide the batch into one file per record.
+  --verbose, -v
+                        Increase verbosity level (-v for WARNING, -vv for INFO, -vvv for DEBUG)
 ```
 """
 
 from __future__ import annotations
 
 import argparse
+import sys
 from enum import Enum, auto
 from itertools import filterfalse
 from pathlib import Path
@@ -80,7 +83,7 @@ def parse_command_line_args() -> argparse.Namespace:
     )
     parser.add_argument(
         "--view_intermediate",
-        "-v",
+        "-i",
         action="store_true",
         help="Whether to write out the intermediate cleaned Genbank file for inspection.",
     )
@@ -89,6 +92,13 @@ def parse_command_line_args() -> argparse.Namespace:
         "-d",
         action="store_true",
         help="Whether to divide the batch into one file per record.",
+    )
+    parser.add_argument(
+        "-v",
+        "--verbose",
+        action="count",
+        default=0,
+        help="Increase verbosity level (-v for WARNING, -vv for INFO, -vvv for DEBUG)",
     )
 
     return parser.parse_args()
@@ -209,11 +219,18 @@ def handle_allele_id_placement(record: SeqRecord) -> SeqRecord:
 
     # parse out the working name of the allele
     allele = record.name
+    logger.debug(f"Processing allele with working name {allele}")
 
     # move the allele name into the id position, replacing a geneious annotation
+    logger.debug(
+        f"Replacing the original id field, {record.id}, with the allele name {allele}"
+    )
     record.id = allele
 
     # rename the accession to be the allele name
+    logger.debug(
+        f"Attempting to set the accessions annotation, {record.annotations['accessions']}, to the allele name."
+    )
     record.annotations["accessions"] = [allele]
 
     # check that the allele name was properly propogated
@@ -261,6 +278,9 @@ def assign_species(record: SeqRecord, species: str) -> SeqRecord:
         convenience, allowing further manipulation or analysis if desired.
     """
     # assign the correct species to the organism annotation
+    logger.debug(
+        f"Replacing the previous organism entry, {record.annotations['organism']}, with the provided species '{species}'"
+    )
     record.annotations["organism"] = species
 
     return record
@@ -310,21 +330,57 @@ def remove_geneious_annotations(record: SeqRecord) -> SeqRecord:
 
     # get rid of the misc features Geneious adds in for where parts of annotations
     # were manually deleted
+    logger.debug(
+        f"Attempting to take {len(record.features)} features for {record.id} and remove all Geneious fields labelled 'misc_feature'"
+    )
     record.features = list(
         filterfalse(lambda f: f.type == "misc_feature", record.features),
     )
+    logger.debug(f"Keeping {len(record.features)} features.")
 
     # delete geneious notes
     for feature in record.features:
         # Check if the feature has a 'note' qualifier and remove it
         if "note" not in feature.qualifiers:
             continue
+        logger.debug(
+            f"Deleting the note feature qualifier, {feature.qualifiers['note']}"
+        )
         del feature.qualifiers["note"]
 
     return record
 
 
-def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
+def replace_special_chars(allele_name: str) -> str:
+    """
+    Replaces special characters in an allele name with underscores.
+
+    This function takes an allele name as input and replaces asterisks (*),
+    hyphens (-), and colons (:) with underscores (_). This is often necessary
+    to ensure compatibility with various file systems and software that may
+    have restrictions on special characters in file names or identifiers.
+
+    Args:
+        allele_name (str): The original allele name that may contain special characters.
+
+    Returns:
+        str: The modified allele name with special characters replaced by underscores.
+
+    Example:
+        >>> replace_special_chars("HLA-A*01:01")
+        'HLA_A_01_01'
+    """
+    logger.debug(f"Replacing special characters in {allele_name}")
+    no_special_chars = allele_name.replace("*", "_").replace("-", "_").replace(":", "_")
+    logger.debug(
+        f"Gene name will be split out with `.split('_')[1]` from {no_special_chars}"
+    )
+    return no_special_chars
+
+
+def clean_record_features(
+    record: SeqRecord, species: str, isolate_dict: None | dict[str, str] = None
+) -> SeqRecord:
     """
         Geneious also exports a number of features and feature qualifiers that are
         unnecessary for our purposes, namely "standard_name" and "gene". This function does
@@ -352,7 +408,8 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
     """
 
     # separate out non-species-specific gene name
-    gene = record.name.split("_")[1]
+    gene = replace_special_chars(record.name).split("_")[1]
+    logger.debug(f"Parsed out gene name for {record.id}: {gene}.")
 
     # separate out record sequence length
     seq_length = len(record.seq)
@@ -368,15 +425,27 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
         # Remove standard_name qualifier from CDS features
         if feature.type == "CDS":
             if "standard_name" in feature.qualifiers:
+                logger.debug(
+                    f"Deleting the 'standard_name' field for {record.id}: {feature.qualifiers['standard_name']}"
+                )
                 del feature.qualifiers["standard_name"]
 
             # in-place mutate the allele name in the CDS, if present
-            elif "allele" in feature.qualifiers:
-                feature.qualifiers["allele"] = record.name
+            if "allele" in feature.qualifiers:
+                logger.debug(
+                    f"Setting the allele feature qualifier to {record.name} for {record.id}"
+                )
+                feature.qualifiers["allele"] = [record.name]
 
-            # in-place mutate the allele name in the CDS, if present
-            elif "gene" in feature.qualifiers:
-                feature.qualifiers["gene"] = gene
+            # in-place mutate the allele name in the CDS
+            feature.qualifiers["gene"] = gene
+
+            # bring in an isolate ID, if provided
+            if isolate_dict:
+                logger.debug(
+                    f"Isolate animal IDs provided. Setting '/isolate' to {isolate_dict[record.name]} for {record.id}."
+                )
+                feature.qualifiers["isolate"] = isolate_dict[record.name]
 
         # Update source feature with organism and mol_type, while making
         # sure it has the correct coordinates
@@ -386,6 +455,9 @@ def clean_record_features(record: SeqRecord, species: str) -> SeqRecord:
             if (
                 int(feature.location.end) != seq_length
             ):  # .end method returns a int-like type but I think the int() annotation handles errors well just in case
+                logger.debug(
+                    f"Mismatch in sequence length and recorded coordinates for {record.id}. Attempting to fix."
+                )
                 source_start = feature.location.start
                 source_end = seq_length
             else:
@@ -553,17 +625,17 @@ def clean_genbank(
     # clean off geneious annotations
     record = remove_geneious_annotations(record)
 
-    # clean up the many features appended to each Genbank record,
-    # which BioPython represents as a dictionary
-    record = clean_record_features(record, species)
-
-    # if not metadata path was provided, finish here
+    # if no metadata path was provided, clean record features and finish here
     if meta_path is None:
-        return record
+        return clean_record_features(record, species)
 
     # if isolate metadata is available, use it to construct record
     # descriptions
     isolate_dict = read_metadata(meta_path)
+
+    # clean up the many features appended to each Genbank record,
+    # which BioPython represents as a dictionary
+    record = clean_record_features(record, species, isolate_dict)
 
     return construct_description(record, species, isolate_dict)
 
@@ -642,8 +714,8 @@ def id_line_replacement(
                 outfile.write(line)
 
         if int_file != int_embl:
-            Path.unlink(int_file)
-    Path.unlink(int_embl)
+            Path(int_file).unlink()
+    Path(int_embl).unlink()
 
 
 def write_output(
@@ -708,6 +780,21 @@ def main() -> None:
     # parse command line arguments
     args = parse_command_line_args()
 
+    # set up logger based on the requested verbosity
+    match args.verbose:
+        case 0:
+            level = "WARNING"
+        case 1:
+            level = "SUCCESS"
+        case 2:
+            level = "INFO"
+        case 3:
+            level = "DEBUG"
+        case _:
+            level = "WARNING"
+    logger.remove()
+    logger.add(sys.stderr, colorize=True, level=level)
+
     # run some checks to catch if the specified files don't exist
     assert Path(args.gb_path).is_file(), "Provided Genbank file path does not exist"
     if args.meta_path is not None:
@@ -725,7 +812,7 @@ def main() -> None:
         clean_genbank(record, args.species, args.meta_path)
         for record in SeqIO.parse(args.gb_path, "genbank")
     ]
-    logger.info(f"Successfully cleaned {len(records)} records.")
+    logger.success(f"Successfully cleaned {len(records)} records.")
 
     # write output in the desired format
     logger.info(f"Writing cleaned and formatted records to {out_path}")

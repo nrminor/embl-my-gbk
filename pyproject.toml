@@ -7,10 +7,11 @@ license = "MIT"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-  "biopython>=1.84",
-  "polars>=1.6.0",
-  "xlsx2csv>=0.8.3",
-  "loguru>=0.7.2",
+    "biopython>=1.84",
+    "polars>=1.6.0",
+    "xlsx2csv>=0.8.3",
+    "loguru>=0.7.2",
+    "fastexcel>=0.11.6",
 ]
 
 [build-system]
@@ -19,14 +20,14 @@ build-backend = "hatchling.build"
 
 [tool.uv]
 dev-dependencies = [
-  "marimo>=0.8.4",
-  "ruff>=0.6.2",
-  "jupyter>=1.1.0",
-  "ipykernel>=6.29.5",
-  "blackdoc>=0.3.9",
-  "pre-commit>=3.8.0",
+    "marimo>=0.8.4",
+    "ruff>=0.6.2",
+    "jupyter>=1.1.0",
+    "ipykernel>=6.29.5",
+    "blackdoc>=0.3.9",
+    "pre-commit>=3.8.0",
 ]
 compile-bytecode = true
 
 [project.scripts]
-"emb_my_gbk" = "embl_my_genbank.__main__:main"
+"emg" = "embl_my_genbank.__main__:main"
